@@ -1,0 +1,23 @@
+<div *ngIf="driver" class="driver-detail">
+<div class="driver-number">
+      <span>{{driver.permanentNumber}}</span>
+    </div>
+  <div>
+    <span>Name: </span>
+    <span>{{driver.givenName}} {{driver.familyName}}</span>
+  </div>
+  <div>
+    <span>Wiki Link: </span>
+    <a href="{{driver.url}}">Click here</a>
+  </div>
+  <div>
+    <span>Nationality: </span>
+    <span>{{driver.nationality}}</span>
+  </div>
+  <div>
+    <span>DoB: </span>
+    <span>{{driver.dateOfBirth}}</span>
+  </div>
+
+
+</div>

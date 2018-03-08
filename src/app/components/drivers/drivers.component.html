@@ -1,11 +1,13 @@
-
-<h2>2017 Drivers</h2>
-<ul class="heroes">
-  <li *ngFor="let driver of drivers" (click)="onSelect(driver)">
-      <span class="team-number">
-          <span class="text">{{driver.permanentNumber?driver.permanentNumber:'NA'}}</span>
-          <span style="background:#00D2BE" class="color"></span>
-        </span>
-        <span class="name">{{driver.givenName}} {{driver.familyName}}</span>
-  </li>
-</ul>
+<h2>
+  2017 Drivers</h2>
+<div class=drivers>
+    <table>
+        <tr *ngFor="let driver of drivers" routerLink="/drivers/{{driver.driverId}}">
+          <td class="team-numeric">
+              <span class="text">{{driver.permanentNumber?driver.permanentNumber:'NA'}}</span>
+              <span style="background:#00D2BE" class="color"></span>
+          </td>
+          <td><span class="name">{{driver.givenName}} {{driver.familyName}}</span></td>
+        </tr>
+      </table>
+</div>

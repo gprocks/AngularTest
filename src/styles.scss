@@ -1,0 +1,69 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+//Drivers
+.drivers {
+    font-family: "Open Sans",Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+  .team-numeric {
+      font-size: 14px;
+      // font-size: 1.4rem;
+      line-height: 14px;
+      font-weight: 700;
+      background: #b0b0b0;
+      color: #fff;
+      display: inline-block;
+      padding: 7px 10px 7px 0;
+      width: 40px;
+      text-align: center;
+      -webkit-transform: skew(-30deg);
+      -moz-transform: skew(-30deg);
+      -o-transform: skew(-30deg);
+      -ms-transform: skew(-30deg);
+      transform: skew(-30deg);
+      position: relative;
+      .color {
+          width: 10px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          background: #000;
+      }
+  }
+  .text {
+      display: inline-block;
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(30deg);
+      -o-transform: skew(30deg);
+      -ms-transform: skew(30deg);
+      transform: skew(30deg);
+  }
+  .name {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-left: 6px;
+  }
+
+
+  tr>td {
+    margin: 0.5em 0em 0.5em 0em;
+  }
+}
+//--> Drivers
+h2
+{
+  font-family: "Open Sans",Helvetica,sans-serif;
+}
+
+.content
+{
+  padding: 90px 20px 20px 20px;
+}
+
+body{margin:0px}
+
+
+.example-card {
+  max-width: 400px;
+}

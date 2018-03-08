@@ -1,0 +1,9 @@
+{
+  "short_name": "F1Live",
+  "name": "Formula1 Live",
+  "start_url": "/",
+  "theme_color": "#f48c5b",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,27 +1,31 @@
-<mat-card class="example-card">
-  <h2>Current Standings</h2>
-  <div>
-    <!-- <mat-spinner style="margin:0 auto;"></mat-spinner> -->
-    <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
+<div class="container" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
+  <div fxLayoutAlign="center">
+    <mat-card class="example-card">
+      <h2>Current Standings</h2>
+      <div>
+        <!-- <mat-spinner style="margin:0 auto;"></mat-spinner> -->
+        <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
 
+      </div>
+      <ng-template #listContent>
+        <div class="drivers">
+          <table>
+            <tr *ngFor="let standing of standings" routerLink="/drivers/{{standing.Driver.driverId}}">
+              <td class="team-numeric">
+                <span class="text">{{standing.position}}</span>
+                <span class="color team-{{standing.Constructors[standing.Constructors.length-1].constructorId}}"></span>
+              </td>
+              <td class="name">
+                <span class="first-name" fxShow fxHide.xs="true">{{standing.Driver.givenName}}</span>
+                <span class="last-name"> {{standing.Driver.familyName}}</span>
+              </td>
+              <td class="country">{{standing.Driver.nationality}}</td>
+              <td class="team">{{standing.Constructors[standing.Constructors.length-1].name|teamTranslator}}</td>
+              <td class="points">{{standing.points}}</td>
+            </tr>
+          </table>
+        </div>
+      </ng-template>
+    </mat-card>
   </div>
-  <ng-template #listContent>
-    <div class="drivers">
-      <table>
-        <tr *ngFor="let standing of standings" routerLink="/drivers/{{standing.Driver.driverId}}">
-          <td class="team-numeric">
-            <span class="text">{{standing.position}}</span>
-            <span class="color team-{{standing.Constructors[standing.Constructors.length-1].constructorId}}"></span>
-          </td>
-          <td class="name">
-            <span class="first-name" fxShow fxHide.xs="true">{{standing.Driver.givenName}}</span>
-            <span class="last-name"> {{standing.Driver.familyName}}</span>
-          </td>
-          <td class="country">{{standing.Driver.nationality}}</td>
-          <td class="team">{{standing.Constructors[standing.Constructors.length-1].name|teamTranslator}}</td>
-          <td class="points">{{standing.points}}</td>
-        </tr>
-      </table>
-    </div>
-  </ng-template>
-</mat-card>
+</div>

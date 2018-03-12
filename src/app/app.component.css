@@ -26,6 +26,12 @@
 .sidenav-content {
   padding-top: 58px;
 }
+
+.navbar-logo
+{
+  height: 80%;
+  padding-right: 10px;
+}
 /* nav-bar -->*/
 
 /* <-- menu-toggle */

@@ -13,6 +13,7 @@ import { GetAgePipe } from './pipes/get-age.pipe';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DriverStandingsService } from './services/driver-standings.service';
 import { MaterialModule } from './material-module/material.module';
+import { TeamTranslatorPipe } from './pipes/team-translator.pipe';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { MaterialModule } from './material-module/material.module';
     DriverComponent,
     StandingsComponent,
     GetAgePipe,
+    TeamTranslatorPipe,
   ],
   imports: [
     BrowserModule,

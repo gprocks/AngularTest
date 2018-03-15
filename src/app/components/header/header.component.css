@@ -1,0 +1,33 @@
+.header-content{
+    text-align: center;
+}
+.header-image{
+    height: 300px;
+    width: 100%;
+   background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url(https://i.imgur.com/fAcQ0JB.jpg) center center no-repeat;
+    background-size: cover;
+    background-position: 0% 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+}
+
+.track-details{
+  margin-top:15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.track-details span {
+    margin-left: 15px;
+}
+
+.track-details span:first-child {
+    margin-left: 0;
+}

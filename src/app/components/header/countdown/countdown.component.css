@@ -1,0 +1,25 @@
+
+.countdown {
+    padding: 2px;
+    display: inline-block;
+}
+.countdown div {
+    display: inline-block;
+    margin-left: 18px;
+    min-width: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.countdown span:first-child {
+    margin-left: 0;
+}
+
+.countdown span {
+  font-size: 80px;
+  display: block;
+}
+
+.countdown .smalltext{
+  font-size: 22px;
+}

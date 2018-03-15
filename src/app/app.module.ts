@@ -14,6 +14,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { DriverStandingsService } from './services/driver-standings.service';
 import { MaterialModule } from './material-module/material.module';
 import { TeamTranslatorPipe } from './pipes/team-translator.pipe';
+import { CountdownComponent } from './components/header/countdown/countdown.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { TeamTranslatorPipe } from './pipes/team-translator.pipe';
     StandingsComponent,
     GetAgePipe,
     TeamTranslatorPipe,
+    CountdownComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

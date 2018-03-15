@@ -15,7 +15,6 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   isSideMenuOpen = false;
-
   menuItems: MenuItem[] = [
     { title: 'Home', link: 'home' },
     { title: 'Drivers', link: 'drivers' }

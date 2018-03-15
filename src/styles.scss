@@ -90,9 +90,20 @@ h2
   font-family: "Open Sans",Helvetica,sans-serif;
 }
 
+.mat-sidenav-container{
+  padding-top:56px;
+}
+
+.mat-toolbar-row{
+height:56px !important;
+}
+.mat-toolbar-multiple-rows {
+    min-height: 56px !important;
+}
+
 .content
 {
-  padding: 90px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 body{margin:0px}

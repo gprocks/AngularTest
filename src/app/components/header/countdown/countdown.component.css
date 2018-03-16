@@ -5,15 +5,16 @@
 }
 .countdown div {
     display: inline-block;
-    margin-left: 18px;
-    min-width: 40px;
+    padding:5px;
+    min-width: 105px;
     text-align: center;
     font-weight: normal;
 }
 
-.countdown span:first-child {
-    margin-left: 0;
+.countdown > div {
+    padding:0px;
 }
+
 
 .countdown span {
   font-size: 80px;

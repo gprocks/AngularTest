@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/interval';
+import { RaceScheduleCurrentService } from '../../../services/race-schedule/race-schedule-current.service';
+import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
+import { ParseDateStringBasic } from '../../../services/util/date-helper';
 
 @Component({
   selector: 'app-countdown',
@@ -9,31 +12,30 @@ import 'rxjs/add/observable/interval';
 })
 export class CountdownComponent implements OnInit {
 
+  @Input() nextRaceDate: Date;
+
   timeRemaining: string[] = [];
-  diff: number;
-  constructor() { }
+  nextRace: RaceScheduleCurrent;
+
+  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) { }
 
   ngOnInit() {
-    Observable.interval(1000).map((x) => {
-      this.diff = Math.floor((new Date('2018-03-25T05:10Z').getTime() - new Date().getTime()) / 1000);
-    }).subscribe((x) => {
-      this.getComponents(this.diff);
-    });
+    this.setupTimer();
   }
 
-  getComponents(t) {
+  getTimeComponents(time) {
     let days: number;
     let hours: number;
     let minutes: number;
     let seconds: number;
 
-    days = Math.floor(t / 86400);
-    t -= days * 86400;
-    hours = Math.floor(t / 3600) % 24;
-    t -= hours * 3600;
-    minutes = Math.floor(t / 60) % 60;
-    t -= minutes * 60;
-    seconds = t % 60;
+    days = Math.floor(time / 86400);
+    time -= days * 86400;
+    hours = Math.floor(time / 3600) % 24;
+    time -= hours * 3600;
+    minutes = Math.floor(time / 60) % 60;
+    time -= minutes * 60;
+    seconds = time % 60;
 
     this.timeRemaining = [
       days.toString().padStart(2, '0'),
@@ -41,5 +43,14 @@ export class CountdownComponent implements OnInit {
       minutes.toString().padStart(2, '0'),
       seconds.toString().padStart(2, '0')
     ];
+  }
+
+  setupTimer() {
+    let diff: number;
+    Observable.interval(1000).map((x) => {
+      diff = Math.floor((this.nextRaceDate.getTime() - new Date().getTime()) / 1000);
+    }).subscribe((x) => {
+      this.getTimeComponents(diff);
+    });
   }
 }

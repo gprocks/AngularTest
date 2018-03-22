@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { DriverStanding } from '../models/driver-standing';
+import { DriverStanding } from '../../models/driver-standing';
 import { Observable } from 'rxjs/Observable';
-import { AppSettings } from '../util/app.settings';
+import { AppSettings } from '../../util/app.settings';
 import { HttpClient } from '@angular/common/http';
 import { tap, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
-import { ApiServices } from '../util/constants';
+import { ApiServices } from '../../util/constants';
 
 @Injectable()
 export class DriverStandingsService {

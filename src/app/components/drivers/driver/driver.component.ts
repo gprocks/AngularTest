@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Driver } from '../../../models/driver';
-import { DriverService } from '../../../services/driver.service';
+import { DriverService } from '../../../services/driver/driver.service';
 
 @Component({
   selector: 'app-driver',

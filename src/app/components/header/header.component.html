@@ -1,39 +1,7 @@
 <div class="header-image">
   <div class="header-content">
     <div>
-      <span>Australia 2018 starts in:</span>
+      <span>{{nextRace?.summary}} starts in:</span>
     </div>
-    <app-countdown></app-countdown>
-    <!-- <div class="track-details">
-      <span>
-        City: Melbourne
-      </span>
-      <span>
-        Circuit: Albert Park Grand Prix Circuit
-      </span>
-    </div>
-    <div class="track-details">
-      <span>
-        2017 Winner: Sebastian Vettel
-      </span>
-    </div> -->
-    <!-- <div class="track-details">
-      <span>
-        P1: 03-24 01:00
-      </span>
-      <span>
-        P2: 03-24 01:00
-      </span>
-      <span>
-        P3: 03-24 01:00
-      </span>
-      </div>
-    <div class="track-details">
-      <span>
-        Q: 03-24 01:00
-      </span>
-      <span>
-        RACE: 03-24 01:00
-      </span>
-    </div> -->
+    <app-countdown [nextRaceDate]="nextRaceDate"></app-countdown>
   </div>

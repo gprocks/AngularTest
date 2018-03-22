@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DriverStanding } from '../../models/driver-standing';
-import { DriverStandingsService } from '../../services/driver-standings.service';
+import { DriverStandingsService } from '../../services/driver-standings/driver-standings.service';
 
 
 @Component({

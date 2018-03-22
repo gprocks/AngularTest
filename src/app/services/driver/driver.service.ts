@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Driver } from '../models/driver';
-import { DRIVERS } from '../mocks/drivers';
+import { Driver } from '../../models/driver';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { AppSettings } from '../util/app.settings';
+import { AppSettings } from '../../util/app.settings';
 
 @Injectable()
 export class DriverService {
@@ -33,13 +32,13 @@ export class DriverService {
   getDriver(id: string): Observable<Driver> {
     const driversUrl = AppSettings.API_URL + 'drivers/' + id + '.json';
     return this.http.get(driversUrl)
-    .map((response: any) => {
-      return response.MRData.DriverTable.Drivers[0] as Driver;
-    })
-    .pipe(
-      tap(driver => console.log('Fetching Driver', driver)),
-      catchError(this.handleError('getDrivers', new Driver() ))
-    );
+      .map((response: any) => {
+        return response.MRData.DriverTable.Drivers[0] as Driver;
+      })
+      .pipe(
+        tap(driver => console.log('Fetching Driver', driver)),
+        catchError(this.handleError('getDrivers', new Driver()))
+      );
   }
 
 

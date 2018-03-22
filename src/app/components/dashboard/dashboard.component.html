@@ -1,8 +1,0 @@
-<h3>Current Standings</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let standing of standings" class="col-1-4" routerLink="/drivers/{{standing.Driver.driverId}}">
-    <div class="module hero">
-      <h4>{{standing.position}} - {{standing.Driver.givenName}} {{standing.Driver.familyName}} - {{standing.points}}</h4>
-    </div>
-  </a>
-</div>

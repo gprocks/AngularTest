@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Driver } from '../../models/driver';
-import { DRIVERS } from '../../mocks/drivers';
-import { DriverService } from '../../services/driver.service';
+import { DriverService } from '../../services/driver/driver.service';
 import { Router } from '@angular/router';
+import { Driver } from '../../models/driver';
 
 
 @Component({
@@ -12,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class DriversComponent implements OnInit {
 
-  selectedDriver: Driver ;
+  selectedDriver: Driver;
 
   drivers: Driver[];
   constructor(private router: Router, private driverService: DriverService) { }

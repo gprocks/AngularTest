@@ -1,0 +1,114 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+//Drivers
+.drivers {
+    font-family: "Open Sans",Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+  .team-numeric {
+      font-size: 14px;
+      // font-size: 1.4rem;
+      line-height: 14px;
+      font-weight: 700;
+      background: #b0b0b0;
+      color: #fff;
+      display: inline-block;
+      padding: 7px 10px 7px 0;
+      width: 30px;
+      text-align: center;
+      -webkit-transform: skew(-30deg);
+      -moz-transform: skew(-30deg);
+      -o-transform: skew(-30deg);
+      -ms-transform: skew(-30deg);
+      transform: skew(-30deg);
+      position: relative;
+      .color {
+          width: 10px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          background: #000;
+
+
+      }
+      .team-mercedes {background:#00D2BE}
+          .team-red_bull {background:#00327D}
+          .team-mclaren {background:#FF8700}
+          .team-williams {background:#fff;border:1px solid #b0b0b0;border-left:0}
+          .team-force_india {background:#F596C8}
+          .team-ferrari {background:#DC0000}
+          .team-toro_rosso {background:#0032FF}
+          .team-renault {background:#FFF500}
+          .team-sauber {background:#9B0000}
+          .team-marussia {background:#6e0000}
+          .team-caterham {background:#006c00}
+          .team-haas {background: #5A5A5A}
+
+
+
+  }
+  .text {
+      display: inline-block;
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(30deg);
+      -o-transform: skew(30deg);
+      -ms-transform: skew(30deg);
+      transform: skew(30deg);
+  }
+  .name {
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-left: 6px;
+  }
+
+  .country{
+      text-transform: uppercase;
+    color: gray;
+  }
+
+
+  .team{
+    font-weight:600;
+    color:gray;
+    text-transform:uppercase
+  }
+
+  .points{
+    font-weight:700;
+    text-align:right
+  }
+
+  tr>td {
+    margin: 0.5em 0em 0.5em 0em;
+  }
+}
+//--> Drivers
+
+h2
+{
+  font-family: "Open Sans",Helvetica,sans-serif;
+}
+
+.mat-sidenav-container{
+  padding-top:56px;
+}
+
+.mat-toolbar-row{
+height:56px !important;
+}
+.mat-toolbar-multiple-rows {
+    min-height: 56px !important;
+}
+
+.content
+{
+  padding: 20px 20px 20px 20px;
+}
+
+body{margin:0px}
+
+
+.example-card {
+  max-width: 600px;
+}

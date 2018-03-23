@@ -17,7 +17,7 @@ export class AppComponent {
   isSideMenuOpen = false;
   menuItems: MenuItem[] = [
     { title: 'Home', link: 'home' },
-    { title: 'Drivers', link: 'drivers' }
+    { title: 'Schedule', link: 'raceschedule' }
   ];
 
   public redirectAndCloseSideNav(redirectLocation) {

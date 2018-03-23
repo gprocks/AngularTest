@@ -17,6 +17,7 @@ import { TeamTranslatorPipe } from './pipes/team-translator.pipe';
 import { CountdownComponent } from './components/header/countdown/countdown.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RaceScheduleCurrentService } from './services/race-schedule/race-schedule-current.service';
+import { RaceScheduleComponent } from './components/race-schedule/race-schedule.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { RaceScheduleCurrentService } from './services/race-schedule/race-schedu
     TeamTranslatorPipe,
     CountdownComponent,
     HeaderComponent,
+    RaceScheduleComponent,
   ],
   imports: [
     BrowserModule,

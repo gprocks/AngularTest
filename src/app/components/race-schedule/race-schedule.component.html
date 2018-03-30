@@ -1,4 +1,4 @@
-<div class="container" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
+<div class="schedule" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
   <div fxLayoutAlign="center">
     <mat-card class="example-card">
       <h2>Race Schedule</h2>
@@ -9,19 +9,52 @@
       </div>
       <ng-template #listContent>
         <div>
-          <table>
+          <table class="schedule-list">
+            <thead>
+              <td>
+                Race
+              </td>
+              <td>
+                <span>Practice 1</span>
+              </td>
+              <td>
+                <span>Practice 2</span>
+              </td>
+              <td>
+                <span>Practice 3</span>
+              </td>
+              <td>
+                <span>Qualification</span>
+              </td>
+              <td>
+                <span>Race</span>
+              </td>
+              <td>
+                <span>Results</span>
+              </td>
+            </thead>
             <tr *ngFor="let raceweekend of raceSchedule">
               <td>
                 <span class="text">{{raceweekend[4].summary}}</span>
-                <!-- <span class="color team-{{standing.Constructors[standing.Constructors.length-1].constructorId}}"></span> -->
               </td>
-              <!-- <td class="name">
-                <span class="first-name" fxShow fxHide.xs="true">{{standing.Driver.givenName}}</span>
-                <span class="last-name"> {{standing.Driver.familyName}}</span>
+              <td>
+                <span class="text date-long">{{(raceweekend[0].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
               </td>
-              <td class="country">{{standing.Driver.nationality}}</td>
-              <td class="team">{{standing.Constructors[standing.Constructors.length-1].name|teamTranslator}}</td>
-              <td class="points">{{standing.points}}</td> -->
+              <td>
+                <span class="text date-long">{{(raceweekend[1].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+              </td>
+              <td>
+                <span class="text date-long">{{(raceweekend[2].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+              </td>
+              <td>
+                <span class="text date-long">{{(raceweekend[3].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+              </td>
+              <td>
+                <span class="text date-long">{{(raceweekend[4].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+              </td>
+              <td>
+
+              </td>
             </tr>
           </table>
         </div>

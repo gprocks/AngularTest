@@ -28,7 +28,6 @@ export class RaceScheduleComponent implements OnInit {
         let raceWeekend: RaceScheduleCurrent[] = [];
         for (let i = 0; i < schedule.length; i++) {
           raceWeekend.push(schedule[i]);
-
           if ((i + 1) % 5 === 0) {
             this.raceSchedule.push(raceWeekend);
             raceWeekend = [];

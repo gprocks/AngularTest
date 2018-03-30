@@ -16,11 +16,17 @@ export class RaceScheduleCurrentService {
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http.get<RaceScheduleCurrent[]>('./assets/schedule/2018.json')
+      .map(raceSchedule => { raceSchedule.forEach(this.setCurrentDate); return raceSchedule; })
       .pipe(
         tap(raceSchedule => console.log('Fetching Race Schedule', raceSchedule)),
         catchError(this.handleError('getCurrentRaceSchedule', []))
       );
 
+  }
+
+  setCurrentDate(raceDetails: RaceScheduleCurrent): RaceScheduleCurrent {
+    raceDetails.eventDate = ParseDateStringBasic(raceDetails.dtstamp);
+    return raceDetails;
   }
 
   getNextRace(): Observable<RaceScheduleCurrent> {
@@ -30,8 +36,7 @@ export class RaceScheduleCurrentService {
         return i.categories === CurrentRaceSchedule.Categories.GrandPrix;
       });
       for (let i = 0; i < races.length; i++) {
-        const testDate = ParseDateStringBasic(races[i].dtstamp);
-        if (ParseDateStringBasic(races[i].dtstamp) >= currentDate) {
+        if (races[i].eventDate >= currentDate) {
           return races[i];
         }
       }

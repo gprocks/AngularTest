@@ -20,6 +20,7 @@ import { RaceScheduleCurrentService } from './services/race-schedule/race-schedu
 import { RaceScheduleComponent } from './components/race-schedule/race-schedule.component';
 import { NationalityService } from './services/nationality/nationality.service';
 import { NationalityPipe } from './pipes/nationality.pipe';
+import { ErrorHandlerService } from './services/util/error-handler.service';
 
 
 @NgModule({
@@ -43,7 +44,14 @@ import { NationalityPipe } from './pipes/nationality.pipe';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [DriverService, DriverStandingsService, HttpClientModule, RaceScheduleCurrentService, NationalityService],
+  providers: [
+    DriverService,
+    DriverStandingsService,
+    HttpClientModule,
+    RaceScheduleCurrentService,
+    NationalityService,
+    ErrorHandlerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

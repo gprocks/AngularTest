@@ -6,11 +6,13 @@ import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AppSettings } from '../../util/app.settings';
+import { ErrorHandlerService } from '../util/error-handler.service';
 
 @Injectable()
 export class DriverService {
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private errorHandlerService: ErrorHandlerService
   ) { }
 
   getDrivers(year?: string): Observable<Driver[]> {
@@ -24,7 +26,7 @@ export class DriverService {
       })
       .pipe(
         tap(drivers => console.log('Fetching Drivers', drivers)),
-        catchError(this.handleError('getDrivers', []))
+        catchError(this.errorHandlerService.handleError('getDrivers', []))
       );
 
   }
@@ -37,25 +39,7 @@ export class DriverService {
       })
       .pipe(
         tap(driver => console.log('Fetching Driver', driver)),
-        catchError(this.handleError('getDrivers', new Driver()))
+        catchError(this.errorHandlerService.handleError('getDrivers', new Driver()))
       );
-  }
-
-
-  /**
- * Handle Http operation that failed.
- * Let the app continue.
- * @param operation - name of the operation that failed
- * @param result - optional value to return as the observable result
- */
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
-      console.error(error); // log to console instead
-
-      // Let the app keep running by returning an empty result.
-      return of(result as T);
-    };
   }
 }

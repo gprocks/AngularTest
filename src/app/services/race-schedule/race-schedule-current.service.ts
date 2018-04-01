@@ -13,11 +13,15 @@ import { ErrorHandlerService } from '../util/error-handler.service';
 @Injectable()
 export class RaceScheduleCurrentService {
 
+  public nextRaceSubject = new BehaviorSubject<RaceScheduleCurrent>(new RaceScheduleCurrent());
+
   constructor(
     private http: HttpClient,
     private nationalityService: NationalityService,
     private errorHandlerService: ErrorHandlerService
-  ) { }
+  ) {
+    this.setNextRaceSubject();
+  }
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http.get<RaceScheduleCurrent[]>('./assets/schedule/2018.json')
@@ -39,6 +43,10 @@ export class RaceScheduleCurrentService {
 
   getNationality(event: string) {
     return event.replace(/(\(|\)| Grand Prix|Session |First |Second |Third |Practice |Qualifying )+/gi, '');
+  }
+
+  setNextRaceSubject() {
+    this.getNextRace().subscribe(race => { this.nextRaceSubject.next(race); });
   }
 
   getNextRace(): Observable<RaceScheduleCurrent> {

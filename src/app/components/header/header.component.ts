@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) { }
 
   ngOnInit() {
-    this.raceScheduleCurrentService.getNextRace().subscribe(race => {
+    this.raceScheduleCurrentService.nextRaceSubject.subscribe(race => {
       this.nextRace = race;
     });
   }

@@ -50,6 +50,9 @@ export class CountdownComponent implements OnInit {
     Observable.interval(1000).map((x) => {
       diff = Math.floor((this.nextRaceDate.getTime() - new Date().getTime()) / 1000);
     }).subscribe((x) => {
+      if (diff <= 0) {
+        this.raceScheduleCurrentService.setNextRaceSubject();
+      }
       this.getTimeComponents(diff);
     });
   }

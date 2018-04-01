@@ -18,6 +18,8 @@ import { CountdownComponent } from './components/header/countdown/countdown.comp
 import { HeaderComponent } from './components/header/header.component';
 import { RaceScheduleCurrentService } from './services/race-schedule/race-schedule-current.service';
 import { RaceScheduleComponent } from './components/race-schedule/race-schedule.component';
+import { NationalityService } from './services/nationality/nationality.service';
+import { NationalityPipe } from './pipes/nationality.pipe';
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { RaceScheduleComponent } from './components/race-schedule/race-schedule.
     CountdownComponent,
     HeaderComponent,
     RaceScheduleComponent,
+    NationalityPipe,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { RaceScheduleComponent } from './components/race-schedule/race-schedule.
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [DriverService, DriverStandingsService, HttpClientModule, RaceScheduleCurrentService],
+  providers: [DriverService, DriverStandingsService, HttpClientModule, RaceScheduleCurrentService, NationalityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

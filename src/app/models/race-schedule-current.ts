@@ -2,6 +2,7 @@ import { ParseDateStringBasic } from '../services/util/date-helper';
 
 export class RaceScheduleCurrent {
   location: string;
+  country: string;
   summary: string;
   uid: string;
   dtstart: any[];

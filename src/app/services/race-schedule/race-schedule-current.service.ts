@@ -7,16 +7,17 @@ import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs/observable/of';
 import { CurrentRaceSchedule } from '../../util/constants';
 import { ParseDateStringBasic } from '../util/date-helper';
+import { NationalityService } from '../nationality/nationality.service';
 
 @Injectable()
 export class RaceScheduleCurrentService {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private nationalityService: NationalityService) {
   }
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http.get<RaceScheduleCurrent[]>('./assets/schedule/2018.json')
-      .map(raceSchedule => { raceSchedule.forEach(this.setCurrentDate); return raceSchedule; })
+      .map(raceSchedule => { raceSchedule.forEach(this.setCustomData.bind(this)); return raceSchedule; })
       .pipe(
         tap(raceSchedule => console.log('Fetching Race Schedule', raceSchedule)),
         catchError(this.handleError('getCurrentRaceSchedule', []))
@@ -24,11 +25,18 @@ export class RaceScheduleCurrentService {
 
   }
 
-  setCurrentDate(raceDetails: RaceScheduleCurrent): RaceScheduleCurrent {
+  setCustomData(raceDetails: RaceScheduleCurrent): RaceScheduleCurrent {
     raceDetails.eventDate = ParseDateStringBasic(raceDetails.dtstamp);
+    this.nationalityService.GetInfoByNationality(this.getNationality(raceDetails.summary))
+      .subscribe(countryInfo => {
+        raceDetails.country = countryInfo == null ? this.getNationality(raceDetails.summary) : countryInfo.en_short_name;
+      });
     return raceDetails;
   }
 
+  getNationality(event: string) {
+    return event.replace(/(\(|\)| Grand Prix|Session |First |Second |Third |Practice |Qualifying )+/gi, '');
+  }
   getNextRace(): Observable<RaceScheduleCurrent> {
     const currentDate: Date = new Date();
     return this.getCurrentRaceSchedule().map(result => {

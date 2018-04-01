@@ -10,11 +10,11 @@
       <ng-template #listContent>
         <div>
           <table class="schedule-list">
-            <thead>
+            <thead style="display:none">
               <td>
                 Race
               </td>
-              <td>
+              <!-- <td>
                 <span>Practice 1</span>
               </td>
               <td>
@@ -22,39 +22,53 @@
               </td>
               <td>
                 <span>Practice 3</span>
-              </td>
+              </td> -->
               <td>
                 <span>Qualification</span>
               </td>
               <td>
                 <span>Race</span>
               </td>
-              <td>
+              <!-- <td>
                 <span>Results</span>
-              </td>
+              </td> -->
             </thead>
             <tr *ngFor="let raceweekend of raceSchedule">
               <td>
-                <span class="text">{{raceweekend[4].summary}}</span>
+                <span class="text">{{raceweekend[4].country}}</span>
               </td>
-              <td>
+              <!-- <td>
                 <span class="text date-long">{{(raceweekend[0].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-med">{{(raceweekend[0].eventDate) | date:'MMM dd, hh:mm'}}</span>
+                 <span class="text date-short">{{(raceweekend[0].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
               </td>
               <td>
-                <span class="text date-long">{{(raceweekend[1].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-long">{{(raceweekend[1].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-med">{{(raceweekend[1].eventDate) | date:'MMM dd, hh:mm'}}</span>
               </td>
               <td>
-                <span class="text date-long">{{(raceweekend[2].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-long">{{(raceweekend[2].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-med">{{(raceweekend[2].eventDate) | date:'MMM dd, hh:mm'}}</span>
+              </td> -->
+              <!-- <td>
+                <span class="text date-long">{{(raceweekend[3].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-med">{{(raceweekend[3].eventDate) | date:'MMM dd, hh:mm'}}</span>
               </td>
               <td>
-                <span class="text date-long">{{(raceweekend[3].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
-              </td>
+                <span class="text date-long">{{(raceweekend[4].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
+                <span class="text date-med">{{(raceweekend[4].eventDate) | date:'MMM dd, hh:mm'}}</span>
+              </td> -->
+              <td> {{raceweekend[0].eventDate | date:'dd'}} - {{raceweekend[4].eventDate | date:'dd MMM'}} </td>
+              <!-- <td>
+                <i class="fas fa-trophy"></i>
+                <span>Hamilton</span>
+              </td> -->
               <td>
-                <span class="text date-long">{{(raceweekend[4].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
+                <i class="fas fa-info-circle"></i>
               </td>
-              <td>
+              <!-- <td>
 
-              </td>
+              </td> -->
             </tr>
           </table>
         </div>

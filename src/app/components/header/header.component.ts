@@ -12,15 +12,12 @@ import { CountdownComponent } from './countdown/countdown.component';
 export class HeaderComponent implements OnInit {
 
   nextRace: RaceScheduleCurrent;
-  nextRaceDate: Date;
 
   constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) { }
 
   ngOnInit() {
-    this.raceScheduleCurrentService.getNextRace().subscribe(race => {
+    this.raceScheduleCurrentService.nextRaceSubject.subscribe(race => {
       this.nextRace = race;
-      this.nextRaceDate = ParseDateStringBasic(race.dtstamp);
-
     });
   }
 

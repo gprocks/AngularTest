@@ -1,6 +1,6 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-//Drivers
+//Drivers/Standings
 .drivers {
     font-family: "Open Sans",Helvetica,sans-serif;
     font-size: 12px;
@@ -83,7 +83,70 @@
     margin: 0.5em 0em 0.5em 0em;
   }
 }
+
+.standings .card {
+  max-width: 600px;
+}
 //--> Drivers
+
+// Schedule
+.schedule-list {
+  border-collapse: collapse;
+  color: #808080;
+
+  /*Header*/
+  thead {
+
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    font-weight: bold;
+  }
+  /* --> Header*/
+
+  /*Body*/
+  td
+  {
+    height: 40px;
+    padding:5px;
+  }
+
+  td:first-child{
+    padding-left:10px;
+    padding-right:30px;
+    font-weight: bold;
+  }
+
+  td:last-child{
+    padding-right:10px;
+  }
+
+  tr:nth-child(even)
+  {
+    background-color: #f8f6ff;
+  }
+  /*-->Body*/
+
+   /*Dates*/
+  .date-long{
+    display:block;
+  }
+  .date-med{
+    display:none;
+  }
+
+  @media screen and (max-width: 400px) {
+    .date-long{
+      display:none;
+    }
+    .date-med{
+      display:block;
+    }
+  }
+  /*-->Dates*/
+
+
+}
+
+//-> Schedule
 
 h2
 {
@@ -109,6 +172,4 @@ height:56px !important;
 body{margin:0px}
 
 
-.example-card {
-  max-width: 600px;
-}
+

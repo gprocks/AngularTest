@@ -17,6 +17,10 @@ import { TeamTranslatorPipe } from './pipes/team-translator.pipe';
 import { CountdownComponent } from './components/header/countdown/countdown.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RaceScheduleCurrentService } from './services/race-schedule/race-schedule-current.service';
+import { RaceScheduleComponent } from './components/race-schedule/race-schedule.component';
+import { NationalityService } from './services/nationality/nationality.service';
+import { NationalityPipe } from './pipes/nationality.pipe';
+import { ErrorHandlerService } from './services/util/error-handler.service';
 
 
 @NgModule({
@@ -29,6 +33,8 @@ import { RaceScheduleCurrentService } from './services/race-schedule/race-schedu
     TeamTranslatorPipe,
     CountdownComponent,
     HeaderComponent,
+    RaceScheduleComponent,
+    NationalityPipe,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,14 @@ import { RaceScheduleCurrentService } from './services/race-schedule/race-schedu
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [DriverService, DriverStandingsService, HttpClientModule, RaceScheduleCurrentService],
+  providers: [
+    DriverService,
+    DriverStandingsService,
+    HttpClientModule,
+    RaceScheduleCurrentService,
+    NationalityService,
+    ErrorHandlerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

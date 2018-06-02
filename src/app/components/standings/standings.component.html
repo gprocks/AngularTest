@@ -1,6 +1,6 @@
-<div class="container" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
+<div class="standings" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
   <div fxLayoutAlign="center">
-    <mat-card class="example-card">
+    <mat-card class="card">
       <h2>Current Standings</h2>
       <div>
         <!-- <mat-spinner style="margin:0 auto;"></mat-spinner> -->
@@ -19,7 +19,7 @@
                 <span class="first-name" fxShow fxHide.xs="true">{{standing.Driver.givenName}}</span>
                 <span class="last-name"> {{standing.Driver.familyName}}</span>
               </td>
-              <td class="country">{{standing.Driver.nationality}}</td>
+              <td class="country">{{standing.Driver.nationality | nationality| async }}</td>
               <td class="team">{{standing.Constructors[standing.Constructors.length-1].name|teamTranslator}}</td>
               <td class="points">{{standing.points}}</td>
             </tr>

@@ -1,73 +1,37 @@
 <div class="schedule" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
   <div fxLayoutAlign="center">
-    <mat-card class="example-card">
+    <mat-card>
       <h2>Race Schedule</h2>
       <div>
-        <!-- <mat-spinner style="margin:0 auto;"></mat-spinner> -->
         <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
-
       </div>
       <ng-template #listContent>
         <div>
           <table class="schedule-list">
-            <thead style="display:none">
+            <thead>
               <td>
-                Race
-              </td>
-              <!-- <td>
-                <span>Practice 1</span>
               </td>
               <td>
-                <span>Practice 2</span>
+                <span>Date</span>
               </td>
               <td>
-                <span>Practice 3</span>
-              </td> -->
-              <td>
-                <span>Qualification</span>
+                <span>Time</span>
               </td>
-              <td>
-                <span>Race</span>
-              </td>
-              <!-- <td>
-                <span>Results</span>
-              </td> -->
+              <td></td>
             </thead>
             <tr *ngFor="let raceweekend of raceSchedule">
               <td>
                 <span class="text">{{raceweekend[4].country}}</span>
-              </td>
-              <!-- <td>
-                <span class="text date-long">{{(raceweekend[0].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
-                <span class="text date-med">{{(raceweekend[0].eventDate) | date:'MMM dd, hh:mm'}}</span>
-                 <span class="text date-short">{{(raceweekend[0].eventDate) | date:'EE, MMM dd yyyy, hh:mm'}}</span>
-              </td>
-              <td>
-                <span class="text date-long">{{(raceweekend[1].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
-                <span class="text date-med">{{(raceweekend[1].eventDate) | date:'MMM dd, hh:mm'}}</span>
-              </td>
-              <td>
-                <span class="text date-long">{{(raceweekend[2].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
-                <span class="text date-med">{{(raceweekend[2].eventDate) | date:'MMM dd, hh:mm'}}</span>
-              </td> -->
-              <!-- <td>
-                <span class="text date-long">{{(raceweekend[3].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
-                <span class="text date-med">{{(raceweekend[3].eventDate) | date:'MMM dd, hh:mm'}}</span>
-              </td>
-              <td>
-                <span class="text date-long">{{(raceweekend[4].eventDate) | date:'EE MMM dd yyyy, hh:mm'}}</span>
-                <span class="text date-med">{{(raceweekend[4].eventDate) | date:'MMM dd, hh:mm'}}</span>
-              </td> -->
-              <td> {{raceweekend[0].eventDate | date:'dd'}} - {{raceweekend[4].eventDate | date:'dd MMM'}} </td>
-              <!-- <td>
-                <i class="fas fa-trophy"></i>
-                <span>Hamilton</span>
-              </td> -->
-              <td>
-                <i class="fas fa-info-circle"></i>
-              </td>
-              <!-- <td>
+                <span class="text">({{raceweekend[4].location}})</span>
 
+              </td>
+              <td>
+                <span class="text date-long">{{raceweekend[4].eventDate | date:'dd MMMM'}}</span>
+                <span class="text date-med">{{raceweekend[4].eventDate | date:'dd MMM'}}</span>
+              </td>
+              <td> {{raceweekend[4].eventDate | date:'HH:mm'}}</td>
+              <!-- <td>
+                <i class="fas fa-info-circle"></i>
               </td> -->
             </tr>
           </table>

@@ -21,6 +21,7 @@ import { RaceScheduleComponent } from './components/race-schedule/race-schedule.
 import { NationalityService } from './services/nationality/nationality.service';
 import { NationalityPipe } from './pipes/nationality.pipe';
 import { ErrorHandlerService } from './services/util/error-handler.service';
+import { WeekendDetailsPopupComponent } from './components/race-schedule/weekend-details-popup/weekend-details-popup.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { ErrorHandlerService } from './services/util/error-handler.service';
     HeaderComponent,
     RaceScheduleComponent,
     NationalityPipe,
+    WeekendDetailsPopupComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,9 @@ import { ErrorHandlerService } from './services/util/error-handler.service';
     FormsModule,
     AppRoutingModule,
     HttpClientModule
+  ],
+  entryComponents: [
+    WeekendDetailsPopupComponent
   ],
   providers: [
     DriverService,

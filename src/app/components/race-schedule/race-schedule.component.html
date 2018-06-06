@@ -21,18 +21,19 @@
             </thead>
             <tr *ngFor="let raceweekend of raceSchedule">
               <td>
-                <span class="text">{{raceweekend[4].country}}</span>
-                <span class="text">({{raceweekend[4].location}})</span>
-
+                <span class="country">{{raceweekend[4].country}}</span>
+                <span>({{raceweekend[4].location}})</span>
               </td>
-              <td>
-                <span class="text date-long">{{raceweekend[4].eventDate | date:'dd MMMM'}}</span>
-                <span class="text date-med">{{raceweekend[4].eventDate | date:'dd MMM'}}</span>
+              <td class="date">
+                <span class="date-long">{{raceweekend[4].eventDate | date:'dd MMMM'}}</span>
+                <span class="date-med">{{raceweekend[4].eventDate | date:'dd MMM'}}</span>
               </td>
               <td> {{raceweekend[4].eventDate | date:'HH:mm'}}</td>
-              <!-- <td>
-                <i class="fas fa-info-circle"></i>
-              </td> -->
+              <td>
+                <div class="actions" (click)="openRaceWeekendPopup(raceweekend);">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+              </td>
             </tr>
           </table>
         </div>

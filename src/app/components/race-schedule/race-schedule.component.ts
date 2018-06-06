@@ -50,8 +50,7 @@ export class RaceScheduleComponent implements OnInit {
 
   openRaceWeekendPopup(raceWeekend: RaceScheduleCurrent[]) {
     this.dialog.open(WeekendDetailsPopupComponent, {
-      // height: '400px',
-      // width: '600px',
+      panelClass: 'myapp-no-padding-dialog',
       data: raceWeekend
     });
   }

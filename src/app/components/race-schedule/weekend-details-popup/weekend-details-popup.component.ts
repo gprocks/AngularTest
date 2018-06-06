@@ -9,12 +9,10 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 })
 export class WeekendDetailsPopupComponent implements OnInit {
 
-  // @Input() raceWeekend: RaceScheduleCurrent[];
-  // raceWeekend: RaceScheduleCurrent[];
   constructor(@Inject(MAT_DIALOG_DATA) public raceWeekend: RaceScheduleCurrent[]) { }
 
   ngOnInit() {
-    // this.test = this.raceWeekend[0].country;
+
   }
 
 }

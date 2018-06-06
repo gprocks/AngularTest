@@ -1,6 +1,21 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~@angular/material/theming';
 $app-primary: mat-palette($mat-indigo, 500);
+.myapp-no-padding-dialog {
+    .mat-dialog-container {
+        padding: 0;
+        margin: 0;
+    }
+    .mat-dialog-content {
+        padding: 0;
+        margin: 0;
+    }
+    .mat-dialog-actions {
+        padding: 10px;
+        margin: 0;
+    }
+}
+
 //Drivers/Standings
 .drivers {
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -160,6 +175,30 @@ $app-primary: mat-palette($mat-indigo, 500);
         }
     }
     /*-->Dates*/
+}
+
+.weekendDetails {
+    font-family: Comfortaa, cursive; // width: 250px;
+    // margin: 5px;
+    .header {
+        :first-child {
+            font-weight: bolder;
+        }
+        padding:10px;
+        display:grid;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://restcountries.eu/data/bel.svg');
+        background-size: cover;
+        background-position:50% 50%;
+        color:white;
+    }
+    table {
+        padding: 10px;
+        width: 100%;
+        tr td:first-child {
+            font-weight: bolder;
+        }
+    }
 }
 
 //-> Schedule

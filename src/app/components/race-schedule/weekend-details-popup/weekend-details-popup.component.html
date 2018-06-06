@@ -1,13 +1,20 @@
 <mat-dialog-content>
-  <div>{{raceWeekend[4].summary}}</div>
-  <table>
-    <tr *ngFor="let event of raceWeekend">
-      <td>{{event.categories}}</td>
-      <td>{{event.eventDate | date:'dd MMMM'}}</td>
-      <td>{{event.eventDate | date:'HH:mm'}}</td>
-    </tr>
-  </table>
+  <div class="weekendDetails">
+    <div class="header">
+      <span>{{raceWeekend[4].summary}}</span>
+      <span>{{raceWeekend[4].location}}</span>
+    </div>
+    <table>
+      <tr *ngFor="let event of raceWeekend">
+        <td>{{event.categories}}</td>
+        <td>{{event.eventDate | date:'dd MMMM'}}</td>
+        <td>{{event.eventDate | date:'HH:mm'}}</td>
+      </tr>
+    </table>
+  </div>
 </mat-dialog-content>
-<mat-dialog-actions align="center">
-  <button mat-button mat-dialog-close>Close</button>
+<mat-dialog-actions align="end">
+  <div class="footer">
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
 </mat-dialog-actions>

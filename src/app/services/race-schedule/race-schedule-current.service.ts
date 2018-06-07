@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { tap, catchError } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { RaceScheduleCurrent } from '../../models/race-schedule-current';
-import { AppSettings } from '../../util/app.settings';
+import 'rxjs/add/operator/mergeMap';
 import { CurrentRaceSchedule } from '../../util/constants';
 import { ParseDateStringBasic } from '../util/date-helper';
 import { NationalityService } from '../nationality/nationality.service';
@@ -34,6 +34,12 @@ export class RaceScheduleCurrentService {
 
   setCustomData(raceDetails: RaceScheduleCurrent): RaceScheduleCurrent {
     raceDetails.eventDate = ParseDateStringBasic(raceDetails.dtstamp);
+    // this.nationalityService.GetInfoByNationality(this.getNationality(raceDetails.summary))
+    //   .flatMap((countryInfo: any) => {
+    //     raceDetails.country = countryInfo == null ? raceDetails.summary : countryInfo.en_short_name;
+    //     return this.countryService.getCountry(raceDetails.country);
+    //   }).subscribe(result => console.log('TEST', result));
+
     this.nationalityService.GetInfoByNationality(this.getNationality(raceDetails.summary))
       .subscribe(countryInfo => {
         raceDetails.country = countryInfo == null ? this.getNationality(raceDetails.summary) : countryInfo.en_short_name;

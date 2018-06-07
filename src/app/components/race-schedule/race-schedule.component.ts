@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RaceScheduleCurrentService } from '../../services/race-schedule/race-schedule-current.service';
 import { RaceScheduleCurrent } from '../../models/race-schedule-current';
-import { race } from 'rxjs/operators';
+import { MatDialog } from '@angular/material';
+import { WeekendDetailsPopupComponent } from './weekend-details-popup/weekend-details-popup.component';
 
 @Component({
   selector: 'app-race-schedule',
@@ -14,7 +15,7 @@ export class RaceScheduleComponent implements OnInit {
   public error: boolean;
   raceSchedule: RaceScheduleCurrent[][] = [];
 
-  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) { }
+  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.isLoading = true;
@@ -45,5 +46,12 @@ export class RaceScheduleComponent implements OnInit {
           this.error = false;
         }
       );
+  }
+
+  openRaceWeekendPopup(raceWeekend: RaceScheduleCurrent[]) {
+    this.dialog.open(WeekendDetailsPopupComponent, {
+      panelClass: 'myapp-no-padding-dialog',
+      data: raceWeekend
+    });
   }
 }

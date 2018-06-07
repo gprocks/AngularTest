@@ -186,8 +186,6 @@ $app-primary: mat-palette($mat-indigo, 500);
         }
         padding:10px;
         display:grid;
-        background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('https://restcountries.eu/data/bel.svg');
         background-size: cover;
         background-position:50% 50%;
         color:white;

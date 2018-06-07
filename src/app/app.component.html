@@ -17,9 +17,13 @@
 </mat-toolbar>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav position="end">
-    <div class="sidenav-content">
-      <button mat-button *ngFor="let menuItem of menuItems" (click)="redirectAndCloseSideNav(menuItem.link);">{{menuItem.title}}</button>
-    </div>
+    <mat-nav-list>
+      <div class="sidenav-content">
+        <mat-list-item *ngFor="let menuItem of menuItems">
+          <a matLine (click)="redirectAndCloseSideNav(menuItem.link);"> {{ menuItem.title }} </a>
+        </mat-list-item>
+      </div>
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>

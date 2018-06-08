@@ -4,6 +4,7 @@ import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
 import { MAT_DIALOG_DATA } from '@angular/material';
 import { CountryService } from '../../../services/country/country.service';
 import { Observable } from 'rxjs/Observable';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-weekend-details-popup',
@@ -18,9 +19,17 @@ export class WeekendDetailsPopupComponent implements OnInit {
   ) { }
 
 
-  flagUrl: Observable<String>;
+  headerImage: Observable<any>;
   ngOnInit() {
-    this.flagUrl = this.countryService.getCountry(this.raceWeekend[0].country).map(result => result[0].flag);
+
+    this.headerImage = this.countryService.getCountry(this.raceWeekend[0].country)
+      .map(result => this.getBackgroundImage(result[0].flag));
+  }
+
+  getBackgroundImage(flagUrl: string) {
+    return {
+      'background-image': 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(' + (flagUrl) + ')'
+    };
   }
 
 }

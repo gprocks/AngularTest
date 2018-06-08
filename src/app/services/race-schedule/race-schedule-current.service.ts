@@ -34,12 +34,6 @@ export class RaceScheduleCurrentService {
 
   setCustomData(raceDetails: RaceScheduleCurrent): RaceScheduleCurrent {
     raceDetails.eventDate = ParseDateStringBasic(raceDetails.dtstamp);
-    // this.nationalityService.GetInfoByNationality(this.getNationality(raceDetails.summary))
-    //   .flatMap((countryInfo: any) => {
-    //     raceDetails.country = countryInfo == null ? raceDetails.summary : countryInfo.en_short_name;
-    //     return this.countryService.getCountry(raceDetails.country);
-    //   }).subscribe(result => console.log('TEST', result));
-
     this.nationalityService.GetInfoByNationality(this.getNationality(raceDetails.summary))
       .subscribe(countryInfo => {
         raceDetails.country = countryInfo == null ? this.getNationality(raceDetails.summary) : countryInfo.en_short_name;

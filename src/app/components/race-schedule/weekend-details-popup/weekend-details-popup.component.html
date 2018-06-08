@@ -1,6 +1,6 @@
 <mat-dialog-content>
   <div class="weekendDetails">
-    <div class="header" [ngStyle]="{'background-image':'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(' + (flagUrl|async) + ')'}">
+    <div class="header" [ngStyle]="headerImage|async">
       <span>{{raceWeekend[4].summary}}</span>
       <span>{{raceWeekend[4].location}}</span>
     </div>

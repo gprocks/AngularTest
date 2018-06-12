@@ -25,8 +25,8 @@ export class DriverStandingsService {
       .map((response: any) => {
         return response.MRData.StandingsTable.StandingsLists[0].DriverStandings as DriverStanding[];
       }).pipe(
-        tap(driver => console.log('Fetching Driver', driver)),
-        catchError(this.errorHandlerService.handleError('getDrivers', []))
+        tap(standings => console.log('Fetching Standings', standings)),
+        catchError(this.errorHandlerService.handleError('getStandings', []))
       );
   }
 }

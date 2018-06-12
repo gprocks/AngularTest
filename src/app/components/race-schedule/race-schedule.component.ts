@@ -3,6 +3,7 @@ import { RaceScheduleCurrentService } from '../../services/race-schedule/race-sc
 import { RaceScheduleCurrent } from '../../models/race-schedule-current';
 import { MatDialog } from '@angular/material';
 import { WeekendDetailsPopupComponent } from './weekend-details-popup/weekend-details-popup.component';
+import { ResultService } from '../../services/result/result.service';
 
 @Component({
   selector: 'app-race-schedule',
@@ -15,12 +16,17 @@ export class RaceScheduleComponent implements OnInit {
   public error: boolean;
   raceSchedule: RaceScheduleCurrent[][] = [];
 
-  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService, private dialog: MatDialog) { }
+  constructor(
+    private raceScheduleCurrentService: RaceScheduleCurrentService,
+    private dialog: MatDialog,
+    private resultService: ResultService
+  ) { }
 
   ngOnInit() {
     this.isLoading = true;
     this.error = false;
     this.getRaceSchedule();
+    this.resultService.getResult('1').subscribe(result => { console.log('fetched result:', result); });
   }
 
   getRaceSchedule(): void {
@@ -48,10 +54,13 @@ export class RaceScheduleComponent implements OnInit {
       );
   }
 
-  openRaceWeekendPopup(raceWeekend: RaceScheduleCurrent[]) {
+  openRaceWeekendPopup(raceWeekend: RaceScheduleCurrent[], round: number) {
     this.dialog.open(WeekendDetailsPopupComponent, {
       panelClass: 'myapp-no-padding-dialog',
-      data: raceWeekend
+      data: {
+        round: round,
+        weekend: raceWeekend
+      }
     });
   }
 }

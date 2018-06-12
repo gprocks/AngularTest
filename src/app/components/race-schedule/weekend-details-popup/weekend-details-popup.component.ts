@@ -14,7 +14,7 @@ import { tap } from 'rxjs/operators';
 export class WeekendDetailsPopupComponent implements OnInit {
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public raceWeekend: RaceScheduleCurrent[],
+    @Inject(MAT_DIALOG_DATA) public raceWeekend: any, // RaceScheduleCurrent[],
     private countryService: CountryService
   ) { }
 
@@ -22,7 +22,7 @@ export class WeekendDetailsPopupComponent implements OnInit {
   headerImage: Observable<any>;
   ngOnInit() {
 
-    this.headerImage = this.countryService.getCountry(this.raceWeekend[0].country)
+    this.headerImage = this.countryService.getCountry(this.raceWeekend.weekend[0].country)
       .map(result => this.getBackgroundImage(result[0].flag));
   }
 

@@ -1,11 +1,11 @@
 <mat-dialog-content>
   <div class="weekendDetails">
     <div class="header" [ngStyle]="headerImage|async">
-      <span>{{raceWeekend[4].summary}}</span>
-      <span>{{raceWeekend[4].location}}</span>
+      <span>{{raceWeekend.weekend[4].summary}}</span>
+      <span>{{raceWeekend.weekend[4].location}}</span>
     </div>
     <table>
-      <tr *ngFor="let event of raceWeekend">
+      <tr *ngFor="let event of raceWeekend.weekend">
         <td>{{event.categories}}</td>
         <td>{{event.eventDate | date:'dd MMMM'}}</td>
         <td>{{event.eventDate | date:'HH:mm'}}</td>
@@ -16,5 +16,6 @@
 <mat-dialog-actions align="end">
   <div class="footer">
     <button mat-button mat-dialog-close>Close</button>
+    <button mat-button mat-dialog-close routerLink="/raceresult/{{raceWeekend.round}}">Results</button>
   </div>
 </mat-dialog-actions>

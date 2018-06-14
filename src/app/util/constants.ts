@@ -1,7 +1,7 @@
 export const ApiServices = {
   Drivers: 'drivers',
   DriverStandings: 'driverStandings',
-  Results: 'results'
+  Results: 'results',
 };
 
 export const CurrentRaceSchedule = {

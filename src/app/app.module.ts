@@ -25,6 +25,7 @@ import { WeekendDetailsPopupComponent } from './components/race-schedule/weekend
 import { CountryService } from './services/country/country.service';
 import { ResultService } from './services/result/result.service';
 import { ResultComponent } from './components/result/result.component';
+import { RaceDetailService } from './services/race-detail/race-detail.service';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { ResultComponent } from './components/result/result.component';
     NationalityService,
     CountryService,
     ResultService,
+    RaceDetailService,
     ErrorHandlerService
   ],
   bootstrap: [AppComponent]

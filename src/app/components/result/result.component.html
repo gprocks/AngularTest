@@ -1,0 +1,29 @@
+<div class="schedule" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
+  <div fxLayoutAlign="center">
+    <mat-card>
+      <h2>{{raceDetails.raceName}}</h2>
+      <div>
+        <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
+      </div>
+      <ng-template #listContent>
+        <div class="drivers">
+          <table>
+            <tr *ngFor="let result of raceResult">
+              <td class="team-numeric">
+                <span class="text">{{result.position}}</span>
+                <span class="color team-{{result.Constructor.constructorId}}"></span>
+              </td>
+              <td class="name">
+                <span class="first-name" fxShow fxHide.xs="true">{{result.Driver.givenName}}</span>
+                <span class="last-name"> {{result.Driver.familyName}}</span>
+              </td>
+              <td class="country">{{result.Driver.nationality | nationality| async }}</td>
+              <td class="team">{{result.Constructor.name|teamTranslator}}</td>
+              <td class="points">{{result.points}}</td>
+            </tr>
+          </table>
+        </div>
+      </ng-template>
+    </mat-card>
+  </div>
+</div>

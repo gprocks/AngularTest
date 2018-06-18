@@ -12,7 +12,7 @@
           <table>
             <tr *ngFor="let standing of standings" routerLink="/drivers/{{standing.Driver.driverId}}">
               <td class="team-numeric">
-                <span class="text">{{standing.position}}</span>
+                <span class="text">{{standing.positionText}}</span>
                 <span class="color team-{{standing.Constructors[standing.Constructors.length-1].constructorId}}"></span>
               </td>
               <td class="name">

@@ -19,7 +19,7 @@
               </td>
               <td></td>
             </thead>
-            <tr *ngFor="let raceweekend of raceSchedule">
+            <tr *ngFor="let raceweekend of raceSchedule; let round = index">
               <td>
                 <span class="country">{{raceweekend[4].country}}</span>
                 <span>({{raceweekend[4].location}})</span>
@@ -30,7 +30,7 @@
               </td>
               <td> {{raceweekend[4].eventDate | date:'HH:mm'}}</td>
               <td>
-                <div class="actions" (click)="openRaceWeekendPopup(raceweekend);">
+                <div class="actions" (click)="openRaceWeekendPopup(raceweekend, round+1);">
                   <i class="fas fa-info-circle"></i>
                 </div>
               </td>

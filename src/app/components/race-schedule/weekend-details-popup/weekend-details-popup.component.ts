@@ -5,6 +5,8 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 import { CountryService } from '../../../services/country/country.service';
 import { Observable } from 'rxjs/Observable';
 import { tap } from 'rxjs/operators';
+import { ResultService } from '../../../services/result/result.service';
+import { Result } from '../../../models/result';
 
 @Component({
   selector: 'app-weekend-details-popup',
@@ -14,16 +16,27 @@ import { tap } from 'rxjs/operators';
 export class WeekendDetailsPopupComponent implements OnInit {
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public raceWeekend: RaceScheduleCurrent[],
-    private countryService: CountryService
+    @Inject(MAT_DIALOG_DATA) public raceWeekend: any, // RaceScheduleCurrent[],
+    private countryService: CountryService,
+    private resultsService: ResultService
   ) { }
 
 
   headerImage: Observable<any>;
+
+  raceResult: Result[];
+  hasResult = false;
+
   ngOnInit() {
 
-    this.headerImage = this.countryService.getCountry(this.raceWeekend[0].country)
+    this.headerImage = this.countryService.getCountry(this.raceWeekend.weekend[0].country)
       .map(result => this.getBackgroundImage(result[0].flag));
+
+    this.resultsService.getResult(this.raceWeekend.round)
+      .subscribe((result) => {
+        this.raceResult = result;
+        this.hasResult = result.length > 0;
+      });
   }
 
   getBackgroundImage(flagUrl: string) {

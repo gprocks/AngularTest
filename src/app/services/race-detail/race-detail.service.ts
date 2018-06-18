@@ -22,10 +22,10 @@ export class RaceDetailService {
     const raceUrl = AppSettings.API_URL + year + '/' + round + '.json';
     return this.http.get(raceUrl)
       .map((response: any) => {
-        return response.MRData.RaceTable.Races as RaceDetail;
+        return response.MRData.RaceTable.Races[0] as RaceDetail;
       })
       .pipe(
-        tap(drivers => console.log('FetchingRace Details', drivers)),
+        tap(drivers => console.log('Fetching Race Details', drivers)),
         catchError(this.errorHandlerService.handleError('getDrivers', new RaceDetail()))
       );
   }

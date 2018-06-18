@@ -18,7 +18,7 @@ export class ResultComponent implements OnInit {
 
   round: string;
 
-  raceDetails: RaceDetail;
+  raceDetails: RaceDetail = new RaceDetail();
   raceResult: Result[] = [];
 
 
@@ -33,10 +33,10 @@ export class ResultComponent implements OnInit {
     this.error = false;
     this.round = this.route.snapshot.paramMap.get('round');
     this.getResults();
-    this.getRace();
+    this.getRaceDetails();
   }
 
-  getRace(): void {
+  getRaceDetails(): void {
     this.raceService.getRace(this.round)
       .subscribe(race => { this.raceDetails = race; },
         error => {

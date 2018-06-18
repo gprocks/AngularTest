@@ -1,7 +1,7 @@
 <div class="schedule" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
   <div fxLayoutAlign="center">
     <mat-card>
-      <h2>Result</h2>
+      <h2>{{raceDetails.raceName}}</h2>
       <div>
         <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
       </div>

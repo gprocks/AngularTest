@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {
   MatButtonModule, MatToolbarModule, MatProgressSpinnerModule,
   MatMenuModule, MatSidenavModule, MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS,
-  MatListModule
+  MatListModule, MatFormFieldModule, MatSelectModule
 } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -24,6 +23,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     MatDialogModule,
     MatListModule,
+    MatFormFieldModule,
+    MatSelectModule,
     FlexLayoutModule
   ],
   declarations: []

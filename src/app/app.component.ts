@@ -18,7 +18,7 @@ export class AppComponent {
   menuItems: MenuItem[] = [
     { title: 'Home', link: 'home' },
     { title: 'Schedule', link: 'raceschedule' },
-    // { title: 'Results', link: 'raceresult/4' }
+    { title: 'Results', link: 'raceresult' }
   ];
 
   public redirectAndCloseSideNav(redirectLocation) {

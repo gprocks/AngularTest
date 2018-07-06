@@ -25,8 +25,23 @@ export class RaceDetailService {
         return response.MRData.RaceTable.Races[0] as RaceDetail;
       })
       .pipe(
-        tap(drivers => console.log('Fetching Race Details', drivers)),
+        tap(raceDetails => console.log('Fetching Race Details', raceDetails)),
         catchError(this.errorHandlerService.handleError('getDrivers', new RaceDetail()))
+      );
+  }
+
+  getRaceList(year?: string): Observable<RaceDetail[]> {
+    if (year == null) {
+      year = 'current';
+    }
+    const raceUrl = AppSettings.API_URL + year + '.json';
+    return this.http.get(raceUrl)
+      .map((response: any) => {
+        return response.MRData.RaceTable.Races as RaceDetail[];
+      })
+      .pipe(
+        tap(raceList => console.log('Fetching Race List', raceList)),
+        catchError(this.errorHandlerService.handleError('getRaceList', []))
       );
   }
 }

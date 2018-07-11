@@ -2,224 +2,225 @@
 @import '~@angular/material/theming';
 $app-primary: mat-palette($mat-indigo, 500);
 .myapp-no-padding-dialog {
-    .mat-dialog-container {
-        padding: 0;
-        margin: 0;
-    }
-    .mat-dialog-content {
-        padding: 0;
-        margin: 0;
-    }
-    .mat-dialog-actions {
-        padding: 10px;
-        margin: 0;
-    }
+  .mat-dialog-container {
+    padding: 0;
+    margin: 0;
+  }
+  .mat-dialog-content {
+    padding: 0;
+    margin: 0;
+  }
+  .mat-dialog-actions {
+    padding: 10px;
+    margin: 0;
+  }
 }
 
 //Drivers/Standings
 .drivers {
-    font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.6;
-    .team-numeric {
-        font-size: 14px; // font-size: 1.4rem;
-        line-height: 14px;
-        font-weight: 700;
-        background: #b0b0b0;
-        color: #fff;
-        display: inline-block;
-        padding: 7px 10px 7px 0;
-        width: 30px;
-        text-align: center;
-        -webkit-transform: skew(-30deg);
-        -moz-transform: skew(-30deg);
-        -o-transform: skew(-30deg);
-        -ms-transform: skew(-30deg);
-        transform: skew(-30deg);
-        position: relative;
-        .color {
-            width: 10px;
-            position: absolute;
-            right: 0;
-            top: 0;
-            height: 100%;
-            background: #000;
-        }
-        .team-mercedes {
-            background: #00D2BE
-        }
-        .team-red_bull {
-            background: #00327D
-        }
-        .team-mclaren {
-            background: #FF8700
-        }
-        .team-williams {
-            background: #fff;
-            border: 1px solid #b0b0b0;
-            border-left: 0
-        }
-        .team-force_india {
-            background: #F596C8
-        }
-        .team-ferrari {
-            background: #DC0000
-        }
-        .team-toro_rosso {
-            background: #0032FF
-        }
-        .team-renault {
-            background: #FFF500
-        }
-        .team-sauber {
-            background: #9B0000
-        }
-        .team-marussia {
-            background: #6e0000
-        }
-        .team-caterham {
-            background: #006c00
-        }
-        .team-haas {
-            background: #5A5A5A
-        }
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  .team-numeric {
+    font-size: 14px; // font-size: 1.4rem;
+    line-height: 14px;
+    font-weight: 700;
+    background: #b0b0b0;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 10px 7px 0;
+    width: 30px;
+    text-align: center;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    transform: skew(-30deg);
+    position: relative;
+    .color {
+      width: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      background: #000;
     }
-    .text {
-        display: inline-block;
-        -webkit-transform: skew(30deg);
-        -moz-transform: skew(30deg);
-        -o-transform: skew(30deg);
-        -ms-transform: skew(30deg);
-        transform: skew(30deg);
+    .team-mercedes {
+      background: #00D2BE
     }
-    .name {
-        font-weight: 700;
-        text-transform: uppercase;
-        padding-left: 6px;
+    .team-red_bull {
+      background: #00327D
     }
-    .country {
-        text-transform: uppercase;
-        color: gray;
+    .team-mclaren {
+      background: #FF8700
     }
-    .team {
-        font-weight: 600;
-        color: gray;
-        text-transform: uppercase
+    .team-williams {
+      background: #fff;
+      border: 1px solid #b0b0b0;
+      border-left: 0;
+      box-sizing: border-box;
     }
-    .points {
-        font-weight: 700;
-        text-align: right
+    .team-force_india {
+      background: #F596C8
     }
-    tr>td {
-        margin: 0.5em 0em 0.5em 0em;
+    .team-ferrari {
+      background: #DC0000
     }
+    .team-toro_rosso {
+      background: #0032FF
+    }
+    .team-renault {
+      background: #FFF500
+    }
+    .team-sauber {
+      background: #9B0000
+    }
+    .team-marussia {
+      background: #6e0000
+    }
+    .team-caterham {
+      background: #006c00
+    }
+    .team-haas {
+      background: #5A5A5A
+    }
+  }
+  .text {
+    display: inline-block;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    transform: skew(30deg);
+  }
+  .name {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 6px;
+  }
+  .country {
+    text-transform: uppercase;
+    color: gray;
+  }
+  .team {
+    font-weight: 600;
+    color: gray;
+    text-transform: uppercase
+  }
+  .points {
+    font-weight: 700;
+    text-align: right
+  }
+  tr>td {
+    margin: 0.5em 0em 0.5em 0em;
+  }
 }
 
 .standings .card {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 //--> Drivers
 // Schedule
 .schedule-list {
-    border-collapse: collapse;
-    color: #808080;
-    /*Header*/
-    thead {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        font-weight: bold;
+  border-collapse: collapse;
+  color: #808080;
+  /*Header*/
+  thead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+  }
+  /* --> Header*/
+  /*Body*/
+  .country {
+    font-weight: bold;
+    @media screen and (max-width: 500px) {
+      display: block
     }
-    /* --> Header*/
-    /*Body*/
-    .country {
-        font-weight: bold;
-        @media screen and (max-width: 500px) {
-            display: block
-        }
+  }
+  .actions {
+    color: mat-color($app-primary);
+    cursor: pointer;
+  }
+  td {
+    height: 40px;
+    padding: 5px;
+    &.date {
+      min-width: 55px;
     }
-    .actions {
-        color: mat-color($app-primary);
-        cursor: pointer;
-    }
-    td {
-        height: 40px;
-        padding: 5px;
-        &.date {
-            min-width: 55px;
-        }
-    }
-    td:first-child {
-        padding-left: 10px;
-        padding-right: 30px;
-    }
-    td:last-child {
-        padding-right: 10px;
-    }
-    tr:nth-child(even) {
-        background-color: #f8f6ff;
-    }
-    /*-->Body*/
-    /*Dates*/
+  }
+  td:first-child {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  td:last-child {
+    padding-right: 10px;
+  }
+  tr:nth-child(even) {
+    background-color: #f8f6ff;
+  }
+  /*-->Body*/
+  /*Dates*/
+  .date-long {
+    display: block;
+  }
+  .date-med {
+    display: none;
+  }
+  @media screen and (max-width: 545px) {
     .date-long {
-        display: block;
+      display: none;
     }
     .date-med {
-        display: none;
+      display: block;
     }
-    @media screen and (max-width: 545px) {
-        .date-long {
-            display: none;
-        }
-        .date-med {
-            display: block;
-        }
-    }
-    /*-->Dates*/
+  }
+  /*-->Dates*/
 }
 
 .weekendDetails {
-    font-family: Comfortaa, cursive; // width: 250px;
-    // margin: 5px;
-    .header {
-        :first-child {
-            font-weight: bolder;
-        }
-        padding:10px;
-        display:grid;
-        background-size: cover;
-        background-position:50% 50%;
-        color:white;
+  font-family: Comfortaa, cursive; // width: 250px;
+  // margin: 5px;
+  .header {
+    :first-child {
+      font-weight: bolder;
     }
-    table {
-        padding: 10px;
-        width: 100%;
-        tr td:first-child {
-            font-weight: bolder;
-        }
+    padding:10px;
+    display:grid;
+    background-size: cover;
+    background-position:50% 50%;
+    color:white;
+  }
+  table {
+    padding: 10px;
+    width: 100%;
+    tr td:first-child {
+      font-weight: bolder;
     }
+  }
 }
 
 //-> Schedule
 h2 {
-    font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .mat-sidenav-container {
-    padding-top: 56px;
+  padding-top: 56px;
 }
 
 .mat-toolbar-row {
-    height: 56px !important;
+  height: 56px !important;
 }
 
 .mat-toolbar-multiple-rows {
-    min-height: 56px !important;
+  min-height: 56px !important;
 }
 
 .content {
-    padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 body {
-    margin: 0px
+  margin: 0px
 }

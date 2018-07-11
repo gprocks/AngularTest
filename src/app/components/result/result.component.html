@@ -1,21 +1,25 @@
-<div class="schedule" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
-  <div>
-    <mat-form-field>
-      <mat-select placeholder="Year" (selectionChange)="yearOnChange($event)" [(ngModel)]="selectedYearOption">
-        <mat-option *ngFor="let year of years" [value]="year.value">
-          {{year.viewValue}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-select placeholder="Race" (selectionChange)="raceOnChange($event)" [(ngModel)]="selectedRaceOption">
-        <mat-option *ngFor="let race of races" [value]="race.round">
-          {{race.raceName}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <!-- </div>
-  <div fxLayoutAlign="center"> -->
+<div class="schedule" fxLayout fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="30px" fxLayoutGap.lt-md="5px">
+  <div fxLayout fxLayout="column" fxLayoutAlign="start center" fxFlexAlign="start center" fxLayout.lt-md="row" fxLayoutAlign.lt-md="center start" fxFlexAlign.lt-md="center start" fxLayoutGap.lt-md="5px">
+    <div>
+      <mat-form-field>
+        <mat-select placeholder="Year" (selectionChange)="yearOnChange($event)" [(ngModel)]="selectedYearOption">
+          <mat-option *ngFor="let year of years" [value]="year.value">
+            {{year.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-select placeholder="Race" (selectionChange)="raceOnChange($event)" [(ngModel)]="selectedRaceOption">
+          <mat-option *ngFor="let race of races" [value]="race.round">
+            {{race.raceName}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayoutAlign="center">
     <mat-card *ngIf="raceResult">
       <h2>{{selectedRace.raceName}}</h2>
       <div>

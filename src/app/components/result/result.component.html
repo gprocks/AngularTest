@@ -1,10 +1,10 @@
-<div class="schedule" fxLayout fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="30px" fxLayoutGap.lt-md="5px">
+<div fxLayout fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="30px" fxLayoutGap.lt-md="5px">
   <div fxLayout fxLayout="column" fxLayoutAlign="start center" fxFlexAlign="start center" fxLayout.lt-md="row" fxLayoutAlign.lt-md="center start" fxFlexAlign.lt-md="center start" fxLayoutGap.lt-md="5px">
     <div>
       <mat-form-field>
-        <mat-select placeholder="Year" (selectionChange)="yearOnChange($event)" [(ngModel)]="selectedYearOption">
-          <mat-option *ngFor="let year of years" [value]="year">
-            {{year}}
+        <mat-select placeholder="Year" (selectionChange)="yearOnChange($event)" [(ngModel)]="selectedSeasonOption">
+          <mat-option *ngFor="let season of seasons" [value]="season">
+            {{season}}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -19,14 +19,14 @@
       </mat-form-field>
     </div>
   </div>
-  <div fxLayoutAlign="center">
+  <div class="race-results" fxLayoutAlign="center">
     <mat-card *ngIf="raceResult">
       <h2>{{selectedRace.raceName}}</h2>
       <div>
         <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
       </div>
       <ng-template #listContent>
-        <div class="drivers">
+        <div *ngIf="resultsLoaded; else noResults" class="drivers">
           <table>
             <tr *ngFor="let result of raceResult">
               <td class="team-numeric">
@@ -43,6 +43,11 @@
             </tr>
           </table>
         </div>
+        <ng-template #noResults>
+          <div class="no-results">
+            <span>There are no results available for this race</span>
+          </div>
+        </ng-template>
       </ng-template>
     </mat-card>
   </div>

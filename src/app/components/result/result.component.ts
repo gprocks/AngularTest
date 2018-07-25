@@ -16,8 +16,9 @@ export class ResultComponent implements OnInit {
 
   public isLoading: boolean;
   public error: boolean;
+  public resultsLoaded: boolean;
 
-  public selectedYearOption: string;
+  public selectedSeasonOption: string;
   public selectedRaceOption: string;
 
   races: RaceDetail[] = [];
@@ -25,7 +26,7 @@ export class ResultComponent implements OnInit {
   raceResult: Result[];
 
 
-  years: string[] = [];
+  seasons: string[] = [];
 
 
   constructor(
@@ -38,72 +39,45 @@ export class ResultComponent implements OnInit {
   ngOnInit() {
     this.isLoading = true;
     this.error = false;
+    this.resultsLoaded = false;
 
-    // populate the years dropdown
-    this.getYears();
-    const urlRound = this.route.snapshot.paramMap.get('round');
+    this.getSeasons();
 
-    if (urlRound) {
-      this.selectedYearOption = this.years[0];
-      this.getRaces();
-      this.selectedRaceOption = urlRound;
-
-      this.updateRaceResults();
-    }
   }
 
-  updateRaceResults(): void {
-    this.selectedRace = this.races.find(race => race.round === this.selectedRaceOption);
-    this.getResults();
-  }
-
-  getResults(): void {
-    this.resultService.getResult(this.selectedRaceOption, this.selectedYearOption)
-      .subscribe(result => { this.raceResult = result; },
-        error => {
-          this.isLoading = false;
-          this.error = true;
-          console.error('Error getting Results: ' + error);
-        },
-        () => {
-          this.isLoading = false;
-          this.error = false;
-        }
-      );
-  }
-
-  yearOnChange(evt) {
-    this.selectedRaceOption = undefined;
-    this.getRaces();
-  }
-
-  raceOnChange(evt) {
-    this.updateRaceResults();
-  }
-
-  getYears(): void {
+  getSeasons(): void {
     this.seasonService.getSeasons()
       .subscribe(seasons => {
-        this.years = seasons.reverse();
-        //always default the selected year tot he 1st in the list
-        this.selectedYearOption = this.years[0];
+        this.seasons = seasons.reverse();
+        this.selectSeason();
       },
         error => {
           console.error('Error getting Seaon Details: ' + error);
         });
   }
 
-  getRaces() {
-    this.raceService.getRaceList(this.selectedYearOption)
+  selectSeason(selectedSeason?: string) {
+    if (selectedSeason) {
+      this.selectedSeasonOption = selectedSeason;
+    } else {
+      this.selectedSeasonOption = this.seasons[0];
+    }
+    this.getRaces(this.selectedSeasonOption);
+  }
+
+  getRaces(season: string) {
+    // clear the selected race
+    this.selectedRaceOption = undefined;
+    this.raceService.getRaceList(this.selectedSeasonOption)
       .subscribe(raceList => {
         this.races = raceList;
-
-        // //if no race was selected default it to the 1st of the season
-        // if (!this.selectedRace) {
-        //   this.selectedRaceOption = raceList[0].round;
-        // }
-        if (this.selectedRaceOption) {
-          this.selectedRace = raceList.find(race => race.round === this.selectedRaceOption);
+        if (!this.selectedRace) {
+          const urlRound = this.route.snapshot.paramMap.get('round');
+          if (urlRound) {
+            this.selectRace(urlRound);
+          } else {
+            this.selectRace(this.races[0].round);
+          }
         }
       },
         error => {
@@ -111,4 +85,42 @@ export class ResultComponent implements OnInit {
         });
   }
 
+  selectRace(round: string) {
+    const selectedRace: RaceDetail = this.races.find(race => race.round === round);
+
+    this.selectedRaceOption = selectedRace.round;
+    this.selectedRace = selectedRace;
+    this.getResults();
+  }
+
+  getResults(): void {
+    this.isLoading = true;
+    this.resultsLoaded = false;
+
+
+
+    this.resultService.getResult(this.selectedRaceOption, this.selectedSeasonOption)
+      .subscribe(result => { this.raceResult = result; },
+        error => {
+          this.isLoading = false;
+          this.error = true;
+          console.log('In Error', this.resultsLoaded);
+          console.error('Error getting Results: ' + error);
+        },
+        () => {
+          this.isLoading = false;
+          this.error = false;
+          this.resultsLoaded = true;
+          console.log('In Complete', this.resultsLoaded);
+        }
+      );
+  }
+
+  yearOnChange(evt) {
+    this.selectSeason(evt.value);
+  }
+
+  raceOnChange(evt) {
+    this.selectRace(evt.value);
+  }
 }

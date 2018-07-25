@@ -201,6 +201,14 @@ $app-primary: mat-palette($mat-indigo, 500);
 }
 
 //-> Schedule
+// Results
+.race-results {
+  .no-results {
+    color: gray;
+  }
+}
+
+//-> Results
 h2 {
   font-family: "Open Sans", Helvetica, sans-serif;
 }

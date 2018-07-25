@@ -1659,17 +1659,10 @@
     "nationality": "British"
   },
   {
-    "num_code": "581",
-    "alpha_2_code": "UM",
-    "alpha_3_code": "UMI",
-    "en_short_name": "United States Minor Outlying Islands",
-    "nationality": "American"
-  },
-  {
     "num_code": "840",
     "alpha_2_code": "US",
     "alpha_3_code": "USA",
-    "en_short_name": "United States of America",
+    "en_short_name": "USA",
     "nationality": "American"
   },
   {
@@ -1697,7 +1690,7 @@
     "num_code": "862",
     "alpha_2_code": "VE",
     "alpha_3_code": "VEN",
-    "en_short_name": "Venezuela (Bolivarian Republic of)",
+    "en_short_name": "Venezuela",
     "nationality": "Venezuelan"
   },
   {

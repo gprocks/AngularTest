@@ -25,8 +25,8 @@ export class ResultService {
         return response.MRData.RaceTable.Races[0].Results as Result[];
       }).pipe(
         tap(result => console.log('Fetching Results', result)),
-        catchError(this.errorHandlerService.handleError('getResult', []))
-      );
+      // catchError(this.errorHandlerService.handleError('getResult', []))
+    );
   }
 
 }

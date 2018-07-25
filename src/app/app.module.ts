@@ -26,6 +26,7 @@ import { CountryService } from './services/country/country.service';
 import { ResultService } from './services/result/result.service';
 import { ResultComponent } from './components/result/result.component';
 import { RaceDetailService } from './services/race-detail/race-detail.service';
+import { SeasonsService } from './services/seasons/seasons.service';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { RaceDetailService } from './services/race-detail/race-detail.service';
     CountryService,
     ResultService,
     RaceDetailService,
+    SeasonsService,
     ErrorHandlerService
   ],
   bootstrap: [AppComponent]

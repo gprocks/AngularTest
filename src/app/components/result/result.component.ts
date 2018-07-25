@@ -4,7 +4,7 @@ import { Result } from '../../models/result';
 import { ActivatedRoute } from '@angular/router';
 import { RaceDetail } from '../../models/race-detail';
 import { RaceDetailService } from '../../services/race-detail/race-detail.service';
-import { SelectItem } from '../../models/select-item';
+import { SeasonsService } from '../../services/seasons/seasons.service';
 
 
 @Component({
@@ -25,13 +25,14 @@ export class ResultComponent implements OnInit {
   raceResult: Result[];
 
 
-  years: SelectItem[] = [];
+  years: string[] = [];
 
 
   constructor(
     private route: ActivatedRoute,
     private resultService: ResultService,
-    private raceService: RaceDetailService
+    private raceService: RaceDetailService,
+    private seasonService: SeasonsService
   ) { }
 
   ngOnInit() {
@@ -40,34 +41,21 @@ export class ResultComponent implements OnInit {
 
     // populate the years dropdown
     this.getYears();
-
-
     const urlRound = this.route.snapshot.paramMap.get('round');
 
-    console.log(urlRound);
     if (urlRound) {
-      this.selectedYearOption = this.years[0].value;
+      this.selectedYearOption = this.years[0];
       this.getRaces();
       this.selectedRaceOption = urlRound;
-      console.log('Races', this.races);
+
       this.updateRaceResults();
     }
-
   }
 
   updateRaceResults(): void {
     this.selectedRace = this.races.find(race => race.round === this.selectedRaceOption);
     this.getResults();
   }
-
-
-  // getRaceDetails(round: string): void {
-  //   this.raceService.getRace(round)
-  //     .subscribe(race => { this.selectedRace = race; },
-  //       error => {
-  //         console.error('Error getting Race Details: ' + error);
-  //       });
-  // }
 
   getResults(): void {
     this.resultService.getResult(this.selectedRaceOption, this.selectedYearOption)
@@ -85,32 +73,35 @@ export class ResultComponent implements OnInit {
   }
 
   yearOnChange(evt) {
-    this.selectedRace = undefined;
-    this.raceResult = undefined;
     this.selectedRaceOption = undefined;
     this.getRaces();
   }
 
   raceOnChange(evt) {
-    // this.selectedRace = this.races.find(race => race.round === evt.value);
     this.updateRaceResults();
   }
 
   getYears(): void {
-    let currentYear = new Date().getFullYear();
-    const minYear = 1950;
-
-    while (currentYear-- > minYear) {
-      this.years.push(
-        { value: currentYear.toString(), viewValue: currentYear.toString() },
-      );
-    }
+    this.seasonService.getSeasons()
+      .subscribe(seasons => {
+        this.years = seasons.reverse();
+        //always default the selected year tot he 1st in the list
+        this.selectedYearOption = this.years[0];
+      },
+        error => {
+          console.error('Error getting Seaon Details: ' + error);
+        });
   }
 
   getRaces() {
     this.raceService.getRaceList(this.selectedYearOption)
       .subscribe(raceList => {
         this.races = raceList;
+
+        // //if no race was selected default it to the 1st of the season
+        // if (!this.selectedRace) {
+        //   this.selectedRaceOption = raceList[0].round;
+        // }
         if (this.selectedRaceOption) {
           this.selectedRace = raceList.find(race => race.round === this.selectedRaceOption);
         }

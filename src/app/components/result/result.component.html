@@ -3,8 +3,8 @@
     <div>
       <mat-form-field>
         <mat-select placeholder="Year" (selectionChange)="yearOnChange($event)" [(ngModel)]="selectedYearOption">
-          <mat-option *ngFor="let year of years" [value]="year.value">
-            {{year.viewValue}}
+          <mat-option *ngFor="let year of years" [value]="year">
+            {{year}}
           </mat-option>
         </mat-select>
       </mat-form-field>

@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'drivers', component: DriversComponent },
   { path: 'drivers/:id', component: DriverComponent },
   { path: 'raceschedule', component: RaceScheduleComponent },
+  { path: 'raceresult', component: ResultComponent },
   { path: 'raceresult/:round', component: ResultComponent }
 ];
 

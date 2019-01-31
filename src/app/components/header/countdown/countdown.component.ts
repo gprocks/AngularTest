@@ -12,13 +12,12 @@ import { ParseDateStringBasic } from '../../../services/util/date-helper';
   styleUrls: ['./countdown.component.css']
 })
 export class CountdownComponent implements OnInit {
-
   @Input() nextRaceDate: Date;
 
   timeRemaining: string[] = [];
   nextRace: RaceScheduleCurrent;
 
-  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) { }
+  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) {}
 
   ngOnInit() {
     this.setupTimer();
@@ -48,15 +47,19 @@ export class CountdownComponent implements OnInit {
 
   setupTimer() {
     let diff: number;
-    interval(1000).pipe(
-      map((x) => {
-        diff = Math.floor((this.nextRaceDate.getTime() - new Date().getTime()) / 1000);
-      })
-    ).subscribe((x) => {
-      if (diff <= 0) {
-        this.raceScheduleCurrentService.setNextRaceSubject();
-      }
-      this.getTimeComponents(diff);
-    });
+    interval(1000)
+      .pipe(
+        map(x => {
+          diff = Math.floor(
+            (this.nextRaceDate.getTime() - new Date().getTime()) / 1000
+          );
+        })
+      )
+      .subscribe(x => {
+        if (diff <= 0) {
+          this.raceScheduleCurrentService.setNextRaceSubject();
+        }
+        this.getTimeComponents(diff);
+      });
   }
 }

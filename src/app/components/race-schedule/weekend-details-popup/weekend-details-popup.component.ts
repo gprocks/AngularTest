@@ -1,4 +1,3 @@
-
 import { Component, OnInit, Input, Inject } from '@angular/core';
 import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
 import { MAT_DIALOG_DATA } from '@angular/material';
@@ -14,13 +13,11 @@ import { Result } from '../../../models/result';
   styleUrls: ['./weekend-details-popup.component.css']
 })
 export class WeekendDetailsPopupComponent implements OnInit {
-
   constructor(
     @Inject(MAT_DIALOG_DATA) public raceWeekend: any, // RaceScheduleCurrent[],
     private countryService: CountryService,
     private resultsService: ResultService
-  ) { }
-
+  ) {}
 
   headerImage: Observable<any>;
 
@@ -28,14 +25,16 @@ export class WeekendDetailsPopupComponent implements OnInit {
   hasResult = false;
 
   ngOnInit() {
+    this.headerImage = this.countryService
+      .getCountry(this.raceWeekend.weekend[0].country)
+      .pipe(map(result => this.getBackgroundImage(result[0].flag)));
 
-    this.headerImage = this.countryService.getCountry(this.raceWeekend.weekend[0].country)
-      .pipe(
-        map(result => this.getBackgroundImage(result[0].flag))
-      );
-
-    this.resultsService.getResult(this.raceWeekend.round)
-      .subscribe((result) => {
+    this.resultsService
+      .getResult(
+        this.raceWeekend.round,
+        this.raceWeekend.weekend[0].eventDate.getFullYear()
+      )
+      .subscribe(result => {
         this.raceResult = result;
         this.hasResult = result.length > 0;
       });
@@ -43,8 +42,10 @@ export class WeekendDetailsPopupComponent implements OnInit {
 
   getBackgroundImage(flagUrl: string) {
     return {
-      'background-image': 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(' + (flagUrl) + ')'
+      'background-image':
+        'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(' +
+        flagUrl +
+        ')'
     };
   }
-
 }

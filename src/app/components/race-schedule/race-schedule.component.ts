@@ -11,27 +11,24 @@ import { ResultService } from '../../services/result/result.service';
   styleUrls: ['./race-schedule.component.css']
 })
 export class RaceScheduleComponent implements OnInit {
-
   public isLoading: boolean;
   public error: boolean;
   raceSchedule: RaceScheduleCurrent[][] = [];
 
   constructor(
     private raceScheduleCurrentService: RaceScheduleCurrentService,
-    private dialog: MatDialog,
-    private resultService: ResultService
-  ) { }
+    private dialog: MatDialog
+  ) {}
 
   ngOnInit() {
     this.isLoading = true;
     this.error = false;
     this.getRaceSchedule();
-    this.resultService.getResult('1').subscribe(result => { console.log('fetched result:', result); });
   }
 
   getRaceSchedule(): void {
-    this.raceScheduleCurrentService.getCurrentRaceSchedule()
-      .subscribe((schedule) => {
+    this.raceScheduleCurrentService.getCurrentRaceSchedule().subscribe(
+      schedule => {
         let raceWeekend: RaceScheduleCurrent[] = [];
         for (let i = 0; i < schedule.length; i++) {
           raceWeekend.push(schedule[i]);
@@ -42,16 +39,16 @@ export class RaceScheduleComponent implements OnInit {
         }
         console.log('building race schedule', this.raceSchedule);
       },
-        error => {
-          this.isLoading = false;
-          this.error = true;
-          console.error('Error getting schedules: ' + error);
-        },
-        () => {
-          this.isLoading = false;
-          this.error = false;
-        }
-      );
+      error => {
+        this.isLoading = false;
+        this.error = true;
+        console.error('Error getting schedules: ' + error);
+      },
+      () => {
+        this.isLoading = false;
+        this.error = false;
+      }
+    );
   }
 
   openRaceWeekendPopup(raceWeekend: RaceScheduleCurrent[], round: number) {

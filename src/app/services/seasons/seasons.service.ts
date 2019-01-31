@@ -8,23 +8,26 @@ import { tap, catchError, map } from 'rxjs/operators';
 
 @Injectable()
 export class SeasonsService {
-
   constructor(
     private http: HttpClient,
     private errorHandlerService: ErrorHandlerService
-  ) { }
+  ) {}
 
   getSeasons(): Observable<string[]> {
-
-    const driversUrl = AppSettings.API_URL + ApiServices.Seasons + '.json?limit=100';
-    return this.http.get(driversUrl)
-      .pipe(
-        map((response: any) => {
-          return response.MRData.SeasonTable.Seasons.map(seasonItem => seasonItem.season);
-        }),
-        tap(standings => console.log('Fetching Season List', standings)),
-        catchError(this.errorHandlerService.handleError('getSeasons', []))
-      );
+    // Hack to ensure only seasons with results are included
+    const driversUrl =
+      AppSettings.API_URL +
+      'constructors/ferrari/' +
+      ApiServices.Seasons +
+      '.json?limit=100';
+    return this.http.get(driversUrl).pipe(
+      map((response: any) => {
+        return response.MRData.SeasonTable.Seasons.map(
+          seasonItem => seasonItem.season
+        );
+      }),
+      tap(standings => console.log('Fetching Season List', standings)),
+      catchError(this.errorHandlerService.handleError('getSeasons', []))
+    );
   }
-
 }

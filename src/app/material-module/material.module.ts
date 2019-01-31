@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import {
   MatButtonModule, MatToolbarModule, MatProgressSpinnerModule,
   MatMenuModule, MatSidenavModule, MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS,
-  MatListModule, MatFormFieldModule, MatSelectModule
+  MatListModule, MatFormFieldModule, MatSelectModule, MatTabsModule, MatIconModule, MatGridListModule
 } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -25,6 +25,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatIconModule,
     FlexLayoutModule
   ],
   declarations: []

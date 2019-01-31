@@ -1,7 +1,10 @@
 <div class="header-image">
   <div class="header-content">
-    <div>
-      <span>{{nextRace?.summary}} starts in:</span>
+    <div *ngIf="nextRace">
+      <div>
+        <span>{{ nextRace.summary }} starts in:</span>
+      </div>
+      <app-countdown [nextRaceDate]="nextRace.eventDate"></app-countdown>
     </div>
-    <app-countdown [nextRaceDate]="nextRace.eventDate"></app-countdown>
   </div>
+</div>

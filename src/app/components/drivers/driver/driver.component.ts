@@ -16,7 +16,7 @@ export class DriverComponent implements OnInit {
     private route: ActivatedRoute,
     private driverService: DriverService,
     private location: Location
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.getDriver();
@@ -24,7 +24,8 @@ export class DriverComponent implements OnInit {
 
   getDriver(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.driverService.getDriver(id)
-      .subscribe(driver => this.driver = driver);
+    this.driverService
+      .getDriver(id)
+      .subscribe(driver => (this.driver = driver));
   }
 }

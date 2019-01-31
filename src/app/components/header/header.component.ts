@@ -7,18 +7,16 @@ import { CountdownComponent } from './countdown/countdown.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
   nextRace: RaceScheduleCurrent;
 
-  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) { }
+  constructor(private raceScheduleCurrentService: RaceScheduleCurrentService) {}
 
   ngOnInit() {
     this.raceScheduleCurrentService.nextRaceSubject.subscribe(race => {
       this.nextRace = race;
     });
   }
-
 }

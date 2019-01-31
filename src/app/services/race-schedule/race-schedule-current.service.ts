@@ -1,13 +1,13 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Observable, BehaviorSubject } from "rxjs";
-import { tap, catchError, map } from "rxjs/operators";
-import { RaceScheduleCurrent } from "../../models/race-schedule-current";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { tap, catchError, map } from 'rxjs/operators';
+import { RaceScheduleCurrent } from '../../models/race-schedule-current';
 
-import { CurrentRaceSchedule } from "../../util/constants";
-import { ParseDateStringBasic } from "../util/date-helper";
-import { NationalityService } from "../nationality/nationality.service";
-import { ErrorHandlerService } from "../util/error-handler.service";
+import { CurrentRaceSchedule } from '../../util/constants';
+import { ParseDateStringBasic } from '../util/date-helper';
+import { NationalityService } from '../nationality/nationality.service';
+import { ErrorHandlerService } from '../util/error-handler.service';
 
 @Injectable()
 export class RaceScheduleCurrentService {
@@ -23,17 +23,17 @@ export class RaceScheduleCurrentService {
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http
-      .get<RaceScheduleCurrent[]>("./assets/schedule/2018.json")
+      .get<RaceScheduleCurrent[]>('./assets/schedule/2019.json')
       .pipe(
         map(raceSchedule => {
           raceSchedule.forEach(this.setCustomData.bind(this));
           return raceSchedule;
         }),
         tap(raceSchedule =>
-          console.log("Fetching Race Schedule", raceSchedule)
+          console.log('Fetching Race Schedule', raceSchedule)
         ),
         catchError(
-          this.errorHandlerService.handleError("getCurrentRaceSchedule", [])
+          this.errorHandlerService.handleError('getCurrentRaceSchedule', [])
         )
       );
   }
@@ -54,7 +54,7 @@ export class RaceScheduleCurrentService {
   getNationality(event: string) {
     return event.replace(
       /(\(|\)| Grand Prix|Session |First |Second |Third |Practice |Qualifying )+/gi,
-      ""
+      ''
     );
   }
 

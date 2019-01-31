@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { NationalityService } from '../services/nationality/nationality.service';
+import { map } from 'rxjs/operators';
 
 @Pipe({
   name: 'nationality'
@@ -12,15 +13,17 @@ export class NationalityPipe implements PipeTransform {
   transform(value: any, args?: any): any {
 
     return this.nationalityService.GetInfoByNationality(value)
-      .map(res => {
-        if (res === undefined) {
-          console.log(value);
-          return value;
-        } else {
-          console.log(res.en_short_name);
-          return res.en_short_name;
-        }
-      });
+      .pipe(
+        map(res => {
+          if (res === undefined) {
+            console.log(value);
+            return value;
+          } else {
+            console.log(res.en_short_name);
+            return res.en_short_name;
+          }
+        })
+      );
 
   }
 

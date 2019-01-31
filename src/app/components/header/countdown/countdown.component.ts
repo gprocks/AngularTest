@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/interval';
+import { Observable, interval } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 import { RaceScheduleCurrentService } from '../../../services/race-schedule/race-schedule-current.service';
 import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
 import { ParseDateStringBasic } from '../../../services/util/date-helper';
@@ -47,9 +48,11 @@ export class CountdownComponent implements OnInit {
 
   setupTimer() {
     let diff: number;
-    Observable.interval(1000).map((x) => {
-      diff = Math.floor((this.nextRaceDate.getTime() - new Date().getTime()) / 1000);
-    }).subscribe((x) => {
+    interval(1000).pipe(
+      map((x) => {
+        diff = Math.floor((this.nextRaceDate.getTime() - new Date().getTime()) / 1000);
+      })
+    ).subscribe((x) => {
       if (diff <= 0) {
         this.raceScheduleCurrentService.setNextRaceSubject();
       }

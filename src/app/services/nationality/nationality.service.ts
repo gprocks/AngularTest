@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Nationality } from '../../models/nationality';
 
@@ -19,11 +19,11 @@ export class NationalityService {
   }
 
   public GetInfoByNationality(nationality: string): Observable<Nationality> {
-    return this.GetInfo()
-      .map(nationalities => {
+    return this.GetInfo().pipe(
+      map(nationalities => {
         return nationalities.filter(function (i) {
           return i.nationality === nationality;
         })[0];
-      });
+      }));
   }
 }

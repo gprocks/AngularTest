@@ -3,8 +3,8 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
 import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
 import { MAT_DIALOG_DATA } from '@angular/material';
 import { CountryService } from '../../../services/country/country.service';
-import { Observable } from 'rxjs/Observable';
-import { tap } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { tap, map } from 'rxjs/operators';
 import { ResultService } from '../../../services/result/result.service';
 import { Result } from '../../../models/result';
 
@@ -30,7 +30,9 @@ export class WeekendDetailsPopupComponent implements OnInit {
   ngOnInit() {
 
     this.headerImage = this.countryService.getCountry(this.raceWeekend.weekend[0].country)
-      .map(result => this.getBackgroundImage(result[0].flag));
+      .pipe(
+        map(result => this.getBackgroundImage(result[0].flag))
+      );
 
     this.resultsService.getResult(this.raceWeekend.round)
       .subscribe((result) => {

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ErrorHandlerService } from '../util/error-handler.service';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Country } from '../../models/country';
 import { tap, catchError } from 'rxjs/operators';
 

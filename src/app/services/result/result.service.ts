@@ -3,9 +3,9 @@ import { ErrorHandlerService } from '../util/error-handler.service';
 import { HttpClient } from '@angular/common/http';
 import { AppSettings } from '../../util/app.settings';
 import { ApiServices } from '../../util/constants';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Result } from '../../models/result';
-import { tap, catchError } from 'rxjs/operators';
+import { tap, catchError, map } from 'rxjs/operators';
 
 @Injectable()
 export class ResultService {
@@ -21,9 +21,10 @@ export class ResultService {
     }
     const resultUrl = AppSettings.API_URL + year + '/' + round + '/' + ApiServices.Results + '.json';
     return this.http.get(resultUrl)
-      .map((response: any) => {
-        return response.MRData.RaceTable.Races[0].Results as Result[];
-      }).pipe(
+      .pipe(
+        map((response: any) => {
+          return response.MRData.RaceTable.Races[0].Results as Result[];
+        }),
         tap(result => console.log('Fetching Results', result)),
       // catchError(this.errorHandlerService.handleError('getResult', []))
     );

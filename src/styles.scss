@@ -1,6 +1,26 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 $app-primary: mat-palette($mat-indigo, 500);
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config(
+  $font-family: "Comfortaa, cursive"
+);
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+body {
+  font-family: Comfortaa, cursive;
+}
+
+.content {
+  padding: 20px 20px 20px 20px;
+}
+
+.mat-drawer-container {
+  background-color: #f3f3f3;
+}
+
 .myapp-no-padding-dialog {
   .mat-dialog-container {
     padding: 0;
@@ -16,111 +36,18 @@ $app-primary: mat-palette($mat-indigo, 500);
   }
 }
 
-//Drivers/Standings
-.drivers {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 1.6;
-  .team-numeric {
-    font-size: 14px; // font-size: 1.4rem;
-    line-height: 14px;
-    font-weight: 700;
-    background: #b0b0b0;
-    color: #fff;
-    display: inline-block;
-    padding: 7px 10px 7px 0;
-    width: 30px;
-    text-align: center;
-    -webkit-transform: skew(-30deg);
-    -moz-transform: skew(-30deg);
-    -o-transform: skew(-30deg);
-    -ms-transform: skew(-30deg);
-    transform: skew(-30deg);
-    position: relative;
-    .color {
-      width: 10px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 100%;
-      background: #000;
-    }
-    .team-mercedes {
-      background: #00D2BE
-    }
-    .team-red_bull {
-      background: #00327D
-    }
-    .team-mclaren {
-      background: #FF8700
-    }
-    .team-williams {
-      background: #fff;
-      border: 1px solid #b0b0b0;
-      border-left: 0;
-      box-sizing: border-box;
-    }
-    .team-force_india {
-      background: #F596C8
-    }
-    .team-ferrari {
-      background: #DC0000
-    }
-    .team-toro_rosso {
-      background: #0032FF
-    }
-    .team-renault {
-      background: #FFF500
-    }
-    .team-sauber {
-      background: #9B0000
-    }
-    .team-marussia {
-      background: #6e0000
-    }
-    .team-caterham {
-      background: #006c00
-    }
-    .team-haas {
-      background: #5A5A5A
-    }
-  }
-  .text {
-    display: inline-block;
-    -webkit-transform: skew(30deg);
-    -moz-transform: skew(30deg);
-    -o-transform: skew(30deg);
-    -ms-transform: skew(30deg);
-    transform: skew(30deg);
-  }
-  .name {
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 6px;
-  }
-  .country {
-    text-transform: uppercase;
-    color: gray;
-  }
-  .team {
-    font-weight: 600;
-    color: gray;
-    text-transform: uppercase
-  }
-  .points {
-    font-weight: 700;
-    text-align: right
-  }
-  tr>td {
-    margin: 0.5em 0em 0.5em 0em;
-  }
+.mat-sidenav-container {
+  padding-top: 56px;
 }
 
-.standings .card {
-  max-width: 600px;
+.mat-toolbar-row {
+  height: 56px !important;
 }
 
-//--> Drivers
+.mat-toolbar-multiple-rows {
+  min-height: 56px !important;
+}
+
 // Schedule
 .schedule-list {
   border-collapse: collapse;
@@ -135,7 +62,7 @@ $app-primary: mat-palette($mat-indigo, 500);
   .country {
     font-weight: bold;
     @media screen and (max-width: 500px) {
-      display: block
+      display: block;
     }
   }
   .actions {
@@ -179,17 +106,15 @@ $app-primary: mat-palette($mat-indigo, 500);
 }
 
 .weekendDetails {
-  font-family: Comfortaa, cursive; // width: 250px;
-  // margin: 5px;
   .header {
     :first-child {
       font-weight: bolder;
     }
-    padding:10px;
-    display:grid;
+    padding: 10px;
+    display: grid;
     background-size: cover;
-    background-position:50% 50%;
-    color:white;
+    background-position: 50% 50%;
+    color: white;
   }
   table {
     padding: 10px;
@@ -201,34 +126,149 @@ $app-primary: mat-palette($mat-indigo, 500);
 }
 
 //-> Schedule
-// Results
-.race-results {
+.result-weekend {
+  padding: 0px !important;
+  max-width: 900px;
+  margin: auto;
+}
+
+//driver-lists
+.driver-list-container {
+  width: 100%;
+  h2 {
+    margin-bottom: 5px;
+  }
+  ul {
+    margin: 0 -10px 0 -10px;
+    padding: 10px;
+    border-radius: 10px;
+    list-style-type: none;
+    width: 100%;
+    li {
+      padding: 0;
+      align-items: center;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-bottom: 2px;
+      overflow: hidden;
+      .driver-list-item {
+        background-color: #ffffff;
+        padding: 15px 10px 15px 20px;
+        width: 100%;
+        align-items: center;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding: 15px;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        font-weight: normal;
+        .driver {
+          font-size: 16px;
+          line-height: 17px;
+          .surname {
+            text-transform: uppercase;
+          }
+        }
+        .rank {
+          position: relative;
+          top: 1px;
+          text-align: right;
+          width: 20px;
+          font-weight: bold;
+        }
+        .team-color-icon {
+          width: 4px;
+          height: 14px;
+          margin: 0 10px;
+        }
+        .team {
+          margin-left: 10px;
+          color: #67676d;
+        }
+        .driver-list-right {
+          margin-left: auto;
+          .detail {
+            margin-left: 10px;
+            min-width: 95px;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 15px;
+            line-height: 1;
+            padding: 2px 10px;
+            width: auto;
+            background-color: #ededed;
+          }
+        }
+      }
+    }
+  }
+}
+
+.standings .driver-list-container {
+  max-width: 800px;
+}
+
+.result {
+  .driver-list-container {
+    max-width: 800px;
+  }
   .no-results {
     color: gray;
   }
 }
 
-//-> Results
-h2 {
-  font-family: "Open Sans", Helvetica, sans-serif;
+.team-mercedes {
+  background: #00d2be;
 }
 
-.mat-sidenav-container {
-  padding-top: 56px;
+.team-red_bull {
+  background: #00327d;
 }
 
-.mat-toolbar-row {
-  height: 56px !important;
+.team-mclaren {
+  background: #ff8700;
 }
 
-.mat-toolbar-multiple-rows {
-  min-height: 56px !important;
+.team-williams {
+  background: #fff;
+  border: 1px solid #b0b0b0;
+  box-sizing: border-box;
 }
 
-.content {
-  padding: 20px 20px 20px 20px;
+.team-force_india {
+  background: #f596c8;
 }
 
-body {
-  margin: 0px
+.team-ferrari {
+  background: #dc0000;
+}
+
+.team-toro_rosso {
+  background: #0032ff;
+}
+
+.team-renault {
+  background: #fff500;
+}
+
+.team-sauber {
+  background: #9b0000;
+}
+
+.team-marussia {
+  background: #6e0000;
+}
+
+.team-caterham {
+  background: #006c00;
+}
+
+.team-haas {
+  background: #5a5a5a;
 }

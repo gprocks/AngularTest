@@ -1,54 +1,94 @@
-<div fxLayout fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="30px" fxLayoutGap.lt-md="5px">
-  <div fxLayout fxLayout="column" fxLayoutAlign="start center" fxFlexAlign="start center" fxLayout.lt-md="row" fxLayoutAlign.lt-md="center start" fxFlexAlign.lt-md="center start" fxLayoutGap.lt-md="5px">
+<div
+  class="result"
+  fxLayout
+  fxLayoutAlign="center"
+  fxLayoutGap="10px"
+  fxLayout.lt-md="column"
+  fxLayoutAlign.lt-md="center center"
+  fxLayoutGap.lt-md="5px"
+>
+  <div
+    fxLayout
+    fxLayout="column"
+    fxLayoutAlign="start center"
+    fxFlexAlign="start center"
+    fxLayout.lt-md="row"
+    fxLayoutAlign.lt-md="center start"
+    fxFlexAlign.lt-md="center start"
+    fxLayoutGap.lt-md="5px"
+  >
     <div>
       <mat-form-field>
-        <mat-select placeholder="Year" (selectionChange)="yearOnChange($event)" [(ngModel)]="selectedSeasonOption">
+        <mat-select
+          placeholder="Year"
+          (selectionChange)="yearOnChange($event)"
+          [(ngModel)]="selectedSeasonOption"
+        >
           <mat-option *ngFor="let season of seasons" [value]="season">
-            {{season}}
+            {{ season }}
           </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
     <div>
       <mat-form-field>
-        <mat-select placeholder="Race" (selectionChange)="raceOnChange($event)" [(ngModel)]="selectedRaceOption">
+        <mat-select
+          placeholder="Race"
+          (selectionChange)="raceOnChange($event)"
+          [(ngModel)]="selectedRaceOption"
+        >
           <mat-option *ngFor="let race of races" [value]="race.round">
-            {{race.raceName}}
+            {{ race.raceName }}
           </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
   </div>
-  <div class="race-results" fxLayoutAlign="center">
-    <mat-card *ngIf="raceResult">
-      <h2>{{selectedRace.raceName}}</h2>
-      <div>
-        <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
+  <div class="driver-list-container">
+    <h2>{{ selectedRace.raceName }}</h2>
+    <div>
+      <mat-spinner
+        *ngIf="isLoading; else listContent"
+        style="margin:0 auto;"
+      ></mat-spinner>
+    </div>
+    <ng-template #listContent>
+      <div *ngIf="resultsLoaded; else noResults" class="drivers">
+        <ul>
+          <li *ngFor="let result of raceResult">
+            <div class="driver-list-item">
+              <span class="rank">{{ result.positionText }}</span>
+              <span
+                class="team-color-icon team-{{
+                  result.Constructor.constructorId
+                }}"
+              ></span>
+              <span class="driver">
+                <span fxShow fxHide.xs="true">{{
+                  result.Driver.givenName + " "
+                }}</span>
+                <strong class="surname">{{ result.Driver.familyName }}</strong>
+              </span>
+              <span class="team">
+                {{ result.Constructor.name | teamTranslator }}
+              </span>
+              <span class="driver-list-right">
+                <span class="country" fxShow fxHide.xs="true">
+                  {{ result.Driver.nationality | nationality | async }}
+                </span>
+                <span>
+                  <span class="detail">{{ result.points }}</span>
+                </span>
+              </span>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ng-template #listContent>
-        <div *ngIf="resultsLoaded; else noResults" class="drivers">
-          <table>
-            <tr *ngFor="let result of raceResult">
-              <td class="team-numeric">
-                <span class="text">{{result.position}}</span>
-                <span class="color team-{{result.Constructor.constructorId}}"></span>
-              </td>
-              <td class="name">
-                <span class="first-name" fxShow fxHide.xs="true">{{result.Driver.givenName}}</span>
-                <span class="last-name"> {{result.Driver.familyName}}</span>
-              </td>
-              <td class="country">{{result.Driver.nationality | nationality| async }}</td>
-              <td class="team">{{result.Constructor.name|teamTranslator}}</td>
-              <td class="points">{{result.points}}</td>
-            </tr>
-          </table>
+      <ng-template #noResults>
+        <div class="no-results">
+          <span>There are no results available for this race</span>
         </div>
-        <ng-template #noResults>
-          <div class="no-results">
-            <span>There are no results available for this race</span>
-          </div>
-        </ng-template>
       </ng-template>
-    </mat-card>
+    </ng-template>
   </div>
 </div>

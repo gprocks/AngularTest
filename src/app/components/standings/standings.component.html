@@ -1,31 +1,46 @@
-<div class="standings" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
-  <div fxLayoutAlign="center">
-    <mat-card class="card">
-      <h2>Current Standings</h2>
-      <div>
-        <!-- <mat-spinner style="margin:0 auto;"></mat-spinner> -->
-        <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
-
-      </div>
-      <ng-template #listContent>
-        <div class="drivers">
-          <table>
-            <tr *ngFor="let standing of standings" routerLink="/drivers/{{standing.Driver.driverId}}">
-              <td class="team-numeric">
-                <span class="text">{{standing.positionText}}</span>
-                <span class="color team-{{standing.Constructors[standing.Constructors.length-1].constructorId}}"></span>
-              </td>
-              <td class="name">
-                <span class="first-name" fxShow fxHide.xs="true">{{standing.Driver.givenName}}</span>
-                <span class="last-name"> {{standing.Driver.familyName}}</span>
-              </td>
-              <td class="country">{{standing.Driver.nationality | nationality| async }}</td>
-              <td class="team">{{standing.Constructors[standing.Constructors.length-1].name|teamTranslator}}</td>
-              <td class="points">{{standing.points}}</td>
-            </tr>
-          </table>
+<div
+  class="standings"
+  fxLayout
+  fxLayoutAlign="center"
+  fxLayoutGap="30px"
+  fxLayout.lt-md="column"
+  fxLayoutAlign.lt-md="center center"
+>
+  <div class="driver-list-container">
+    <h2>Drivers Standings</h2>
+    <ul>
+      <li
+        *ngFor="let standing of standings"
+        routerLink="/drivers/{{ standing.Driver.driverId }}"
+      >
+        <div class="driver-list-item">
+          <span class="rank">{{ standing.positionText }}</span>
+          <span
+            class="team-color-icon team-{{
+              standing.Constructors[standing.Constructors.length - 1]
+                .constructorId
+            }}"
+          ></span>
+          <span class="driver">
+            <span fxShow fxHide.xs="true">{{
+              standing.Driver.givenName + " "
+            }}</span>
+            <strong class="surname">{{ standing.Driver.familyName }}</strong>
+          </span>
+          <span class="team">{{
+            standing.Constructors[standing.Constructors.length - 1].name
+              | teamTranslator
+          }}</span>
+          <span class="driver-list-right">
+            <span class="country" fxShow fxHide.xs="true">
+              {{ standing.Driver.nationality | nationality | async }}
+            </span>
+            <span>
+              <span class="detail">{{ standing.points }}</span>
+            </span>
+          </span>
         </div>
-      </ng-template>
-    </mat-card>
+      </li>
+    </ul>
   </div>
 </div>

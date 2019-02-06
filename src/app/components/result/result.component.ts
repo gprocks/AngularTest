@@ -6,14 +6,12 @@ import { RaceDetail } from '../../models/race-detail';
 import { RaceDetailService } from '../../services/race-detail/race-detail.service';
 import { SeasonsService } from '../../services/seasons/seasons.service';
 
-
 @Component({
   selector: 'app-result',
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css']
 })
 export class ResultComponent implements OnInit {
-
   public isLoading: boolean;
   public error: boolean;
   public resultsLoaded: boolean;
@@ -25,16 +23,14 @@ export class ResultComponent implements OnInit {
   selectedRace: RaceDetail;
   raceResult: Result[];
 
-
   seasons: string[] = [];
-
 
   constructor(
     private route: ActivatedRoute,
     private resultService: ResultService,
     private raceService: RaceDetailService,
     private seasonService: SeasonsService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.isLoading = true;
@@ -42,18 +38,18 @@ export class ResultComponent implements OnInit {
     this.resultsLoaded = false;
 
     this.getSeasons();
-
   }
 
   getSeasons(): void {
-    this.seasonService.getSeasons()
-      .subscribe(seasons => {
+    this.seasonService.getSeasons().subscribe(
+      seasons => {
         this.seasons = seasons.reverse();
         this.selectSeason();
       },
-        error => {
-          console.error('Error getting Seaon Details: ' + error);
-        });
+      error => {
+        console.error('Error getting Seaon Details: ' + error);
+      }
+    );
   }
 
   selectSeason(selectedSeason?: string) {
@@ -68,8 +64,8 @@ export class ResultComponent implements OnInit {
   getRaces(season: string) {
     // clear the selected race
     this.selectedRaceOption = undefined;
-    this.raceService.getRaceList(this.selectedSeasonOption)
-      .subscribe(raceList => {
+    this.raceService.getRaceList(this.selectedSeasonOption).subscribe(
+      raceList => {
         this.races = raceList;
         if (!this.selectedRace) {
           const urlRound = this.route.snapshot.paramMap.get('round');
@@ -80,13 +76,16 @@ export class ResultComponent implements OnInit {
           }
         }
       },
-        error => {
-          console.error('Error getting Race Details: ' + error);
-        });
+      error => {
+        console.error('Error getting Race Details: ' + error);
+      }
+    );
   }
 
   selectRace(round: string) {
-    const selectedRace: RaceDetail = this.races.find(race => race.round === round);
+    const selectedRace: RaceDetail = this.races.find(
+      race => race.round === round
+    );
 
     this.selectedRaceOption = selectedRace.round;
     this.selectedRace = selectedRace;
@@ -97,10 +96,12 @@ export class ResultComponent implements OnInit {
     this.isLoading = true;
     this.resultsLoaded = false;
 
-
-
-    this.resultService.getResult(this.selectedRaceOption, this.selectedSeasonOption)
-      .subscribe(result => { this.raceResult = result; },
+    this.resultService
+      .getResult(this.selectedRaceOption, this.selectedSeasonOption)
+      .subscribe(
+        result => {
+          this.raceResult = result;
+        },
         error => {
           this.isLoading = false;
           this.error = true;

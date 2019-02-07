@@ -1,16 +1,21 @@
-<div class="schedule" fxLayout fxLayout.lt-sm="column" fxLayoutAlign="center" fxLayoutGap="30px">
+<div
+  class="schedule"
+  fxLayout
+  fxLayout.lt-sm="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="30px"
+>
   <div fxLayoutAlign="center">
     <mat-card>
       <h2>Race Schedule</h2>
       <div>
-        <mat-spinner *ngIf="isLoading; else listContent" style="margin:0 auto;"></mat-spinner>
+        <mat-spinner *ngIf="isLoading; else listContent"></mat-spinner>
       </div>
       <ng-template #listContent>
         <div>
           <table class="schedule-list">
             <thead>
-              <td>
-              </td>
+              <td></td>
               <td>
                 <span>Date</span>
               </td>
@@ -21,16 +26,23 @@
             </thead>
             <tr *ngFor="let raceweekend of raceSchedule; let round = index">
               <td>
-                <span class="country">{{raceweekend[4].country}}</span>
-                <span>({{raceweekend[4].location}})</span>
+                <span class="country">{{ raceweekend[4].country }}</span>
+                <span>({{ raceweekend[4].location }})</span>
               </td>
               <td class="date">
-                <span class="date-long">{{raceweekend[4].eventDate | date:'dd MMMM'}}</span>
-                <span class="date-med">{{raceweekend[4].eventDate | date:'dd MMM'}}</span>
+                <span class="date-long">{{
+                  raceweekend[4].eventDate | date: "dd MMMM"
+                }}</span>
+                <span class="date-med">{{
+                  raceweekend[4].eventDate | date: "dd MMM"
+                }}</span>
               </td>
-              <td> {{raceweekend[4].eventDate | date:'HH:mm'}}</td>
+              <td>{{ raceweekend[4].eventDate | date: "HH:mm" }}</td>
               <td>
-                <div class="actions" (click)="openRaceWeekendPopup(raceweekend, round+1);">
+                <div
+                  class="actions"
+                  (click)="openRaceWeekendPopup(raceweekend, round + 1)"
+                >
                   <i class="fas fa-info-circle"></i>
                 </div>
               </td>

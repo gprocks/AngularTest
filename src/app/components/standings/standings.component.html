@@ -7,40 +7,10 @@
   fxLayoutAlign.lt-md="center center"
 >
   <div class="driver-list-container">
-    <h2>Drivers Standings</h2>
-    <ul>
-      <li
-        *ngFor="let standing of standings"
-        routerLink="/drivers/{{ standing.Driver.driverId }}"
-      >
-        <div class="driver-list-item">
-          <span class="rank">{{ standing.positionText }}</span>
-          <span
-            class="team-color-icon team-{{
-              standing.Constructors[standing.Constructors.length - 1]
-                .constructorId
-            }}"
-          ></span>
-          <span class="driver">
-            <span fxShow fxHide.xs="true">{{
-              standing.Driver.givenName + " "
-            }}</span>
-            <strong class="surname">{{ standing.Driver.familyName }}</strong>
-          </span>
-          <span class="team">{{
-            standing.Constructors[standing.Constructors.length - 1].name
-              | teamTranslator
-          }}</span>
-          <span class="driver-list-right">
-            <span class="country" fxShow fxHide.xs="true">
-              {{ standing.Driver.nationality | nationality | async }}
-            </span>
-            <span>
-              <span class="detail">{{ standing.points }}</span>
-            </span>
-          </span>
-        </div>
-      </li>
-    </ul>
+    <mat-spinner *ngIf="isLoading; else listContent"></mat-spinner>
   </div>
+  <ng-template #listContent>
+    <h2>Drivers Standings</h2>
+    <app-driver-result [driverResults]="results"></app-driver-result>
+  </ng-template>
 </div>

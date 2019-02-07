@@ -54,35 +54,7 @@
     </div>
     <ng-template #listContent>
       <div *ngIf="resultsLoaded; else noResults" class="drivers">
-        <ul>
-          <li *ngFor="let result of raceResult">
-            <div class="driver-list-item">
-              <span class="rank">{{ result.positionText }}</span>
-              <span
-                class="team-color-icon team-{{
-                  result.Constructor.constructorId
-                }}"
-              ></span>
-              <span class="driver">
-                <span fxShow fxHide.xs="true">{{
-                  result.Driver.givenName + " "
-                }}</span>
-                <strong class="surname">{{ result.Driver.familyName }}</strong>
-              </span>
-              <span class="team">
-                {{ result.Constructor.name | teamTranslator }}
-              </span>
-              <span class="driver-list-right">
-                <span class="country" fxShow fxHide.xs="true">
-                  {{ result.Driver.nationality | nationality | async }}
-                </span>
-                <span>
-                  <span class="detail">{{ result.points }}</span>
-                </span>
-              </span>
-            </div>
-          </li>
-        </ul>
+        <app-driver-result [driverResults]="raceResult"></app-driver-result>
       </div>
       <ng-template #noResults>
         <div class="no-results">

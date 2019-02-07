@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DriverStanding } from '../../models/driver-standing';
 import { DriverStandingsService } from '../../services/driver-standings/driver-standings.service';
-
+import { DriverResultDisplay } from '../../models/driver-result-display';
 
 @Component({
   selector: 'app-standings',
@@ -9,11 +8,10 @@ import { DriverStandingsService } from '../../services/driver-standings/driver-s
   styleUrls: ['./standings.component.css']
 })
 export class StandingsComponent implements OnInit {
-
   public isLoading: boolean;
   public error: boolean;
-  standings: DriverStanding[] = [];
-  constructor(private driverStandingService: DriverStandingsService) { }
+  results: DriverResultDisplay[] = [];
+  constructor(private driverStandingService: DriverStandingsService) {}
 
   ngOnInit() {
     this.isLoading = true;
@@ -22,17 +20,21 @@ export class StandingsComponent implements OnInit {
   }
 
   getStandings(): void {
-    this.driverStandingService.getStandings()
-      .subscribe(drivers => this.standings = drivers,
-        error => {
-          this.isLoading = false;
-          this.error = true;
-          console.error('Error getting meetings: ' + error);
-        },
-        () => {
-          this.isLoading = false;
-          this.error = false;
-        }
-      );
+    this.driverStandingService.getStandings().subscribe(
+      driverStandings => {
+        this.results = driverStandings.map(driverStanding => {
+          return DriverStandingsService.getDriverResultDisplay(driverStanding);
+        });
+      },
+      error => {
+        this.isLoading = false;
+        this.error = true;
+        console.error('Error getting meetings: ' + error);
+      },
+      () => {
+        this.isLoading = false;
+        this.error = false;
+      }
+    );
   }
 }

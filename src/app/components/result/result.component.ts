@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ResultService } from '../../services/result/result.service';
-import { Result } from '../../models/result';
 import { ActivatedRoute } from '@angular/router';
 import { RaceDetail } from '../../models/race-detail';
 import { RaceDetailService } from '../../services/race-detail/race-detail.service';
 import { SeasonsService } from '../../services/seasons/seasons.service';
+import { DriverResultDisplay } from '../../models/driver-result-display';
 
 @Component({
   selector: 'app-result',
@@ -21,7 +21,7 @@ export class ResultComponent implements OnInit {
 
   races: RaceDetail[] = [];
   selectedRace: RaceDetail;
-  raceResult: Result[];
+  raceResult: DriverResultDisplay[];
 
   seasons: string[] = [];
 
@@ -100,7 +100,9 @@ export class ResultComponent implements OnInit {
       .getResult(this.selectedRaceOption, this.selectedSeasonOption)
       .subscribe(
         result => {
-          this.raceResult = result;
+          this.raceResult = result.map(resultItems =>
+            ResultService.getDriverResultDisplay(resultItems)
+          );
         },
         error => {
           this.isLoading = false;

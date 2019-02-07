@@ -1,0 +1,32 @@
+<ul ng-if="driverResult.length>0">
+  <li
+    *ngFor="let driverResult of driverResults"
+    routerLink="/drivers/{{ driverResult.Driver.driverId }}"
+  >
+    <div class="driver-list-item">
+      <span class="rank">{{ driverResult.position }}</span>
+      <span
+        class="team-color-icon team-{{
+          driverResult.Constructor.constructorId
+        }}"
+      ></span>
+      <span class="driver">
+        <span fxShow fxHide.xs="true">{{
+          driverResult.Driver.givenName + " "
+        }}</span>
+        <strong class="surname">{{ driverResult.Driver.familyName }}</strong>
+      </span>
+      <span class="team">{{
+        driverResult.Constructor.name | teamTranslator
+      }}</span>
+      <span class="driver-list-right">
+        <span class="country" fxShow fxHide.xs="true">
+          {{ driverResult.Driver.nationality | nationality | async }}
+        </span>
+        <span>
+          <span class="detail">{{ driverResult.points }}</span>
+        </span>
+      </span>
+    </div>
+  </li>
+</ul>

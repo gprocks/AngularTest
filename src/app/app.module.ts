@@ -27,7 +27,7 @@ import { ResultService } from './services/result/result.service';
 import { ResultComponent } from './components/result/result.component';
 import { RaceDetailService } from './services/race-detail/race-detail.service';
 import { SeasonsService } from './services/seasons/seasons.service';
-
+import { DriverResultComponent } from './components/driver-result/driver-result.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,8 @@ import { SeasonsService } from './services/seasons/seasons.service';
     RaceScheduleComponent,
     NationalityPipe,
     WeekendDetailsPopupComponent,
-    ResultComponent
+    ResultComponent,
+    DriverResultComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +53,7 @@ import { SeasonsService } from './services/seasons/seasons.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  entryComponents: [
-    WeekendDetailsPopupComponent
-  ],
+  entryComponents: [WeekendDetailsPopupComponent],
   providers: [
     DriverService,
     DriverStandingsService,
@@ -69,4 +68,4 @@ import { SeasonsService } from './services/seasons/seasons.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

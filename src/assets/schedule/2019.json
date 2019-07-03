@@ -634,18 +634,18 @@
     "summary": "First Practice Session (Canadian Grand Prix)",
     "uid": "http://2019.f1calendar.com#GP7_2019P1",
     "dtstart": [
-      "20190607T150000Z",
+      "20190607T140000Z",
       {
         "value": "DATE-TIME"
       }
     ],
     "dtend": [
-      "20190607T163000Z",
+      "20190607T153000Z",
       {
         "value": "DATE-TIME"
       }
     ],
-    "dtstamp": "20190607T150000Z",
+    "dtstamp": "20190607T140000Z",
     "categories": "First Practice Session",
     "geo": ["45.5034", "-73.5267"],
     "sequence": "2019"
@@ -655,18 +655,18 @@
     "summary": "Second Practice Session (Canadian Grand Prix)",
     "uid": "http://2019.f1calendar.com#GP7_2019P2",
     "dtstart": [
-      "20190607T190000Z",
+      "20190607T180000Z",
       {
         "value": "DATE-TIME"
       }
     ],
     "dtend": [
-      "20190607T203000Z",
+      "20190607T193000Z",
       {
         "value": "DATE-TIME"
       }
     ],
-    "dtstamp": "20190607T190000Z",
+    "dtstamp": "20190607T180000Z",
     "categories": "Second Practice Session",
     "geo": ["45.5034", "-73.5267"],
     "sequence": "2019"
@@ -676,18 +676,18 @@
     "summary": "Third Practice Session (Canadian Grand Prix)",
     "uid": "http://2019.f1calendar.com#GP7_2019P3",
     "dtstart": [
-      "20190608T160000Z",
+      "20190608T150000Z",
       {
         "value": "DATE-TIME"
       }
     ],
     "dtend": [
-      "20190608T170000Z",
+      "20190608T160000Z",
       {
         "value": "DATE-TIME"
       }
     ],
-    "dtstamp": "20190608T160000Z",
+    "dtstamp": "20190608T150000Z",
     "categories": "Third Practice Session",
     "geo": ["45.5034", "-73.5267"],
     "sequence": "2019"
@@ -697,18 +697,18 @@
     "summary": "Qualifying Session (Canadian Grand Prix)",
     "uid": "http://2019.f1calendar.com#GP7_2019Q",
     "dtstart": [
-      "20190608T190000Z",
+      "20190608T180000Z",
       {
         "value": "DATE-TIME"
       }
     ],
     "dtend": [
-      "20190608T200000Z",
+      "20190608T190000Z",
       {
         "value": "DATE-TIME"
       }
     ],
-    "dtstamp": "20190608T190000Z",
+    "dtstamp": "20190608T180000Z",
     "categories": "Qualifying Session",
     "geo": ["45.5034", "-73.5267"],
     "sequence": "2019"
@@ -718,18 +718,18 @@
     "summary": "Canadian Grand Prix",
     "uid": "http://2019.f1calendar.com#GP7_2019",
     "dtstart": [
-      "20190609T191000Z",
+      "20190609T181000Z",
       {
         "value": "DATE-TIME"
       }
     ],
     "dtend": [
-      "20190609T211000Z",
+      "20190609T201000Z",
       {
         "value": "DATE-TIME"
       }
     ],
-    "dtstamp": "20190609T191000Z",
+    "dtstamp": "20190609T181000Z",
     "categories": "Grand Prix",
     "geo": ["45.5034", "-73.5267"],
     "sequence": "2019"

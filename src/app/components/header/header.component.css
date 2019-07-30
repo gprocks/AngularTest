@@ -1,33 +1,32 @@
-.header-content{
-    text-align: center;
-}
-.header-image{
-    height: 300px;
-    width: 100%;
-   background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ), url(https://i.imgur.com/tQdAooh.jpg) center center no-repeat;
-    background-size: cover;
-    background-position: 0% 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: 'Comfortaa', cursive;
-    color: #fff;
+.header-content {
+  text-align: center;
 }
 
-.track-details{
-  margin-top:15px;
+.header-image {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)), url(../../../assets/Header1.jpg) center center no-repeat;
+  background-size: cover;
+  background-position: 0% 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+}
+
+.track-details {
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
 }
 
 .track-details span {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .track-details span:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }

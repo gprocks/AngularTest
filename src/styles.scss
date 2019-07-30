@@ -4,11 +4,11 @@
 $app-primary: mat-palette($mat-indigo, 500);
 // Define a custom typography config that overrides the font-family as well as the
 // `headlines` and `body-1` levels.
-$custom-typography: mat-typography-config(
-  $font-family: "Comfortaa, cursive"
+$custom-typography: mat-typography-config($font-family: "Comfortaa, cursive"
 );
 // Override the typography in the core CSS.
 @include mat-core($custom-typography);
+
 body {
   font-family: Comfortaa, cursive;
 }
@@ -26,10 +26,12 @@ body {
     padding: 0;
     margin: 0;
   }
+
   .mat-dialog-content {
     padding: 0;
     margin: 0;
   }
+
   .mat-dialog-actions {
     padding: 10px;
     margin: 0;
@@ -56,56 +58,70 @@ mat-spinner {
 .schedule-list {
   border-collapse: collapse;
   color: #808080;
+
   /*Header*/
   thead {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     font-weight: bold;
   }
+
   /* --> Header*/
   /*Body*/
   .country {
     font-weight: bold;
+
     @media screen and (max-width: 500px) {
       display: block;
     }
   }
+
   .actions {
     color: mat-color($app-primary);
     cursor: pointer;
   }
+
   td {
     height: 40px;
     padding: 5px;
+
     &.date {
       min-width: 55px;
     }
   }
+
   td:first-child {
     padding-left: 10px;
     padding-right: 30px;
   }
+
   td:last-child {
     padding-right: 10px;
   }
+
   tr:nth-child(even) {
     background-color: #f8f6ff;
   }
+
   /*-->Body*/
   /*Dates*/
   .date-long {
     display: block;
   }
+
   .date-med {
     display: none;
   }
+
   @media screen and (max-width: 545px) {
     .date-long {
       display: none;
     }
+
     .date-med {
       display: block;
     }
   }
+
   /*-->Dates*/
 }
 
@@ -114,15 +130,18 @@ mat-spinner {
     :first-child {
       font-weight: bolder;
     }
+
     padding: 10px;
     display: grid;
     background-size: cover;
     background-position: 50% 50%;
     color: white;
   }
+
   table {
     padding: 10px;
     width: 100%;
+
     tr td:first-child {
       font-weight: bolder;
     }
@@ -139,15 +158,18 @@ mat-spinner {
 //driver-lists
 .driver-list-container {
   width: 100%;
+
   h2 {
     margin-bottom: 5px;
   }
+
   ul {
     margin: 0 -10px 0 -10px;
     padding: 10px;
     border-radius: 10px;
     list-style-type: none;
     width: 100%;
+
     li {
       padding: 0;
       align-items: center;
@@ -157,6 +179,7 @@ mat-spinner {
       justify-content: flex-start;
       margin-bottom: 2px;
       overflow: hidden;
+
       .driver-list-item {
         background-color: #ffffff;
         padding: 15px 10px 15px 20px;
@@ -172,13 +195,16 @@ mat-spinner {
         line-height: 15px;
         letter-spacing: 0.5px;
         font-weight: normal;
+
         .driver {
           font-size: 16px;
           line-height: 17px;
+
           .surname {
             text-transform: uppercase;
           }
         }
+
         .rank {
           position: relative;
           top: 1px;
@@ -186,17 +212,21 @@ mat-spinner {
           width: 20px;
           font-weight: bold;
         }
+
         .team-color-icon {
           width: 4px;
           height: 14px;
           margin: 0 10px;
         }
+
         .team {
           margin-left: 10px;
           color: #67676d;
         }
+
         .driver-list-right {
           margin-left: auto;
+
           .detail {
             margin-left: 10px;
             min-width: 95px;
@@ -222,6 +252,7 @@ mat-spinner {
   .driver-list-container {
     max-width: 800px;
   }
+
   .no-results {
     color: gray;
   }
@@ -245,6 +276,10 @@ mat-spinner {
   box-sizing: border-box;
 }
 
+.team-racing_point {
+  background: #f596c8;
+}
+
 .team-force_india {
   background: #f596c8;
 }
@@ -265,6 +300,10 @@ mat-spinner {
   background: #9b0000;
 }
 
+.team-alfa {
+  background: #9b0000;
+}
+
 .team-marussia {
   background: #6e0000;
 }
@@ -274,5 +313,5 @@ mat-spinner {
 }
 
 .team-haas {
-  background: #5a5a5a;
+  background: #bd9e57;
 }

@@ -8,7 +8,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)), url(../../../assets/Header1.jpg) center center no-repeat;
   background-size: cover;
-  background-position: 0% 35%;
   display: flex;
   align-items: center;
   justify-content: center;

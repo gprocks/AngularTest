@@ -1,16 +1,16 @@
-import { Component, OnInit, Input, Inject } from '@angular/core';
-import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
-import { MAT_DIALOG_DATA } from '@angular/material';
-import { CountryService } from '../../../services/country/country.service';
-import { Observable } from 'rxjs';
-import { tap, map } from 'rxjs/operators';
-import { ResultService } from '../../../services/result/result.service';
-import { Result } from '../../../models/result';
+import { Component, OnInit, Input, Inject } from "@angular/core";
+import { RaceScheduleCurrent } from "../../../models/race-schedule-current";
+import { MAT_DIALOG_DATA } from "@angular/material";
+import { CountryService } from "../../../services/country/country.service";
+import { Observable } from "rxjs";
+import { tap, map } from "rxjs/operators";
+import { ResultService } from "../../../services/result/result.service";
+import { RaceResult } from "../../../models/race-result";
 
 @Component({
-  selector: 'app-weekend-details-popup',
-  templateUrl: './weekend-details-popup.component.html',
-  styleUrls: ['./weekend-details-popup.component.css']
+  selector: "app-weekend-details-popup",
+  templateUrl: "./weekend-details-popup.component.html",
+  styleUrls: ["./weekend-details-popup.component.css"]
 })
 export class WeekendDetailsPopupComponent implements OnInit {
   constructor(
@@ -21,7 +21,7 @@ export class WeekendDetailsPopupComponent implements OnInit {
 
   headerImage: Observable<any>;
 
-  raceResult: Result[];
+  raceResult: RaceResult[];
   hasResult = false;
 
   ngOnInit() {
@@ -35,17 +35,17 @@ export class WeekendDetailsPopupComponent implements OnInit {
         this.raceWeekend.weekend[0].eventDate.getFullYear()
       )
       .subscribe(result => {
-        this.raceResult = result;
-        this.hasResult = result.length > 0;
+        this.raceResult = result.race;
+        this.hasResult = result.race.length > 0;
       });
   }
 
   getBackgroundImage(flagUrl: string) {
     return {
-      'background-image':
-        'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(' +
+      "background-image":
+        "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(" +
         flagUrl +
-        ')'
+        ")"
     };
   }
 }

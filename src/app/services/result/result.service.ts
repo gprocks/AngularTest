@@ -1,12 +1,15 @@
-import { Injectable } from '@angular/core';
-import { ErrorHandlerService } from '../util/error-handler.service';
-import { HttpClient } from '@angular/common/http';
-import { AppSettings } from '../../util/app.settings';
-import { ApiServices } from '../../util/constants';
-import { Observable } from 'rxjs';
-import { Result } from '../../models/result';
-import { tap, catchError, map } from 'rxjs/operators';
-import { DriverResultDisplay } from '../../models/driver-result-display';
+import { Injectable } from "@angular/core";
+import { ErrorHandlerService } from "../util/error-handler.service";
+import { HttpClient } from "@angular/common/http";
+import { AppSettings } from "../../util/app.settings";
+import { ApiServices } from "../../util/constants";
+import { Observable } from "rxjs";
+import { forkJoin } from "rxjs";
+import { RaceResult } from "../../models/race-result";
+import { tap, catchError, map } from "rxjs/operators";
+import { DriverResultDisplay } from "../../models/driver-result-display";
+// import { QualifyingResult } from "../../models/qualifying-result";
+import { WeekendResults } from "../../models/weekend-results";
 
 @Injectable()
 export class ResultService {
@@ -14,7 +17,7 @@ export class ResultService {
     private http: HttpClient,
     private errorHandlerService: ErrorHandlerService
   ) {}
-  static getDriverResultDisplay(result: Result): DriverResultDisplay {
+  static getDriverResultDisplay(result: RaceResult): DriverResultDisplay {
     const returnItem: DriverResultDisplay = {
       Driver: result.Driver,
       Constructor: result.Constructor,
@@ -24,24 +27,46 @@ export class ResultService {
     return returnItem;
   }
 
-  getResult(round: string, year?: string): Observable<Result[]> {
+  getResult(round: string, year?: string): Observable<WeekendResults> {
     if (year == null) {
-      year = 'current';
+      year = "current";
     }
-    const resultUrl =
+    const raceResultApi =
       AppSettings.API_URL +
       year +
-      '/' +
+      "/" +
       round +
-      '/' +
+      "/" +
       ApiServices.Results +
-      '.json';
-    return this.http.get(resultUrl).pipe(
-      map((response: any) => {
-        return response.MRData.RaceTable.Races[0].Results as Result[];
+      ".json";
+
+    const qualiResultApi =
+      AppSettings.API_URL +
+      year +
+      "/" +
+      round +
+      "/" +
+      ApiServices.Qualifying +
+      ".json";
+
+    const raceResult = forkJoin({
+      race: this.http.get<any>(raceResultApi),
+      quali: this.http.get<any>(qualiResultApi)
+    }).pipe(
+      map(responses => {
+        // tslint:disable-next-line: prefer-const
+        let weekendResult: WeekendResults = new WeekendResults();
+        weekendResult.qualifying =
+          responses.quali.MRData.RaceTable.Races[0].QualifyingResults;
+
+        weekendResult.race = responses.race.MRData.RaceTable.Races[0].Results;
+        return weekendResult;
       }),
-      tap(result => console.log('Fetching Results', result))
-      // catchError(this.errorHandlerService.handleError('getResult', []))
+      tap(resp => {
+        console.log("Fetching Weekend Results", resp);
+      })
     );
+
+    return raceResult;
   }
 }

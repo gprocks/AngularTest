@@ -159,6 +159,20 @@ mat-spinner {
 .driver-list-container {
   width: 100%;
 
+  button {
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: normal;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
   h2 {
     margin-bottom: 5px;
   }

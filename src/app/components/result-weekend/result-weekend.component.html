@@ -7,6 +7,7 @@
   fxLayoutAlign.lt-md="center center"
   fxLayoutGap.lt-md="5px"
 >
+  <!-- Temp DDL -->
   <div
     fxLayout
     fxLayout="column"
@@ -44,8 +45,12 @@
       </mat-form-field>
     </div>
   </div>
+  <!-- End of temp ddl -->
   <div class="driver-list-container">
-    <h2>{{ selectedRace.raceName }}</h2>
+    <!-- <div *ngIf="!isLoading">
+      {{ selectedRace.raceName }}
+    </div> -->
+    <h2 *ngIf="!isLoading">{{ selectedRace.raceName }}</h2>
     <div>
       <mat-spinner
         *ngIf="isLoading; else listContent"
@@ -54,7 +59,34 @@
     </div>
     <ng-template #listContent>
       <div *ngIf="resultsLoaded; else noResults" class="drivers">
-        <app-driver-result [driverResults]="raceResult"></app-driver-result>
+        <div fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="10px">
+          <button
+            [ngClass]="{ active: view === 'race' }"
+            fxFlex="50"
+            mat-button
+            [disabled]="!weekendResults.race.length"
+            (click)="view = 'race'"
+          >
+            Race
+          </button>
+          <button
+            [ngClass]="{ active: view === 'quali' }"
+            fxFlex="50"
+            mat-button
+            [disabled]="!weekendResults.qualifying.length"
+            (click)="view = 'quali'"
+          >
+            Qualification
+          </button>
+        </div>
+        <app-driver-result
+          *ngIf="view === 'race'"
+          [driverResults]="weekendResults.race"
+        ></app-driver-result>
+        <app-quali-result
+          *ngIf="view === 'quali'"
+          [qualiResults]="weekendResults.qualifying"
+        ></app-quali-result>
       </div>
       <ng-template #noResults>
         <div class="no-results">

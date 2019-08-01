@@ -1,9 +1,12 @@
 import { Driver } from "./driver";
 import { Constructor } from "./constructor";
 
-export interface DriverResultDisplay {
+export interface QualifyingResult {
+  number: string;
   position: string;
   Driver: Driver;
   Constructor: Constructor;
-  points: string;
+  Q1: string;
+  Q2: string;
+  Q3: string;
 }

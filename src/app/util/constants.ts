@@ -2,7 +2,8 @@ export const ApiServices = {
   Drivers: 'drivers',
   DriverStandings: 'driverStandings',
   Results: 'results',
-  Seasons: 'seasons',
+  Qualifying: 'qualifying',
+  Seasons: 'seasons'
 };
 
 export const CurrentRaceSchedule = {

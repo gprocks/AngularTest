@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { QualifyingResult } from "src/app/models/qualifying-result";
+import { QualifyingResult } from "../../models/qualifying-result";
 
 @Component({
   selector: "app-quali-result",

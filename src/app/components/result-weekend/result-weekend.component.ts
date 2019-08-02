@@ -4,7 +4,7 @@ import { ActivatedRoute } from "@angular/router";
 import { RaceDetail } from "../../models/race-detail";
 import { RaceDetailService } from "../../services/race-detail/race-detail.service";
 import { SeasonsService } from "../../services/seasons/seasons.service";
-import { WeekendResults } from "src/app/models/weekend-results";
+import { WeekendResults } from "../../models/weekend-results";
 
 @Component({
   selector: "app-result-weekend",

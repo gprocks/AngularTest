@@ -1,7 +1,7 @@
 import { Driver } from './driver';
 import { Constructor } from './constructor';
 
-export class Result {
+export class RaceResult {
   number: string;
   position: string;
   positionText: string;
@@ -14,8 +14,6 @@ export class Result {
   // Time?: Time;
   // FastestLap?: FastestLap;
 }
-
-
 
 // interface FastestLap {
 //   rank: string;

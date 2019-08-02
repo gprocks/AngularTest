@@ -1,0 +1,35 @@
+<ul *ngIf="qualiResults.length > 0">
+  <li *ngFor="let qualiResult of qualiResults">
+    <div class="driver-list-item">
+      <span class="rank">{{ qualiResult.position }}</span>
+      <span
+        class="team-color-icon team-{{ qualiResult.Constructor.constructorId }}"
+      ></span>
+      <span class="driver">
+        <span fxShow fxHide.lt-sm="true">{{
+          qualiResult.Driver.givenName + " "
+        }}</span>
+        <strong class="surname">{{ qualiResult.Driver.familyName }}</strong>
+      </span>
+      <span class="team">{{
+        qualiResult.Constructor.name | teamTranslator
+      }}</span>
+      <span class="driver-list-right">
+        <span>
+          <span *ngIf="qualiResult.Q3" class="detail" fxHide.xs="true">{{
+            qualiResult.Q3
+          }}</span>
+          <span *ngIf="qualiResult.Q2" class="detail" fxHide.xs="true">{{
+            qualiResult.Q2
+          }}</span>
+          <span *ngIf="qualiResult.Q1" class="detail" fxHide.xs="true">{{
+            qualiResult.Q1
+          }}</span>
+          <span class="detail" fxHide.gt-xs>{{
+            getFinalQualiTime(qualiResult)
+          }}</span>
+        </span>
+      </span>
+    </div>
+  </li>
+</ul>

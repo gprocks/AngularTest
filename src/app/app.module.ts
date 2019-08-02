@@ -1,33 +1,34 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from "@angular/core";
 
-import { FormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
-import { DriversComponent } from './components/drivers/drivers.component';
-import { DriverComponent } from './components/drivers/driver/driver.component';
-import { DriverService } from './services/driver/driver.service';
-import { AppRoutingModule } from './app-routing.module';
-import { StandingsComponent } from './components/standings/standings.component';
-import { GetAgePipe } from './pipes/get-age.pipe';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { DriverStandingsService } from './services/driver-standings/driver-standings.service';
-import { MaterialModule } from './material-module/material.module';
-import { TeamTranslatorPipe } from './pipes/team-translator.pipe';
-import { CountdownComponent } from './components/header/countdown/countdown.component';
-import { HeaderComponent } from './components/header/header.component';
-import { RaceScheduleCurrentService } from './services/race-schedule/race-schedule-current.service';
-import { RaceScheduleComponent } from './components/race-schedule/race-schedule.component';
-import { NationalityService } from './services/nationality/nationality.service';
-import { NationalityPipe } from './pipes/nationality.pipe';
-import { ErrorHandlerService } from './services/util/error-handler.service';
-import { WeekendDetailsPopupComponent } from './components/race-schedule/weekend-details-popup/weekend-details-popup.component';
-import { CountryService } from './services/country/country.service';
-import { ResultService } from './services/result/result.service';
-import { ResultComponent } from './components/result/result.component';
-import { RaceDetailService } from './services/race-detail/race-detail.service';
-import { SeasonsService } from './services/seasons/seasons.service';
-import { DriverResultComponent } from './components/driver-result/driver-result.component';
+import { FormsModule } from "@angular/forms";
+import { AppComponent } from "./app.component";
+import { DriversComponent } from "./components/drivers/drivers.component";
+import { DriverComponent } from "./components/drivers/driver/driver.component";
+import { DriverService } from "./services/driver/driver.service";
+import { AppRoutingModule } from "./app-routing.module";
+import { StandingsComponent } from "./components/standings/standings.component";
+import { GetAgePipe } from "./pipes/get-age.pipe";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { DriverStandingsService } from "./services/driver-standings/driver-standings.service";
+import { MaterialModule } from "./material-module/material.module";
+import { TeamTranslatorPipe } from "./pipes/team-translator.pipe";
+import { CountdownComponent } from "./components/header/countdown/countdown.component";
+import { HeaderComponent } from "./components/header/header.component";
+import { RaceScheduleCurrentService } from "./services/race-schedule/race-schedule-current.service";
+import { RaceScheduleComponent } from "./components/race-schedule/race-schedule.component";
+import { NationalityService } from "./services/nationality/nationality.service";
+import { NationalityPipe } from "./pipes/nationality.pipe";
+import { ErrorHandlerService } from "./services/util/error-handler.service";
+import { WeekendDetailsPopupComponent } from "./components/race-schedule/weekend-details-popup/weekend-details-popup.component";
+import { CountryService } from "./services/country/country.service";
+import { ResultService } from "./services/result/result.service";
+import { RaceDetailService } from "./services/race-detail/race-detail.service";
+import { SeasonsService } from "./services/seasons/seasons.service";
+import { ResultWeekendComponent } from "./components/result-weekend/result-weekend.component";
+import { DriverResultComponent } from "./components/driver-result/driver-result.component";
+import { QualiResultComponent } from "./components/quali-result/quali-result.component";
 
 @NgModule({
   declarations: [
@@ -42,8 +43,9 @@ import { DriverResultComponent } from './components/driver-result/driver-result.
     RaceScheduleComponent,
     NationalityPipe,
     WeekendDetailsPopupComponent,
-    ResultComponent,
-    DriverResultComponent
+    ResultWeekendComponent,
+    DriverResultComponent,
+    QualiResultComponent
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ResultService } from '../../services/result/result.service';
-import { ActivatedRoute } from '@angular/router';
-import { RaceDetail } from '../../models/race-detail';
-import { RaceDetailService } from '../../services/race-detail/race-detail.service';
-import { SeasonsService } from '../../services/seasons/seasons.service';
-import { DriverResultDisplay } from '../../models/driver-result-display';
+import { Component, OnInit, Input } from "@angular/core";
+import { ResultService } from "../../services/result/result.service";
+import { ActivatedRoute } from "@angular/router";
+import { RaceDetail } from "../../models/race-detail";
+import { RaceDetailService } from "../../services/race-detail/race-detail.service";
+import { SeasonsService } from "../../services/seasons/seasons.service";
+import { WeekendResults } from "../../models/weekend-results";
 
 @Component({
-  selector: 'app-result',
-  templateUrl: './result.component.html',
-  styleUrls: ['./result.component.css']
+  selector: "app-result-weekend",
+  templateUrl: "./result-weekend.component.html",
+  styleUrls: ["./result-weekend.component.css"]
 })
-export class ResultComponent implements OnInit {
+export class ResultWeekendComponent implements OnInit {
   public isLoading: boolean;
   public error: boolean;
   public resultsLoaded: boolean;
@@ -19,11 +19,13 @@ export class ResultComponent implements OnInit {
   public selectedSeasonOption: string;
   public selectedRaceOption: string;
 
+  seasons: string[] = [];
   races: RaceDetail[] = [];
   selectedRace: RaceDetail;
-  raceResult: DriverResultDisplay[];
 
-  seasons: string[] = [];
+  weekendResults: WeekendResults;
+
+  view: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -47,7 +49,7 @@ export class ResultComponent implements OnInit {
         this.selectSeason();
       },
       error => {
-        console.error('Error getting Seaon Details: ' + error);
+        console.error("Error getting Seaon Details: " + error);
       }
     );
   }
@@ -68,7 +70,7 @@ export class ResultComponent implements OnInit {
       raceList => {
         this.races = raceList;
         if (!this.selectedRace) {
-          const urlRound = this.route.snapshot.paramMap.get('round');
+          const urlRound = this.route.snapshot.paramMap.get("round");
           if (urlRound) {
             this.selectRace(urlRound);
           } else {
@@ -77,7 +79,7 @@ export class ResultComponent implements OnInit {
         }
       },
       error => {
-        console.error('Error getting Race Details: ' + error);
+        console.error("Error getting Race Details: " + error);
       }
     );
   }
@@ -100,21 +102,19 @@ export class ResultComponent implements OnInit {
       .getResult(this.selectedRaceOption, this.selectedSeasonOption)
       .subscribe(
         result => {
-          this.raceResult = result.map(resultItems =>
-            ResultService.getDriverResultDisplay(resultItems)
-          );
+          this.weekendResults = result;
+          this.view = this.weekendResults.race.length ? "race" : "quali";
         },
         error => {
           this.isLoading = false;
           this.error = true;
-          console.log('In Error', this.resultsLoaded);
-          console.error('Error getting Results: ' + error);
+          console.log("In Error", this.resultsLoaded);
+          console.error("Error getting Results: " + error);
         },
         () => {
           this.isLoading = false;
           this.error = false;
           this.resultsLoaded = true;
-          console.log('In Complete', this.resultsLoaded);
         }
       );
   }

@@ -114,7 +114,9 @@ export class ResultWeekendComponent implements OnInit {
         () => {
           this.isLoading = false;
           this.error = false;
-          this.resultsLoaded = true;
+          this.resultsLoaded =
+            this.weekendResults.race.length > 0 ||
+            this.weekendResults.qualifying.length > 0;
         }
       );
   }

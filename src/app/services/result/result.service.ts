@@ -56,10 +56,14 @@ export class ResultService {
       map(responses => {
         // tslint:disable-next-line: prefer-const
         let weekendResult: WeekendResults = new WeekendResults();
-        weekendResult.qualifying =
-          responses.quali.MRData.RaceTable.Races[0].QualifyingResults;
+        if (responses.quali.MRData.RaceTable.Races[0]) {
+          weekendResult.qualifying =
+            responses.quali.MRData.RaceTable.Races[0].QualifyingResults;
+        }
+        if (responses.race.MRData.RaceTable.Races[0]) {
+          weekendResult.race = responses.race.MRData.RaceTable.Races[0].Results;
+        }
 
-        weekendResult.race = responses.race.MRData.RaceTable.Races[0].Results;
         return weekendResult;
       }),
       tap(resp => {

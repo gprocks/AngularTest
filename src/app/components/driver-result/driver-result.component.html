@@ -1,7 +1,7 @@
 <ul *ngIf="driverResults.length > 0">
   <li *ngFor="let driverResult of driverResults">
     <!-- routerLink="/drivers/{{ driverResult.Driver.driverId }}" -->
-    <div class="driver-list-item">
+    <div class="list-item">
       <span class="rank">{{ driverResult.position }}</span>
       <span
         class="team-color-icon team-{{

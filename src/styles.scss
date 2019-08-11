@@ -86,6 +86,7 @@ mat-spinner {
 
 .list-container {
   width: 100%;
+  max-width: 800px;
 
   h2 {
     margin-bottom: 5px;
@@ -223,14 +224,14 @@ mat-spinner {
 }
 
 
-.standings .driver-list-container {
-  max-width: 800px;
-}
+// .standings .driver-list-container {
+//   max-width: 800px;
+// }
 
 .result {
-  .driver-list-container {
-    max-width: 800px;
-  }
+  // .driver-list-container {
+  //   max-width: 800px;
+  // }
 
   .no-results {
     color: gray;

@@ -1,5 +1,5 @@
-<ul *ngIf="qualiResults.length > 0">
-  <li *ngFor="let qualiResult of qualiResults">
+<ul *ngIf="qualiResults.length > 0" @list>
+  <li *ngFor="let qualiResult of qualiResults" @items>
     <div class="list-item">
       <span class="rank">{{ qualiResult.position }}</span>
       <span

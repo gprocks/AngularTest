@@ -5,7 +5,7 @@ export class WeekendResults {
   race: RaceResult[];
   qualifying: QualifyingResult[];
   constructor() {
-    this.race = [];
+    this.qualifying = [];
     this.race = [];
   }
 }

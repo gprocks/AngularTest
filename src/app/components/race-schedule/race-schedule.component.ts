@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { RaceScheduleCurrentService } from '../../services/race-schedule/race-schedule-current.service';
-import { RaceScheduleCurrent } from '../../models/race-schedule-current';
-import { MatDialog } from '@angular/material';
-import { WeekendDetailsPopupComponent } from './weekend-details-popup/weekend-details-popup.component';
-import { ResultService } from '../../services/result/result.service';
+import { Component, OnInit } from "@angular/core";
+import { RaceScheduleCurrentService } from "../../services/race-schedule/race-schedule-current.service";
+import { RaceScheduleCurrent } from "../../models/race-schedule-current";
+import { MatDialog } from "@angular/material";
+import { WeekendDetailsPopupComponent } from "./weekend-details-popup/weekend-details-popup.component";
+import { ResultService } from "../../services/result/result.service";
+import { staggerItems } from "../../animations/stagger-list-item";
 
 @Component({
-  selector: 'app-race-schedule',
-  templateUrl: './race-schedule.component.html',
-  styleUrls: ['./race-schedule.component.css']
+  selector: "app-race-schedule",
+  templateUrl: "./race-schedule.component.html",
+  styleUrls: ["./race-schedule.component.css"],
+  animations: staggerItems
 })
 export class RaceScheduleComponent implements OnInit {
   public isLoading: boolean;
@@ -37,12 +39,12 @@ export class RaceScheduleComponent implements OnInit {
             raceWeekend = [];
           }
         }
-        console.log('building race schedule', this.raceSchedule);
+        console.log("building race schedule", this.raceSchedule);
       },
       error => {
         this.isLoading = false;
         this.error = true;
-        console.error('Error getting schedules: ' + error);
+        console.error("Error getting schedules: " + error);
       },
       () => {
         this.isLoading = false;
@@ -53,7 +55,7 @@ export class RaceScheduleComponent implements OnInit {
 
   openRaceWeekendPopup(raceWeekend: RaceScheduleCurrent[], round: number) {
     this.dialog.open(WeekendDetailsPopupComponent, {
-      panelClass: 'myapp-no-padding-dialog',
+      panelClass: "myapp-no-padding-dialog",
       data: {
         round: round,
         weekend: raceWeekend

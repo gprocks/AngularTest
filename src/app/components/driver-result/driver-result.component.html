@@ -1,5 +1,5 @@
-<ul *ngIf="driverResults.length > 0">
-  <li *ngFor="let driverResult of driverResults">
+<ul *ngIf="driverResults.length > 0" @list>
+  <li *ngFor="let driverResult of driverResults" @items>
     <!-- routerLink="/drivers/{{ driverResult.Driver.driverId }}" -->
     <div class="list-item">
       <span class="rank">{{ driverResult.position }}</span>

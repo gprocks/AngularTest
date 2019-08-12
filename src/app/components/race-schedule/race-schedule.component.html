@@ -15,8 +15,8 @@
       <mat-spinner *ngIf="isLoading; else listContent"></mat-spinner>
     </div>
     <ng-template #listContent>
-      <ul *ngIf="raceSchedule.length > 0">
-        <li *ngFor="let raceweekend of raceSchedule; let round = index">
+      <ul *ngIf="raceSchedule.length > 0" @list>
+        <li *ngFor="let raceweekend of raceSchedule; let round = index" @items>
           <div class="race-details list-item">
             <span class="country">{{ raceweekend[4].country }}</span>
             <span class="city">{{ raceweekend[4].location }}</span>

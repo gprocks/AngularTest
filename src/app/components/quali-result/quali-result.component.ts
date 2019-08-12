@@ -1,10 +1,12 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { QualifyingResult } from "../../models/qualifying-result";
+import { staggerItems } from "../../animations/stagger-list-item";
 
 @Component({
   selector: "app-quali-result",
   templateUrl: "./quali-result.component.html",
-  styleUrls: ["./quali-result.component.css"]
+  styleUrls: ["./quali-result.component.css"],
+  animations: staggerItems
 })
 export class QualiResultComponent implements OnInit {
   @Input() qualiResults: QualifyingResult[];

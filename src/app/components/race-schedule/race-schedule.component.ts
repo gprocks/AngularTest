@@ -3,7 +3,6 @@ import { RaceScheduleCurrentService } from "../../services/race-schedule/race-sc
 import { RaceScheduleCurrent } from "../../models/race-schedule-current";
 import { MatDialog } from "@angular/material";
 import { WeekendDetailsPopupComponent } from "./weekend-details-popup/weekend-details-popup.component";
-import { ResultService } from "../../services/result/result.service";
 import { staggerItems } from "../../animations/stagger-list-item";
 
 @Component({

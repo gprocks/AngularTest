@@ -251,9 +251,7 @@ mat-spinner {
 }
 
 .team-williams {
-  background: #fff;
-  border: 1px solid #b0b0b0;
-  box-sizing: border-box;
+  background: #0600ef;
 }
 
 .team-racing_point {
@@ -270,6 +268,15 @@ mat-spinner {
 
 .team-toro_rosso {
   background: #0032ff;
+}
+
+.team-toro_rosso {
+  background: #0032ff;
+}
+
+.team-alphatauri,
+.team-alpha_tauri {
+  background: #ffffff;
 }
 
 .team-renault {
@@ -293,5 +300,5 @@ mat-spinner {
 }
 
 .team-haas {
-  background: #bd9e57;
+  background: #787878;
 }

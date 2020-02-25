@@ -226,7 +226,7 @@
   },
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_fp1",
-    "summary": "(TBC) First Practice Session (Chinese Grand Prix)",
+    "summary": "First Practice Session (Chinese Grand Prix)",
     "dtstamp": "20200219T140100Z",
     "dtstart": "20200417T030000Z",
     "dtend": "20200417T043000Z",
@@ -241,7 +241,7 @@
   },
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_fp2",
-    "summary": "(TBC) Second Practice Session (Chinese Grand Prix)",
+    "summary": "Second Practice Session (Chinese Grand Prix)",
     "dtstamp": "20200219T140100Z",
     "dtstart": "20200417T070000Z",
     "dtend": "20200417T083000Z",
@@ -256,7 +256,7 @@
   },
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_fp3",
-    "summary": "(TBC) Third Practice Session (Chinese Grand Prix)",
+    "summary": "Third Practice Session (Chinese Grand Prix)",
     "dtstamp": "20200219T140100Z",
     "dtstart": "20200418T040000Z",
     "dtend": "20200418T050000Z",
@@ -271,7 +271,7 @@
   },
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_qualifying",
-    "summary": "(TBC) Qualifying Session (Chinese Grand Prix)",
+    "summary": "Qualifying Session (Chinese Grand Prix)",
     "dtstamp": "20200219T140100Z",
     "dtstart": "20200418T070000Z",
     "dtend": "20200418T080000Z",
@@ -286,7 +286,7 @@
   },
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_race",
-    "summary": "(TBC) Chinese Grand Prix",
+    "summary": "Chinese Grand Prix",
     "dtstamp": "20200219T140100Z",
     "dtstart": "20200419T061000Z",
     "dtend": "20200419T081000Z",

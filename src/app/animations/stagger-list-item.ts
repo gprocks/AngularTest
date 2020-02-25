@@ -4,10 +4,10 @@ import {
   animateChild,
   transition,
   trigger,
-  query as q,
+  query,
   stagger
 } from "@angular/animations";
-const query = (s, a, o = { optional: true }) => q(s, a, o);
+// const query = (s, a, o = { optional: true }) => q(s, a, o);
 
 export const staggerItems = [
   // nice stagger effect when showing existing elements

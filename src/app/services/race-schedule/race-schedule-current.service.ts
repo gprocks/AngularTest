@@ -52,10 +52,11 @@ export class RaceScheduleCurrentService {
   }
 
   getNationality(event: string) {
-    return event.replace(
-      /(\(|\)| Grand Prix|Session |First |Second |Third |Practice |Qualifying )+/gi,
+    let evt =  event.replace(
+      /(\(|\)| Grand Prix|Session |1 |2 |3 |Practice | Qualifying|Free )+/gi,
       ""
     );
+    return evt;
   }
 
   setNextRaceSubject() {

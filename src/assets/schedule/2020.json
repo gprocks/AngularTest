@@ -1,758 +1,8 @@
 [
   {
     "uid": "http://2020.f1calendar.com/#GP0_2020_fp1",
-    "summary": "First Practice Session (Australian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200313T010000Z",
-    "dtend": "20200313T023000Z",
-    "sequence": "2020",
-    "geo": [
-      "-37.8373",
-      "144.9666"
-    ],
-    "location": "Melbourne",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP0_2020_fp2",
-    "summary": "Second Practice Session (Australian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200313T050000Z",
-    "dtend": "20200313T063000Z",
-    "sequence": "2020",
-    "geo": [
-      "-37.8373",
-      "144.9666"
-    ],
-    "location": "Melbourne",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP0_2020_fp3",
-    "summary": "Third Practice Session (Australian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200314T030000Z",
-    "dtend": "20200314T040000Z",
-    "sequence": "2020",
-    "geo": [
-      "-37.8373",
-      "144.9666"
-    ],
-    "location": "Melbourne",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP0_2020_qualifying",
-    "summary": "Qualifying Session (Australian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200314T060000Z",
-    "dtend": "20200314T070000Z",
-    "sequence": "2020",
-    "geo": [
-      "-37.8373",
-      "144.9666"
-    ],
-    "location": "Melbourne",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP0_2020_race",
-    "summary": "Australian Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200315T051000Z",
-    "dtend": "20200315T071000Z",
-    "sequence": "2020",
-    "geo": [
-      "-37.8373",
-      "144.9666"
-    ],
-    "location": "Melbourne",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP1_2020_fp1",
-    "summary": "First Practice Session (Bahrain Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200320T110000Z",
-    "dtend": "20200320T123000Z",
-    "sequence": "2020",
-    "geo": [
-      "26.037",
-      "50.5112"
-    ],
-    "location": "Sakhir",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP1_2020_fp2",
-    "summary": "Second Practice Session (Bahrain Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200320T150000Z",
-    "dtend": "20200320T163000Z",
-    "sequence": "2020",
-    "geo": [
-      "26.037",
-      "50.5112"
-    ],
-    "location": "Sakhir",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP1_2020_fp3",
-    "summary": "Third Practice Session (Bahrain Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200321T120000Z",
-    "dtend": "20200321T130000Z",
-    "sequence": "2020",
-    "geo": [
-      "26.037",
-      "50.5112"
-    ],
-    "location": "Sakhir",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP1_2020_qualifying",
-    "summary": "Qualifying Session (Bahrain Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200321T150000Z",
-    "dtend": "20200321T160000Z",
-    "sequence": "2020",
-    "geo": [
-      "26.037",
-      "50.5112"
-    ],
-    "location": "Sakhir",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP1_2020_race",
-    "summary": "Bahrain Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200322T151000Z",
-    "dtend": "20200322T171000Z",
-    "sequence": "2020",
-    "geo": [
-      "26.037",
-      "50.5112"
-    ],
-    "location": "Sakhir",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP2_2020_fp1",
-    "summary": "First Practice Session (Vietnamese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200403T040000Z",
-    "dtend": "20200403T053000Z",
-    "sequence": "2020",
-    "geo": [
-      "21.016597",
-      "105.765736"
-    ],
-    "location": "Hanoi",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP2_2020_fp2",
-    "summary": "Second Practice Session (Vietnamese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200403T080000Z",
-    "dtend": "20200403T093000Z",
-    "sequence": "2020",
-    "geo": [
-      "21.016597",
-      "105.765736"
-    ],
-    "location": "Hanoi",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP2_2020_fp3",
-    "summary": "Third Practice Session (Vietnamese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200404T050000Z",
-    "dtend": "20200404T060000Z",
-    "sequence": "2020",
-    "geo": [
-      "21.016597",
-      "105.765736"
-    ],
-    "location": "Hanoi",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP2_2020_qualifying",
-    "summary": "Qualifying Session (Vietnamese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200404T080000Z",
-    "dtend": "20200404T090000Z",
-    "sequence": "2020",
-    "geo": [
-      "21.016597",
-      "105.765736"
-    ],
-    "location": "Hanoi",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP2_2020_race",
-    "summary": "Vietnamese Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200405T071000Z",
-    "dtend": "20200405T091000Z",
-    "sequence": "2020",
-    "geo": [
-      "21.016597",
-      "105.765736"
-    ],
-    "location": "Hanoi",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP3_2020_fp1",
-    "summary": "First Practice Session (Chinese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200417T030000Z",
-    "dtend": "20200417T043000Z",
-    "sequence": "2020",
-    "geo": [
-      "31.3807",
-      "121.2498"
-    ],
-    "location": "Shanghai",
-    "status": "TENTATIVE",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP3_2020_fp2",
-    "summary": "Second Practice Session (Chinese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200417T070000Z",
-    "dtend": "20200417T083000Z",
-    "sequence": "2020",
-    "geo": [
-      "31.3807",
-      "121.2498"
-    ],
-    "location": "Shanghai",
-    "status": "TENTATIVE",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP3_2020_fp3",
-    "summary": "Third Practice Session (Chinese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200418T040000Z",
-    "dtend": "20200418T050000Z",
-    "sequence": "2020",
-    "geo": [
-      "31.3807",
-      "121.2498"
-    ],
-    "location": "Shanghai",
-    "status": "TENTATIVE",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP3_2020_qualifying",
-    "summary": "Qualifying Session (Chinese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200418T070000Z",
-    "dtend": "20200418T080000Z",
-    "sequence": "2020",
-    "geo": [
-      "31.3807",
-      "121.2498"
-    ],
-    "location": "Shanghai",
-    "status": "TENTATIVE",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP3_2020_race",
-    "summary": "Chinese Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200419T061000Z",
-    "dtend": "20200419T081000Z",
-    "sequence": "2020",
-    "geo": [
-      "31.3807",
-      "121.2498"
-    ],
-    "location": "Shanghai",
-    "status": "TENTATIVE",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP4_2020_fp1",
-    "summary": "First Practice Session (Dutch Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200501T090000Z",
-    "dtend": "20200501T103000Z",
-    "sequence": "2020",
-    "geo": [
-      "52.388408",
-      "4.547122"
-    ],
-    "location": "Zandvoort",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP4_2020_fp2",
-    "summary": "Second Practice Session (Dutch Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200501T130000Z",
-    "dtend": "20200501T143000Z",
-    "sequence": "2020",
-    "geo": [
-      "52.388408",
-      "4.547122"
-    ],
-    "location": "Zandvoort",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP4_2020_fp3",
-    "summary": "Third Practice Session (Dutch Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200502T100000Z",
-    "dtend": "20200502T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "52.388408",
-      "4.547122"
-    ],
-    "location": "Zandvoort",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP4_2020_qualifying",
-    "summary": "Qualifying Session (Dutch Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200502T130000Z",
-    "dtend": "20200502T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "52.388408",
-      "4.547122"
-    ],
-    "location": "Zandvoort",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP4_2020_race",
-    "summary": "Dutch Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200503T131000Z",
-    "dtend": "20200503T151000Z",
-    "sequence": "2020",
-    "geo": [
-      "52.388408",
-      "4.547122"
-    ],
-    "location": "Zandvoort",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP5_2020_fp1",
-    "summary": "First Practice Session (Spanish Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200508T090000Z",
-    "dtend": "20200508T103000Z",
-    "sequence": "2020",
-    "geo": [
-      "41.5638",
-      "2.2585"
-    ],
-    "location": "Barcelona",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP5_2020_fp2",
-    "summary": "Second Practice Session (Spanish Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200508T130000Z",
-    "dtend": "20200508T143000Z",
-    "sequence": "2020",
-    "geo": [
-      "41.5638",
-      "2.2585"
-    ],
-    "location": "Barcelona",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP5_2020_fp3",
-    "summary": "Third Practice Session (Spanish Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200509T100000Z",
-    "dtend": "20200509T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "41.5638",
-      "2.2585"
-    ],
-    "location": "Barcelona",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP5_2020_qualifying",
-    "summary": "Qualifying Session (Spanish Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200509T130000Z",
-    "dtend": "20200509T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "41.5638",
-      "2.2585"
-    ],
-    "location": "Barcelona",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP5_2020_race",
-    "summary": "Spanish Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200510T131000Z",
-    "dtend": "20200510T151000Z",
-    "sequence": "2020",
-    "geo": [
-      "41.5638",
-      "2.2585"
-    ],
-    "location": "Barcelona",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP6_2020_fp1",
-    "summary": "First Practice Session (Monaco Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200521T090000Z",
-    "dtend": "20200521T103000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.7338",
-      "7.4215"
-    ],
-    "location": "Monte Carlo",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP6_2020_fp2",
-    "summary": "Second Practice Session (Monaco Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200521T130000Z",
-    "dtend": "20200521T143000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.7338",
-      "7.4215"
-    ],
-    "location": "Monte Carlo",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP6_2020_fp3",
-    "summary": "Third Practice Session (Monaco Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200523T100000Z",
-    "dtend": "20200523T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.7338",
-      "7.4215"
-    ],
-    "location": "Monte Carlo",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP6_2020_qualifying",
-    "summary": "Qualifying Session (Monaco Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200523T130000Z",
-    "dtend": "20200523T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.7338",
-      "7.4215"
-    ],
-    "location": "Monte Carlo",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP6_2020_race",
-    "summary": "Monaco Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200524T131000Z",
-    "dtend": "20200524T151000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.7338",
-      "7.4215"
-    ],
-    "location": "Monte Carlo",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP7_2020_fp1",
-    "summary": "First Practice Session (Azerbaijan Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200605T090000Z",
-    "dtend": "20200605T103000Z",
-    "sequence": "2020",
-    "geo": [
-      "40.3699",
-      "49.8433"
-    ],
-    "location": "Baku",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP7_2020_fp2",
-    "summary": "Second Practice Session (Azerbaijan Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200605T130000Z",
-    "dtend": "20200605T143000Z",
-    "sequence": "2020",
-    "geo": [
-      "40.3699",
-      "49.8433"
-    ],
-    "location": "Baku",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP7_2020_fp3",
-    "summary": "Third Practice Session (Azerbaijan Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200606T100000Z",
-    "dtend": "20200606T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "40.3699",
-      "49.8433"
-    ],
-    "location": "Baku",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP7_2020_qualifying",
-    "summary": "Qualifying Session (Azerbaijan Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200606T130000Z",
-    "dtend": "20200606T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "40.3699",
-      "49.8433"
-    ],
-    "location": "Baku",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP7_2020_race",
-    "summary": "Azerbaijan Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200607T121000Z",
-    "dtend": "20200607T141000Z",
-    "sequence": "2020",
-    "geo": [
-      "40.3699",
-      "49.8433"
-    ],
-    "location": "Baku",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP8_2020_fp1",
-    "summary": "First Practice Session (Canadian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200612T150000Z",
-    "dtend": "20200612T163000Z",
-    "sequence": "2020",
-    "geo": [
-      "45.5034",
-      "-73.5267"
-    ],
-    "location": "Montreal",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP8_2020_fp2",
-    "summary": "Second Practice Session (Canadian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200612T190000Z",
-    "dtend": "20200612T203000Z",
-    "sequence": "2020",
-    "geo": [
-      "45.5034",
-      "-73.5267"
-    ],
-    "location": "Montreal",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP8_2020_fp3",
-    "summary": "Third Practice Session (Canadian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200613T150000Z",
-    "dtend": "20200613T160000Z",
-    "sequence": "2020",
-    "geo": [
-      "45.5034",
-      "-73.5267"
-    ],
-    "location": "Montreal",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP8_2020_qualifying",
-    "summary": "Qualifying Session (Canadian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200613T180000Z",
-    "dtend": "20200613T190000Z",
-    "sequence": "2020",
-    "geo": [
-      "45.5034",
-      "-73.5267"
-    ],
-    "location": "Montreal",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP8_2020_race",
-    "summary": "Canadian Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200614T181000Z",
-    "dtend": "20200614T201000Z",
-    "sequence": "2020",
-    "geo": [
-      "45.5034",
-      "-73.5267"
-    ],
-    "location": "Montreal",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP9_2020_fp1",
-    "summary": "First Practice Session (French Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200626T090000Z",
-    "dtend": "20200626T103000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.2517",
-      "5.7935"
-    ],
-    "location": "Paul Ricard",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP9_2020_fp2",
-    "summary": "Second Practice Session (French Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200626T130000Z",
-    "dtend": "20200626T143000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.2517",
-      "5.7935"
-    ],
-    "location": "Paul Ricard",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP9_2020_fp3",
-    "summary": "Third Practice Session (French Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200627T100000Z",
-    "dtend": "20200627T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.2517",
-      "5.7935"
-    ],
-    "location": "Paul Ricard",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP9_2020_qualifying",
-    "summary": "Qualifying Session (French Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200627T130000Z",
-    "dtend": "20200627T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.2517",
-      "5.7935"
-    ],
-    "location": "Paul Ricard",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP9_2020_race",
-    "summary": "French Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200628T131000Z",
-    "dtend": "20200628T151000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.2517",
-      "5.7935"
-    ],
-    "location": "Paul Ricard",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP10_2020_fp1",
-    "summary": "First Practice Session (Austrian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "summary": "Free Practice 1 (Austrian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200703T090000Z",
     "dtend": "20200703T103000Z",
     "sequence": "2020",
@@ -762,12 +12,12 @@
     ],
     "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "First Practice Session"
+    "categories": "Free Practice 1"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP10_2020_fp2",
-    "summary": "Second Practice Session (Austrian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP0_2020_fp2",
+    "summary": "Free Practice 2 (Austrian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200703T130000Z",
     "dtend": "20200703T143000Z",
     "sequence": "2020",
@@ -777,12 +27,12 @@
     ],
     "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "Second Practice Session"
+    "categories": "Free Practice 2"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP10_2020_fp3",
-    "summary": "Third Practice Session (Austrian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP0_2020_fp3",
+    "summary": "Free Practice 3 (Austrian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200704T100000Z",
     "dtend": "20200704T110000Z",
     "sequence": "2020",
@@ -792,12 +42,12 @@
     ],
     "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "Third Practice Session"
+    "categories": "Free Practice 3"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP10_2020_qualifying",
-    "summary": "Qualifying Session (Austrian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP0_2020_qualifying",
+    "summary": "Qualifying (Austrian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200704T130000Z",
     "dtend": "20200704T140000Z",
     "sequence": "2020",
@@ -807,12 +57,12 @@
     ],
     "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "Qualifying Session"
+    "categories": "Qualifying"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP10_2020_race",
+    "uid": "http://2020.f1calendar.com/#GP0_2020_race",
     "summary": "Austrian Grand Prix",
-    "dtstamp": "20200219T140100Z",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200705T131000Z",
     "dtend": "20200705T151000Z",
     "sequence": "2020",
@@ -825,86 +75,86 @@
     "categories": "Grand Prix"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP11_2020_fp1",
-    "summary": "First Practice Session (British Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200717T100000Z",
-    "dtend": "20200717T113000Z",
+    "uid": "http://2020.f1calendar.com/#GP1_2020_fp1",
+    "summary": "Free Practice 1 (Steiermark (Austrian) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200710T090000Z",
+    "dtend": "20200710T103000Z",
     "sequence": "2020",
     "geo": [
-      "52.0706",
-      "-1.0174"
+      "47.2225",
+      "14.7607"
     ],
-    "location": "Silverstone",
+    "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "First Practice Session"
+    "categories": "Free Practice 1"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP11_2020_fp2",
-    "summary": "Second Practice Session (British Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200717T140000Z",
-    "dtend": "20200717T153000Z",
+    "uid": "http://2020.f1calendar.com/#GP1_2020_fp2",
+    "summary": "Free Practice 2 (Steiermark (Austrian) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200710T130000Z",
+    "dtend": "20200710T143000Z",
     "sequence": "2020",
     "geo": [
-      "52.0706",
-      "-1.0174"
+      "47.2225",
+      "14.7607"
     ],
-    "location": "Silverstone",
+    "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "Second Practice Session"
+    "categories": "Free Practice 2"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP11_2020_fp3",
-    "summary": "Third Practice Session (British Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200718T110000Z",
-    "dtend": "20200718T120000Z",
+    "uid": "http://2020.f1calendar.com/#GP1_2020_fp3",
+    "summary": "Free Practice 3 (Steiermark (Austrian) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200711T100000Z",
+    "dtend": "20200711T110000Z",
     "sequence": "2020",
     "geo": [
-      "52.0706",
-      "-1.0174"
+      "47.2225",
+      "14.7607"
     ],
-    "location": "Silverstone",
+    "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "Third Practice Session"
+    "categories": "Free Practice 3"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP11_2020_qualifying",
-    "summary": "Qualifying Session (British Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200718T140000Z",
-    "dtend": "20200718T150000Z",
+    "uid": "http://2020.f1calendar.com/#GP1_2020_qualifying",
+    "summary": "Qualifying (Steiermark (Austrian) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200711T130000Z",
+    "dtend": "20200711T140000Z",
     "sequence": "2020",
     "geo": [
-      "52.0706",
-      "-1.0174"
+      "47.2225",
+      "14.7607"
     ],
-    "location": "Silverstone",
+    "location": "Spielberg",
     "status": "CONFIRMED",
-    "categories": "Qualifying Session"
+    "categories": "Qualifying"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP11_2020_race",
-    "summary": "British Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200719T141000Z",
-    "dtend": "20200719T161000Z",
+    "uid": "http://2020.f1calendar.com/#GP1_2020_race",
+    "summary": "Steiermark (Austrian) Grand Prix",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200712T131000Z",
+    "dtend": "20200712T151000Z",
     "sequence": "2020",
     "geo": [
-      "52.0706",
-      "-1.0174"
+      "47.2225",
+      "14.7607"
     ],
-    "location": "Silverstone",
+    "location": "Spielberg",
     "status": "CONFIRMED",
     "categories": "Grand Prix"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP12_2020_fp1",
-    "summary": "First Practice Session (Hungarian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200731T090000Z",
-    "dtend": "20200731T103000Z",
+    "uid": "http://2020.f1calendar.com/#GP2_2020_fp1",
+    "summary": "Free Practice 1 (Hungarian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200717T090000Z",
+    "dtend": "20200717T103000Z",
     "sequence": "2020",
     "geo": [
       "47.583",
@@ -912,14 +162,14 @@
     ],
     "location": "Budapest",
     "status": "CONFIRMED",
-    "categories": "First Practice Session"
+    "categories": "Free Practice 1"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP12_2020_fp2",
-    "summary": "Second Practice Session (Hungarian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200731T130000Z",
-    "dtend": "20200731T143000Z",
+    "uid": "http://2020.f1calendar.com/#GP2_2020_fp2",
+    "summary": "Free Practice 2 (Hungarian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200717T130000Z",
+    "dtend": "20200717T143000Z",
     "sequence": "2020",
     "geo": [
       "47.583",
@@ -927,57 +177,282 @@
     ],
     "location": "Budapest",
     "status": "CONFIRMED",
-    "categories": "Second Practice Session"
+    "categories": "Free Practice 2"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP12_2020_fp3",
-    "summary": "Third Practice Session (Hungarian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP2_2020_fp3",
+    "summary": "Free Practice 3 (Hungarian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200718T100000Z",
+    "dtend": "20200718T110000Z",
+    "sequence": "2020",
+    "geo": [
+      "47.583",
+      "19.2526"
+    ],
+    "location": "Budapest",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP2_2020_qualifying",
+    "summary": "Qualifying (Hungarian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200718T130000Z",
+    "dtend": "20200718T140000Z",
+    "sequence": "2020",
+    "geo": [
+      "47.583",
+      "19.2526"
+    ],
+    "location": "Budapest",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP2_2020_race",
+    "summary": "Hungarian Grand Prix",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200719T131000Z",
+    "dtend": "20200719T151000Z",
+    "sequence": "2020",
+    "geo": [
+      "47.583",
+      "19.2526"
+    ],
+    "location": "Budapest",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP3_2020_fp1",
+    "summary": "Free Practice 1 (British Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200731T100000Z",
+    "dtend": "20200731T113000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP3_2020_fp2",
+    "summary": "Free Practice 2 (British Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200731T140000Z",
+    "dtend": "20200731T153000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP3_2020_fp3",
+    "summary": "Free Practice 3 (British Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200801T100000Z",
     "dtend": "20200801T110000Z",
     "sequence": "2020",
     "geo": [
-      "47.583",
-      "19.2526"
+      "52.0706",
+      "-1.0174"
     ],
-    "location": "Budapest",
+    "location": "Silverstone",
     "status": "CONFIRMED",
-    "categories": "Third Practice Session"
+    "categories": "Free Practice 3"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP12_2020_qualifying",
-    "summary": "Qualifying Session (Hungarian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP3_2020_qualifying",
+    "summary": "Qualifying (British Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200801T130000Z",
     "dtend": "20200801T140000Z",
     "sequence": "2020",
     "geo": [
-      "47.583",
-      "19.2526"
+      "52.0706",
+      "-1.0174"
     ],
-    "location": "Budapest",
+    "location": "Silverstone",
     "status": "CONFIRMED",
-    "categories": "Qualifying Session"
+    "categories": "Qualifying"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP12_2020_race",
-    "summary": "Hungarian Grand Prix",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP3_2020_race",
+    "summary": "British Grand Prix",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200802T131000Z",
     "dtend": "20200802T151000Z",
     "sequence": "2020",
     "geo": [
-      "47.583",
-      "19.2526"
+      "52.0706",
+      "-1.0174"
     ],
-    "location": "Budapest",
+    "location": "Silverstone",
     "status": "CONFIRMED",
     "categories": "Grand Prix"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP13_2020_fp1",
-    "summary": "First Practice Session (Belgian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP4_2020_fp1",
+    "summary": "Free Practice 1 (70th Anniversary (British) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200807T100000Z",
+    "dtend": "20200807T113000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP4_2020_fp2",
+    "summary": "Free Practice 2 (70th Anniversary (British) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200807T140000Z",
+    "dtend": "20200807T153000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP4_2020_fp3",
+    "summary": "Free Practice 3 (70th Anniversary (British) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200808T110000Z",
+    "dtend": "20200808T120000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP4_2020_qualifying",
+    "summary": "Qualifying (70th Anniversary (British) Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200808T140000Z",
+    "dtend": "20200808T150000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP4_2020_race",
+    "summary": "70th Anniversary (British) Grand Prix",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200809T141000Z",
+    "dtend": "20200809T161000Z",
+    "sequence": "2020",
+    "geo": [
+      "52.0706",
+      "-1.0174"
+    ],
+    "location": "Silverstone",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP5_2020_fp1",
+    "summary": "Free Practice 1 (Spanish Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200814T090000Z",
+    "dtend": "20200814T103000Z",
+    "sequence": "2020",
+    "geo": [
+      "41.5638",
+      "2.2585"
+    ],
+    "location": "Barcelona",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP5_2020_fp2",
+    "summary": "Free Practice 2 (Spanish Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200814T130000Z",
+    "dtend": "20200814T143000Z",
+    "sequence": "2020",
+    "geo": [
+      "41.5638",
+      "2.2585"
+    ],
+    "location": "Barcelona",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP5_2020_fp3",
+    "summary": "Free Practice 3 (Spanish Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200815T100000Z",
+    "dtend": "20200815T110000Z",
+    "sequence": "2020",
+    "geo": [
+      "41.5638",
+      "2.2585"
+    ],
+    "location": "Barcelona",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP5_2020_qualifying",
+    "summary": "Qualifying (Spanish Grand Prix)",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200815T130000Z",
+    "dtend": "20200815T140000Z",
+    "sequence": "2020",
+    "geo": [
+      "41.5638",
+      "2.2585"
+    ],
+    "location": "Barcelona",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP5_2020_race",
+    "summary": "Spanish Grand Prix",
+    "dtstamp": "20200701T030600Z",
+    "dtstart": "20200816T131000Z",
+    "dtend": "20200816T151000Z",
+    "sequence": "2020",
+    "geo": [
+      "41.5638",
+      "2.2585"
+    ],
+    "location": "Barcelona",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP6_2020_fp1",
+    "summary": "Free Practice 1 (Belgian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200828T090000Z",
     "dtend": "20200828T103000Z",
     "sequence": "2020",
@@ -987,12 +462,12 @@
     ],
     "location": "Spa-Francorchamps",
     "status": "CONFIRMED",
-    "categories": "First Practice Session"
+    "categories": "Free Practice 1"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP13_2020_fp2",
-    "summary": "Second Practice Session (Belgian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP6_2020_fp2",
+    "summary": "Free Practice 2 (Belgian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200828T130000Z",
     "dtend": "20200828T143000Z",
     "sequence": "2020",
@@ -1002,12 +477,12 @@
     ],
     "location": "Spa-Francorchamps",
     "status": "CONFIRMED",
-    "categories": "Second Practice Session"
+    "categories": "Free Practice 2"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP13_2020_fp3",
-    "summary": "Third Practice Session (Belgian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP6_2020_fp3",
+    "summary": "Free Practice 3 (Belgian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200829T100000Z",
     "dtend": "20200829T110000Z",
     "sequence": "2020",
@@ -1017,12 +492,12 @@
     ],
     "location": "Spa-Francorchamps",
     "status": "CONFIRMED",
-    "categories": "Third Practice Session"
+    "categories": "Free Practice 3"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP13_2020_qualifying",
-    "summary": "Qualifying Session (Belgian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP6_2020_qualifying",
+    "summary": "Qualifying (Belgian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200829T130000Z",
     "dtend": "20200829T140000Z",
     "sequence": "2020",
@@ -1032,12 +507,12 @@
     ],
     "location": "Spa-Francorchamps",
     "status": "CONFIRMED",
-    "categories": "Qualifying Session"
+    "categories": "Qualifying"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP13_2020_race",
+    "uid": "http://2020.f1calendar.com/#GP6_2020_race",
     "summary": "Belgian Grand Prix",
-    "dtstamp": "20200219T140100Z",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200830T131000Z",
     "dtend": "20200830T151000Z",
     "sequence": "2020",
@@ -1050,9 +525,9 @@
     "categories": "Grand Prix"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP14_2020_fp1",
-    "summary": "First Practice Session (Italian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP7_2020_fp1",
+    "summary": "Free Practice 1 (Italian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200904T090000Z",
     "dtend": "20200904T103000Z",
     "sequence": "2020",
@@ -1062,12 +537,12 @@
     ],
     "location": "Monza",
     "status": "CONFIRMED",
-    "categories": "First Practice Session"
+    "categories": "Free Practice 1"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP14_2020_fp2",
-    "summary": "Second Practice Session (Italian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP7_2020_fp2",
+    "summary": "Free Practice 2 (Italian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200904T130000Z",
     "dtend": "20200904T143000Z",
     "sequence": "2020",
@@ -1077,12 +552,12 @@
     ],
     "location": "Monza",
     "status": "CONFIRMED",
-    "categories": "Second Practice Session"
+    "categories": "Free Practice 2"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP14_2020_fp3",
-    "summary": "Third Practice Session (Italian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP7_2020_fp3",
+    "summary": "Free Practice 3 (Italian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200905T100000Z",
     "dtend": "20200905T110000Z",
     "sequence": "2020",
@@ -1092,12 +567,12 @@
     ],
     "location": "Monza",
     "status": "CONFIRMED",
-    "categories": "Third Practice Session"
+    "categories": "Free Practice 3"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP14_2020_qualifying",
-    "summary": "Qualifying Session (Italian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
+    "uid": "http://2020.f1calendar.com/#GP7_2020_qualifying",
+    "summary": "Qualifying (Italian Grand Prix)",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200905T130000Z",
     "dtend": "20200905T140000Z",
     "sequence": "2020",
@@ -1107,12 +582,12 @@
     ],
     "location": "Monza",
     "status": "CONFIRMED",
-    "categories": "Qualifying Session"
+    "categories": "Qualifying"
   },
   {
-    "uid": "http://2020.f1calendar.com/#GP14_2020_race",
+    "uid": "http://2020.f1calendar.com/#GP7_2020_race",
     "summary": "Italian Grand Prix",
-    "dtstamp": "20200219T140100Z",
+    "dtstamp": "20200701T030600Z",
     "dtstart": "20200906T131000Z",
     "dtend": "20200906T151000Z",
     "sequence": "2020",
@@ -1121,531 +596,6 @@
       "9.2825"
     ],
     "location": "Monza",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP15_2020_fp1",
-    "summary": "First Practice Session (Singapore Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200918T083000Z",
-    "dtend": "20200918T100000Z",
-    "sequence": "2020",
-    "geo": [
-      "1.2857",
-      "103.8575"
-    ],
-    "location": "Singapore",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP15_2020_fp2",
-    "summary": "Second Practice Session (Singapore Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200918T123000Z",
-    "dtend": "20200918T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "1.2857",
-      "103.8575"
-    ],
-    "location": "Singapore",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP15_2020_fp3",
-    "summary": "Third Practice Session (Singapore Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200919T100000Z",
-    "dtend": "20200919T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "1.2857",
-      "103.8575"
-    ],
-    "location": "Singapore",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP15_2020_qualifying",
-    "summary": "Qualifying Session (Singapore Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200919T130000Z",
-    "dtend": "20200919T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "1.2857",
-      "103.8575"
-    ],
-    "location": "Singapore",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP15_2020_race",
-    "summary": "Singapore Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200920T121000Z",
-    "dtend": "20200920T141000Z",
-    "sequence": "2020",
-    "geo": [
-      "1.2857",
-      "103.8575"
-    ],
-    "location": "Singapore",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP16_2020_fp1",
-    "summary": "First Practice Session (Russian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200925T080000Z",
-    "dtend": "20200925T093000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.6203",
-      "39.712"
-    ],
-    "location": "Sochi",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP16_2020_fp2",
-    "summary": "Second Practice Session (Russian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200925T120000Z",
-    "dtend": "20200925T133000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.6203",
-      "39.712"
-    ],
-    "location": "Sochi",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP16_2020_fp3",
-    "summary": "Third Practice Session (Russian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200926T090000Z",
-    "dtend": "20200926T100000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.6203",
-      "39.712"
-    ],
-    "location": "Sochi",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP16_2020_qualifying",
-    "summary": "Qualifying Session (Russian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200926T120000Z",
-    "dtend": "20200926T130000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.6203",
-      "39.712"
-    ],
-    "location": "Sochi",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP16_2020_race",
-    "summary": "Russian Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20200927T111000Z",
-    "dtend": "20200927T131000Z",
-    "sequence": "2020",
-    "geo": [
-      "43.6203",
-      "39.712"
-    ],
-    "location": "Sochi",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP17_2020_fp1",
-    "summary": "First Practice Session (Japanese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201009T020000Z",
-    "dtend": "20201009T033000Z",
-    "sequence": "2020",
-    "geo": [
-      "35.3689",
-      "138.9256"
-    ],
-    "location": "Suzuka",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP17_2020_fp2",
-    "summary": "Second Practice Session (Japanese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201009T060000Z",
-    "dtend": "20201009T073000Z",
-    "sequence": "2020",
-    "geo": [
-      "35.3689",
-      "138.9256"
-    ],
-    "location": "Suzuka",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP17_2020_fp3",
-    "summary": "Third Practice Session (Japanese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201010T030000Z",
-    "dtend": "20201010T040000Z",
-    "sequence": "2020",
-    "geo": [
-      "35.3689",
-      "138.9256"
-    ],
-    "location": "Suzuka",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP17_2020_qualifying",
-    "summary": "Qualifying Session (Japanese Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201010T060000Z",
-    "dtend": "20201010T070000Z",
-    "sequence": "2020",
-    "geo": [
-      "35.3689",
-      "138.9256"
-    ],
-    "location": "Suzuka",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP17_2020_race",
-    "summary": "Japanese Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201011T041000Z",
-    "dtend": "20201011T061000Z",
-    "sequence": "2020",
-    "geo": [
-      "35.3689",
-      "138.9256"
-    ],
-    "location": "Suzuka",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP18_2020_fp1",
-    "summary": "First Practice Session (United States Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201023T160000Z",
-    "dtend": "20201023T173000Z",
-    "sequence": "2020",
-    "geo": [
-      "30.1328",
-      "-97.6411"
-    ],
-    "location": "Austin",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP18_2020_fp2",
-    "summary": "Second Practice Session (United States Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201023T200000Z",
-    "dtend": "20201023T213000Z",
-    "sequence": "2020",
-    "geo": [
-      "30.1328",
-      "-97.6411"
-    ],
-    "location": "Austin",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP18_2020_fp3",
-    "summary": "Third Practice Session (United States Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201024T180000Z",
-    "dtend": "20201024T190000Z",
-    "sequence": "2020",
-    "geo": [
-      "30.1328",
-      "-97.6411"
-    ],
-    "location": "Austin",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP18_2020_qualifying",
-    "summary": "Qualifying Session (United States Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201024T210000Z",
-    "dtend": "20201024T220000Z",
-    "sequence": "2020",
-    "geo": [
-      "30.1328",
-      "-97.6411"
-    ],
-    "location": "Austin",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP18_2020_race",
-    "summary": "United States Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201025T191000Z",
-    "dtend": "20201025T211000Z",
-    "sequence": "2020",
-    "geo": [
-      "30.1328",
-      "-97.6411"
-    ],
-    "location": "Austin",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP19_2020_fp1",
-    "summary": "First Practice Session (Mexico City Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201030T170000Z",
-    "dtend": "20201030T183000Z",
-    "sequence": "2020",
-    "geo": [
-      "19.4028",
-      "-99.0986"
-    ],
-    "location": "Mexico City",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP19_2020_fp2",
-    "summary": "Second Practice Session (Mexico City Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201030T210000Z",
-    "dtend": "20201030T223000Z",
-    "sequence": "2020",
-    "geo": [
-      "19.4028",
-      "-99.0986"
-    ],
-    "location": "Mexico City",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP19_2020_fp3",
-    "summary": "Third Practice Session (Mexico City Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201031T160000Z",
-    "dtend": "20201031T170000Z",
-    "sequence": "2020",
-    "geo": [
-      "19.4028",
-      "-99.0986"
-    ],
-    "location": "Mexico City",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP19_2020_qualifying",
-    "summary": "Qualifying Session (Mexico City Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201031T190000Z",
-    "dtend": "20201031T200000Z",
-    "sequence": "2020",
-    "geo": [
-      "19.4028",
-      "-99.0986"
-    ],
-    "location": "Mexico City",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP19_2020_race",
-    "summary": "Mexico City Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201101T191000Z",
-    "dtend": "20201101T211000Z",
-    "sequence": "2020",
-    "geo": [
-      "19.4028",
-      "-99.0986"
-    ],
-    "location": "Mexico City",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP20_2020_fp1",
-    "summary": "First Practice Session (Brazilian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201113T140000Z",
-    "dtend": "20201113T153000Z",
-    "sequence": "2020",
-    "geo": [
-      "-23.7014",
-      "-46.6969"
-    ],
-    "location": "Sao Paulo",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP20_2020_fp2",
-    "summary": "Second Practice Session (Brazilian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201113T180000Z",
-    "dtend": "20201113T193000Z",
-    "sequence": "2020",
-    "geo": [
-      "-23.7014",
-      "-46.6969"
-    ],
-    "location": "Sao Paulo",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP20_2020_fp3",
-    "summary": "Third Practice Session (Brazilian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201114T150000Z",
-    "dtend": "20201114T160000Z",
-    "sequence": "2020",
-    "geo": [
-      "-23.7014",
-      "-46.6969"
-    ],
-    "location": "Sao Paulo",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP20_2020_qualifying",
-    "summary": "Qualifying Session (Brazilian Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201114T180000Z",
-    "dtend": "20201114T190000Z",
-    "sequence": "2020",
-    "geo": [
-      "-23.7014",
-      "-46.6969"
-    ],
-    "location": "Sao Paulo",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP20_2020_race",
-    "summary": "Brazilian Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201115T171000Z",
-    "dtend": "20201115T191000Z",
-    "sequence": "2020",
-    "geo": [
-      "-23.7014",
-      "-46.6969"
-    ],
-    "location": "Sao Paulo",
-    "status": "CONFIRMED",
-    "categories": "Grand Prix"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP21_2020_fp1",
-    "summary": "First Practice Session (Abu Dhabi Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201127T090000Z",
-    "dtend": "20201127T103000Z",
-    "sequence": "2020",
-    "geo": [
-      "24.4821",
-      "54.3482"
-    ],
-    "location": "Yas Island",
-    "status": "CONFIRMED",
-    "categories": "First Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP21_2020_fp2",
-    "summary": "Second Practice Session (Abu Dhabi Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201127T130000Z",
-    "dtend": "20201127T143000Z",
-    "sequence": "2020",
-    "geo": [
-      "24.4821",
-      "54.3482"
-    ],
-    "location": "Yas Island",
-    "status": "CONFIRMED",
-    "categories": "Second Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP21_2020_fp3",
-    "summary": "Third Practice Session (Abu Dhabi Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201128T100000Z",
-    "dtend": "20201128T110000Z",
-    "sequence": "2020",
-    "geo": [
-      "24.4821",
-      "54.3482"
-    ],
-    "location": "Yas Island",
-    "status": "CONFIRMED",
-    "categories": "Third Practice Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP21_2020_qualifying",
-    "summary": "Qualifying Session (Abu Dhabi Grand Prix)",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201128T130000Z",
-    "dtend": "20201128T140000Z",
-    "sequence": "2020",
-    "geo": [
-      "24.4821",
-      "54.3482"
-    ],
-    "location": "Yas Island",
-    "status": "CONFIRMED",
-    "categories": "Qualifying Session"
-  },
-  {
-    "uid": "http://2020.f1calendar.com/#GP21_2020_race",
-    "summary": "Abu Dhabi Grand Prix",
-    "dtstamp": "20200219T140100Z",
-    "dtstart": "20201129T131000Z",
-    "dtend": "20201129T151000Z",
-    "sequence": "2020",
-    "geo": [
-      "24.4821",
-      "54.3482"
-    ],
-    "location": "Yas Island",
     "status": "CONFIRMED",
     "categories": "Grand Prix"
   }

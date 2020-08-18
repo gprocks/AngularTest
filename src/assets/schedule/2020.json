@@ -2,7 +2,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP0_2020_fp1",
     "summary": "Free Practice 1 (Austrian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200703T090000Z",
     "dtend": "20200703T103000Z",
     "sequence": "2020",
@@ -17,7 +17,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP0_2020_fp2",
     "summary": "Free Practice 2 (Austrian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200703T130000Z",
     "dtend": "20200703T143000Z",
     "sequence": "2020",
@@ -32,7 +32,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP0_2020_fp3",
     "summary": "Free Practice 3 (Austrian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200704T100000Z",
     "dtend": "20200704T110000Z",
     "sequence": "2020",
@@ -47,7 +47,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP0_2020_qualifying",
     "summary": "Qualifying (Austrian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200704T130000Z",
     "dtend": "20200704T140000Z",
     "sequence": "2020",
@@ -62,7 +62,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP0_2020_race",
     "summary": "Austrian Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200705T131000Z",
     "dtend": "20200705T151000Z",
     "sequence": "2020",
@@ -77,7 +77,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP1_2020_fp1",
     "summary": "Free Practice 1 (Steiermark (Austrian) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200710T090000Z",
     "dtend": "20200710T103000Z",
     "sequence": "2020",
@@ -92,7 +92,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP1_2020_fp2",
     "summary": "Free Practice 2 (Steiermark (Austrian) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200710T130000Z",
     "dtend": "20200710T143000Z",
     "sequence": "2020",
@@ -107,7 +107,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP1_2020_fp3",
     "summary": "Free Practice 3 (Steiermark (Austrian) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200711T100000Z",
     "dtend": "20200711T110000Z",
     "sequence": "2020",
@@ -122,7 +122,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP1_2020_qualifying",
     "summary": "Qualifying (Steiermark (Austrian) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200711T130000Z",
     "dtend": "20200711T140000Z",
     "sequence": "2020",
@@ -137,7 +137,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP1_2020_race",
     "summary": "Steiermark (Austrian) Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200712T131000Z",
     "dtend": "20200712T151000Z",
     "sequence": "2020",
@@ -152,7 +152,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP2_2020_fp1",
     "summary": "Free Practice 1 (Hungarian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200717T090000Z",
     "dtend": "20200717T103000Z",
     "sequence": "2020",
@@ -167,7 +167,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP2_2020_fp2",
     "summary": "Free Practice 2 (Hungarian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200717T130000Z",
     "dtend": "20200717T143000Z",
     "sequence": "2020",
@@ -182,7 +182,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP2_2020_fp3",
     "summary": "Free Practice 3 (Hungarian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200718T100000Z",
     "dtend": "20200718T110000Z",
     "sequence": "2020",
@@ -197,7 +197,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP2_2020_qualifying",
     "summary": "Qualifying (Hungarian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200718T130000Z",
     "dtend": "20200718T140000Z",
     "sequence": "2020",
@@ -212,7 +212,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP2_2020_race",
     "summary": "Hungarian Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200719T131000Z",
     "dtend": "20200719T151000Z",
     "sequence": "2020",
@@ -227,7 +227,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_fp1",
     "summary": "Free Practice 1 (British Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200731T100000Z",
     "dtend": "20200731T113000Z",
     "sequence": "2020",
@@ -242,7 +242,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_fp2",
     "summary": "Free Practice 2 (British Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200731T140000Z",
     "dtend": "20200731T153000Z",
     "sequence": "2020",
@@ -257,7 +257,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_fp3",
     "summary": "Free Practice 3 (British Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200801T100000Z",
     "dtend": "20200801T110000Z",
     "sequence": "2020",
@@ -272,7 +272,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_qualifying",
     "summary": "Qualifying (British Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200801T130000Z",
     "dtend": "20200801T140000Z",
     "sequence": "2020",
@@ -287,7 +287,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP3_2020_race",
     "summary": "British Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200802T131000Z",
     "dtend": "20200802T151000Z",
     "sequence": "2020",
@@ -302,7 +302,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP4_2020_fp1",
     "summary": "Free Practice 1 (70th Anniversary (British) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200807T100000Z",
     "dtend": "20200807T113000Z",
     "sequence": "2020",
@@ -317,7 +317,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP4_2020_fp2",
     "summary": "Free Practice 2 (70th Anniversary (British) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200807T140000Z",
     "dtend": "20200807T153000Z",
     "sequence": "2020",
@@ -332,9 +332,9 @@
   {
     "uid": "http://2020.f1calendar.com/#GP4_2020_fp3",
     "summary": "Free Practice 3 (70th Anniversary (British) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
-    "dtstart": "20200808T110000Z",
-    "dtend": "20200808T120000Z",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200808T100000Z",
+    "dtend": "20200808T110000Z",
     "sequence": "2020",
     "geo": [
       "52.0706",
@@ -347,9 +347,9 @@
   {
     "uid": "http://2020.f1calendar.com/#GP4_2020_qualifying",
     "summary": "Qualifying (70th Anniversary (British) Grand Prix)",
-    "dtstamp": "20200701T030600Z",
-    "dtstart": "20200808T140000Z",
-    "dtend": "20200808T150000Z",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200808T130000Z",
+    "dtend": "20200808T140000Z",
     "sequence": "2020",
     "geo": [
       "52.0706",
@@ -362,9 +362,9 @@
   {
     "uid": "http://2020.f1calendar.com/#GP4_2020_race",
     "summary": "70th Anniversary (British) Grand Prix",
-    "dtstamp": "20200701T030600Z",
-    "dtstart": "20200809T141000Z",
-    "dtend": "20200809T161000Z",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200809T131000Z",
+    "dtend": "20200809T151000Z",
     "sequence": "2020",
     "geo": [
       "52.0706",
@@ -377,7 +377,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP5_2020_fp1",
     "summary": "Free Practice 1 (Spanish Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200814T090000Z",
     "dtend": "20200814T103000Z",
     "sequence": "2020",
@@ -392,7 +392,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP5_2020_fp2",
     "summary": "Free Practice 2 (Spanish Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200814T130000Z",
     "dtend": "20200814T143000Z",
     "sequence": "2020",
@@ -407,7 +407,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP5_2020_fp3",
     "summary": "Free Practice 3 (Spanish Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200815T100000Z",
     "dtend": "20200815T110000Z",
     "sequence": "2020",
@@ -422,7 +422,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP5_2020_qualifying",
     "summary": "Qualifying (Spanish Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200815T130000Z",
     "dtend": "20200815T140000Z",
     "sequence": "2020",
@@ -437,7 +437,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP5_2020_race",
     "summary": "Spanish Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200816T131000Z",
     "dtend": "20200816T151000Z",
     "sequence": "2020",
@@ -452,7 +452,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP6_2020_fp1",
     "summary": "Free Practice 1 (Belgian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200828T090000Z",
     "dtend": "20200828T103000Z",
     "sequence": "2020",
@@ -467,7 +467,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP6_2020_fp2",
     "summary": "Free Practice 2 (Belgian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200828T130000Z",
     "dtend": "20200828T143000Z",
     "sequence": "2020",
@@ -482,7 +482,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP6_2020_fp3",
     "summary": "Free Practice 3 (Belgian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200829T100000Z",
     "dtend": "20200829T110000Z",
     "sequence": "2020",
@@ -497,7 +497,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP6_2020_qualifying",
     "summary": "Qualifying (Belgian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200829T130000Z",
     "dtend": "20200829T140000Z",
     "sequence": "2020",
@@ -512,7 +512,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP6_2020_race",
     "summary": "Belgian Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200830T131000Z",
     "dtend": "20200830T151000Z",
     "sequence": "2020",
@@ -527,7 +527,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP7_2020_fp1",
     "summary": "Free Practice 1 (Italian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200904T090000Z",
     "dtend": "20200904T103000Z",
     "sequence": "2020",
@@ -542,7 +542,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP7_2020_fp2",
     "summary": "Free Practice 2 (Italian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200904T130000Z",
     "dtend": "20200904T143000Z",
     "sequence": "2020",
@@ -557,7 +557,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP7_2020_fp3",
     "summary": "Free Practice 3 (Italian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200905T100000Z",
     "dtend": "20200905T110000Z",
     "sequence": "2020",
@@ -572,7 +572,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP7_2020_qualifying",
     "summary": "Qualifying (Italian Grand Prix)",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200905T130000Z",
     "dtend": "20200905T140000Z",
     "sequence": "2020",
@@ -587,7 +587,7 @@
   {
     "uid": "http://2020.f1calendar.com/#GP7_2020_race",
     "summary": "Italian Grand Prix",
-    "dtstamp": "20200701T030600Z",
+    "dtstamp": "20200809T232226Z",
     "dtstart": "20200906T131000Z",
     "dtend": "20200906T151000Z",
     "sequence": "2020",
@@ -596,6 +596,351 @@
       "9.2825"
     ],
     "location": "Monza",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP8_2020_fp1",
+    "summary": "Free Practice 1 (Tuscan Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200911T090000Z",
+    "dtend": "20200911T103000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.997896",
+      "11.371913"
+    ],
+    "location": "Mugello",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP8_2020_fp2",
+    "summary": "Free Practice 2 (Tuscan Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200911T130000Z",
+    "dtend": "20200911T143000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.997896",
+      "11.371913"
+    ],
+    "location": "Mugello",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP8_2020_fp3",
+    "summary": "Free Practice 3 (Tuscan Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200912T100000Z",
+    "dtend": "20200912T110000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.997896",
+      "11.371913"
+    ],
+    "location": "Mugello",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP8_2020_qualifying",
+    "summary": "Qualifying (Tuscan Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200912T130000Z",
+    "dtend": "20200912T140000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.997896",
+      "11.371913"
+    ],
+    "location": "Mugello",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP8_2020_race",
+    "summary": "Tuscan Grand Prix",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200913T131000Z",
+    "dtend": "20200913T151000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.997896",
+      "11.371913"
+    ],
+    "location": "Mugello",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP9_2020_fp1",
+    "summary": "Free Practice 1 (Russian Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200925T080000Z",
+    "dtend": "20200925T093000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.6203",
+      "39.712"
+    ],
+    "location": "Sochi",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP9_2020_fp2",
+    "summary": "Free Practice 2 (Russian Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200925T120000Z",
+    "dtend": "20200925T133000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.6203",
+      "39.712"
+    ],
+    "location": "Sochi",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP9_2020_fp3",
+    "summary": "Free Practice 3 (Russian Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200926T090000Z",
+    "dtend": "20200926T100000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.6203",
+      "39.712"
+    ],
+    "location": "Sochi",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP9_2020_qualifying",
+    "summary": "Qualifying (Russian Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200926T120000Z",
+    "dtend": "20200926T130000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.6203",
+      "39.712"
+    ],
+    "location": "Sochi",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP9_2020_race",
+    "summary": "Russian Grand Prix",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20200927T111000Z",
+    "dtend": "20200927T131000Z",
+    "sequence": "2020",
+    "geo": [
+      "43.6203",
+      "39.712"
+    ],
+    "location": "Sochi",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP10_2020_fp1",
+    "summary": "Free Practice 1 (Eifel Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201009T090000Z",
+    "dtend": "20201009T103000Z",
+    "sequence": "2020",
+    "geo": [
+      "50.33182",
+      "6.939926"
+    ],
+    "location": "Nurburgring",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP10_2020_fp2",
+    "summary": "Free Practice 2 (Eifel Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201009T130000Z",
+    "dtend": "20201009T143000Z",
+    "sequence": "2020",
+    "geo": [
+      "50.33182",
+      "6.939926"
+    ],
+    "location": "Nurburgring",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP10_2020_fp3",
+    "summary": "Free Practice 3 (Eifel Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201010T100000Z",
+    "dtend": "20201010T110000Z",
+    "sequence": "2020",
+    "geo": [
+      "50.33182",
+      "6.939926"
+    ],
+    "location": "Nurburgring",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP10_2020_qualifying",
+    "summary": "Qualifying (Eifel Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201010T130000Z",
+    "dtend": "20201010T140000Z",
+    "sequence": "2020",
+    "geo": [
+      "50.33182",
+      "6.939926"
+    ],
+    "location": "Nurburgring",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP10_2020_race",
+    "summary": "Eifel Grand Prix",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201011T121000Z",
+    "dtend": "20201011T141000Z",
+    "sequence": "2020",
+    "geo": [
+      "50.33182",
+      "6.939926"
+    ],
+    "location": "Nurburgring",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP11_2020_fp1",
+    "summary": "Free Practice 1 (Portuguese Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201023T100000Z",
+    "dtend": "20201023T113000Z",
+    "sequence": "2020",
+    "geo": [
+      "37.232191",
+      "-8.628495"
+    ],
+    "location": "Portimao",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP11_2020_fp2",
+    "summary": "Free Practice 2 (Portuguese Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201023T140000Z",
+    "dtend": "20201023T153000Z",
+    "sequence": "2020",
+    "geo": [
+      "37.232191",
+      "-8.628495"
+    ],
+    "location": "Portimao",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 2"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP11_2020_fp3",
+    "summary": "Free Practice 3 (Portuguese Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201024T100000Z",
+    "dtend": "20201024T110000Z",
+    "sequence": "2020",
+    "geo": [
+      "37.232191",
+      "-8.628495"
+    ],
+    "location": "Portimao",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 3"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP11_2020_qualifying",
+    "summary": "Qualifying (Portuguese Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201024T130000Z",
+    "dtend": "20201024T140000Z",
+    "sequence": "2020",
+    "geo": [
+      "37.232191",
+      "-8.628495"
+    ],
+    "location": "Portimao",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP11_2020_race",
+    "summary": "Portuguese Grand Prix",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201025T131000Z",
+    "dtend": "20201025T151000Z",
+    "sequence": "2020",
+    "geo": [
+      "37.232191",
+      "-8.628495"
+    ],
+    "location": "Portimao",
+    "status": "CONFIRMED",
+    "categories": "Grand Prix"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP12_2020_fp1",
+    "summary": "Free Practice 1 (Emilia Romagna Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201031T090000Z",
+    "dtend": "20201031T103000Z",
+    "sequence": "2020",
+    "geo": [
+      "44.344576",
+      "11.713808"
+    ],
+    "location": "Imola",
+    "status": "CONFIRMED",
+    "categories": "Free Practice 1"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP12_2020_qualifying",
+    "summary": "Qualifying (Emilia Romagna Grand Prix)",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201031T130000Z",
+    "dtend": "20201031T140000Z",
+    "sequence": "2020",
+    "geo": [
+      "44.344576",
+      "11.713808"
+    ],
+    "location": "Imola",
+    "status": "CONFIRMED",
+    "categories": "Qualifying"
+  },
+  {
+    "uid": "http://2020.f1calendar.com/#GP12_2020_race",
+    "summary": "Emilia Romagna Grand Prix",
+    "dtstamp": "20200809T232226Z",
+    "dtstart": "20201101T121000Z",
+    "dtend": "20201101T141000Z",
+    "sequence": "2020",
+    "geo": [
+      "44.344576",
+      "11.713808"
+    ],
+    "location": "Imola",
     "status": "CONFIRMED",
     "categories": "Grand Prix"
   }

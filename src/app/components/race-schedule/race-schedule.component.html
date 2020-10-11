@@ -18,13 +18,13 @@
       <ul *ngIf="raceSchedule.length > 0" @list>
         <li *ngFor="let raceweekend of raceSchedule; let round = index" @items>
           <div class="race-details list-item">
-            <span class="country"
-              >{{ raceweekend[4].country
-              }}<span *ngIf="raceweekend[4].status == 'TENTATIVE'"
-                >*</span
-              ></span
-            >
-            <span class="city">{{ raceweekend[4].location }}</span>
+<div class="location">
+  <span class="country">{{ raceweekend[4].country
+                }}<span *ngIf="raceweekend[4].status == 'TENTATIVE'">*</span></span>
+  <span class="city">{{ raceweekend[4].location }}</span>
+</div>
+
+            
             <span class="right">
               <span fxHide.xs="true">{{
                 raceweekend[4].eventDate | date: "dd MMMM"

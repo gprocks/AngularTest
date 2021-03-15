@@ -23,7 +23,7 @@ export class RaceScheduleCurrentService {
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http
-      .get<RaceScheduleCurrent[]>("./assets/schedule/2020.json")
+      .get<RaceScheduleCurrent[]>("./assets/schedule/2021.json")
       .pipe(
         map(raceSchedule => {
           raceSchedule.forEach(this.setCustomData.bind(this));

@@ -1351,7 +1351,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_fp1",
-		"summary": "Mexico City Grand Prix",
+		"summary": "Mexico Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211029T163000Z",
 		"dtend": "20211029T173000Z",
@@ -1360,13 +1360,13 @@
 			"19.4028",
 			"-99.0986"
 		],
-		"location": "Mexico City",
+		"location": "Mexico",
 		"status": "CONFIRMED",
 		"categories": "Free Practice 1"
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_fp2",
-		"summary": "Mexico City Grand Prix",
+		"summary": "Mexico Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211029T200000Z",
 		"dtend": "20211029T210000Z",
@@ -1375,13 +1375,13 @@
 			"19.4028",
 			"-99.0986"
 		],
-		"location": "Mexico City",
+		"location": "Mexico",
 		"status": "CONFIRMED",
 		"categories": "Free Practice 2"
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_fp3",
-		"summary": "Mexico City Grand Prix",
+		"summary": "Mexico Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211030T160000Z",
 		"dtend": "20211030T170000Z",
@@ -1390,13 +1390,13 @@
 			"19.4028",
 			"-99.0986"
 		],
-		"location": "Mexico City",
+		"location": "Mexico",
 		"status": "CONFIRMED",
 		"categories": "Free Practice 3"
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_qualifying",
-		"summary": "Mexico City Grand Prix",
+		"summary": "Mexico Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211030T190000Z",
 		"dtend": "20211030T200000Z",
@@ -1405,13 +1405,13 @@
 			"19.4028",
 			"-99.0986"
 		],
-		"location": "Mexico City",
+		"location": "Mexico",
 		"status": "CONFIRMED",
 		"categories": "Qualifying"
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_gp",
-		"summary": "Mexico City Grand Prix",
+		"summary": "Mexico Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211031T190000Z",
 		"dtend": "20211031T210000Z",
@@ -1420,7 +1420,7 @@
 			"19.4028",
 			"-99.0986"
 		],
-		"location": "Mexico City",
+		"location": "Mexico",
 		"status": "CONFIRMED",
 		"categories": "Grand Prix"
 	},

@@ -1,7 +1,7 @@
 [
 	{
 		"uid": "http://2021.f1calendar.com/#GP0_2021_fp1",
-		"summary": "Free Practice 1 (Bahrain Grand Prix)",
+		"summary": "Bahrain Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210326T113000Z",
 		"dtend": "20210326T123000Z",
@@ -16,7 +16,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP0_2021_fp2",
-		"summary": "Free Practice 2 (Bahrain Grand Prix)",
+		"summary": "Bahrain Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210326T150000Z",
 		"dtend": "20210326T160000Z",
@@ -31,7 +31,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP0_2021_fp3",
-		"summary": "Free Practice 3 (Bahrain Grand Prix)",
+		"summary": "Bahrain Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210327T120000Z",
 		"dtend": "20210327T130000Z",
@@ -46,7 +46,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP0_2021_qualifying",
-		"summary": "Qualifying (Bahrain Grand Prix)",
+		"summary": "Bahrain Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210327T150000Z",
 		"dtend": "20210327T160000Z",
@@ -61,7 +61,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP0_2021_gp",
-		"summary": "Grand Prix (Bahrain Grand Prix)",
+		"summary": "Bahrain Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210328T150000Z",
 		"dtend": "20210328T170000Z",
@@ -76,7 +76,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP1_2021_fp1",
-		"summary": "Free Practice 1 (Emilia Romagna Grand Prix)",
+		"summary": "Emilia Romagna Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210416T093000Z",
 		"dtend": "20210416T103000Z",
@@ -91,7 +91,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP1_2021_fp2",
-		"summary": "Free Practice 2 (Emilia Romagna Grand Prix)",
+		"summary": "Emilia Romagna Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210416T130000Z",
 		"dtend": "20210416T140000Z",
@@ -106,7 +106,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP1_2021_fp3",
-		"summary": "Free Practice 3 (Emilia Romagna Grand Prix)",
+		"summary": "Emilia Romagna Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210417T093000Z",
 		"dtend": "20210417T103000Z",
@@ -121,7 +121,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP1_2021_qualifying",
-		"summary": "Qualifying (Emilia Romagna Grand Prix)",
+		"summary": "Emilia Romagna Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210417T130000Z",
 		"dtend": "20210417T140000Z",
@@ -136,7 +136,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP1_2021_gp",
-		"summary": "Grand Prix (Emilia Romagna Grand Prix)",
+		"summary": "Emilia Romagna Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210418T130000Z",
 		"dtend": "20210418T150000Z",
@@ -151,7 +151,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP2_2021_fp1",
-		"summary": "Free Practice 1 (Portuguese Grand Prix)",
+		"summary": "Portuguese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210430T103000Z",
 		"dtend": "20210430T113000Z",
@@ -166,7 +166,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP2_2021_fp2",
-		"summary": "Free Practice 2 (Portuguese Grand Prix)",
+		"summary": "Portuguese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210430T140000Z",
 		"dtend": "20210430T150000Z",
@@ -181,7 +181,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP2_2021_fp3",
-		"summary": "Free Practice 3 (Portuguese Grand Prix)",
+		"summary": "Portuguese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210501T110000Z",
 		"dtend": "20210501T120000Z",
@@ -196,7 +196,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP2_2021_qualifying",
-		"summary": "Qualifying (Portuguese Grand Prix)",
+		"summary": "Portuguese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210501T140000Z",
 		"dtend": "20210501T150000Z",
@@ -211,7 +211,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP2_2021_gp",
-		"summary": "Grand Prix (Portuguese Grand Prix)",
+		"summary": "Portuguese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210502T140000Z",
 		"dtend": "20210502T160000Z",
@@ -226,7 +226,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP3_2021_fp1",
-		"summary": "Free Practice 1 (Spanish Grand Prix)",
+		"summary": "Spanish Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210507T093000Z",
 		"dtend": "20210507T103000Z",
@@ -241,7 +241,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP3_2021_fp2",
-		"summary": "Free Practice 2 (Spanish Grand Prix)",
+		"summary": "Spanish Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210507T130000Z",
 		"dtend": "20210507T140000Z",
@@ -256,7 +256,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP3_2021_fp3",
-		"summary": "Free Practice 3 (Spanish Grand Prix)",
+		"summary": "Spanish Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210508T100000Z",
 		"dtend": "20210508T110000Z",
@@ -271,7 +271,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP3_2021_qualifying",
-		"summary": "Qualifying (Spanish Grand Prix)",
+		"summary": "Spanish Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210508T130000Z",
 		"dtend": "20210508T140000Z",
@@ -286,7 +286,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP3_2021_gp",
-		"summary": "Grand Prix (Spanish Grand Prix)",
+		"summary": "Spanish Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210509T130000Z",
 		"dtend": "20210509T150000Z",
@@ -301,7 +301,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP4_2021_fp1",
-		"summary": "Free Practice 1 (Monaco Grand Prix)",
+		"summary": "Monaco Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210520T093000Z",
 		"dtend": "20210520T103000Z",
@@ -316,7 +316,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP4_2021_fp2",
-		"summary": "Free Practice 2 (Monaco Grand Prix)",
+		"summary": "Monaco Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210520T130000Z",
 		"dtend": "20210520T140000Z",
@@ -331,7 +331,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP4_2021_fp3",
-		"summary": "Free Practice 3 (Monaco Grand Prix)",
+		"summary": "Monaco Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210522T100000Z",
 		"dtend": "20210522T110000Z",
@@ -346,7 +346,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP4_2021_qualifying",
-		"summary": "Qualifying (Monaco Grand Prix)",
+		"summary": "Monaco Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210522T130000Z",
 		"dtend": "20210522T140000Z",
@@ -361,7 +361,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP4_2021_gp",
-		"summary": "Grand Prix (Monaco Grand Prix)",
+		"summary": "Monaco Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210523T130000Z",
 		"dtend": "20210523T150000Z",
@@ -376,7 +376,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP5_2021_fp1",
-		"summary": "Free Practice 1 (Azerbaijan Grand Prix)",
+		"summary": "Azerbaijan Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210604T093000Z",
 		"dtend": "20210604T103000Z",
@@ -391,7 +391,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP5_2021_fp2",
-		"summary": "Free Practice 2 (Azerbaijan Grand Prix)",
+		"summary": "Azerbaijan Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210604T130000Z",
 		"dtend": "20210604T140000Z",
@@ -406,7 +406,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP5_2021_fp3",
-		"summary": "Free Practice 3 (Azerbaijan Grand Prix)",
+		"summary": "Azerbaijan Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210605T100000Z",
 		"dtend": "20210605T110000Z",
@@ -421,7 +421,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP5_2021_qualifying",
-		"summary": "Qualifying (Azerbaijan Grand Prix)",
+		"summary": "Azerbaijan Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210605T130000Z",
 		"dtend": "20210605T140000Z",
@@ -436,7 +436,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP5_2021_gp",
-		"summary": "Grand Prix (Azerbaijan Grand Prix)",
+		"summary": "Azerbaijan Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210606T120000Z",
 		"dtend": "20210606T140000Z",
@@ -451,7 +451,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP6_2021_fp1",
-		"summary": "Free Practice 1 (Canadian Grand Prix)",
+		"summary": "Canadian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210611T153000Z",
 		"dtend": "20210611T163000Z",
@@ -466,7 +466,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP6_2021_fp2",
-		"summary": "Free Practice 2 (Canadian Grand Prix)",
+		"summary": "Canadian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210611T190000Z",
 		"dtend": "20210611T200000Z",
@@ -481,7 +481,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP6_2021_fp3",
-		"summary": "Free Practice 3 (Canadian Grand Prix)",
+		"summary": "Canadian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210612T150000Z",
 		"dtend": "20210612T160000Z",
@@ -496,7 +496,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP6_2021_qualifying",
-		"summary": "Qualifying (Canadian Grand Prix)",
+		"summary": "Canadian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210612T180000Z",
 		"dtend": "20210612T190000Z",
@@ -511,7 +511,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP6_2021_gp",
-		"summary": "Grand Prix (Canadian Grand Prix)",
+		"summary": "Canadian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210613T180000Z",
 		"dtend": "20210613T200000Z",
@@ -526,7 +526,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP7_2021_fp1",
-		"summary": "Free Practice 1 (French Grand Prix)",
+		"summary": "French Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210625T093000Z",
 		"dtend": "20210625T103000Z",
@@ -541,7 +541,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP7_2021_fp2",
-		"summary": "Free Practice 2 (French Grand Prix)",
+		"summary": "French Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210625T130000Z",
 		"dtend": "20210625T140000Z",
@@ -556,7 +556,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP7_2021_fp3",
-		"summary": "Free Practice 3 (French Grand Prix)",
+		"summary": "French Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210626T100000Z",
 		"dtend": "20210626T110000Z",
@@ -571,7 +571,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP7_2021_qualifying",
-		"summary": "Qualifying (French Grand Prix)",
+		"summary": "French Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210626T130000Z",
 		"dtend": "20210626T140000Z",
@@ -586,7 +586,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP7_2021_gp",
-		"summary": "Grand Prix (French Grand Prix)",
+		"summary": "French Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210627T130000Z",
 		"dtend": "20210627T150000Z",
@@ -601,7 +601,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP8_2021_fp1",
-		"summary": "Free Practice 1 (Austrian Grand Prix)",
+		"summary": "Austrian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210702T093000Z",
 		"dtend": "20210702T103000Z",
@@ -616,7 +616,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP8_2021_fp2",
-		"summary": "Free Practice 2 (Austrian Grand Prix)",
+		"summary": "Austrian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210702T130000Z",
 		"dtend": "20210702T140000Z",
@@ -631,7 +631,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP8_2021_fp3",
-		"summary": "Free Practice 3 (Austrian Grand Prix)",
+		"summary": "Austrian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210703T100000Z",
 		"dtend": "20210703T110000Z",
@@ -646,7 +646,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP8_2021_qualifying",
-		"summary": "Qualifying (Austrian Grand Prix)",
+		"summary": "Austrian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210703T130000Z",
 		"dtend": "20210703T140000Z",
@@ -661,7 +661,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP8_2021_gp",
-		"summary": "Grand Prix (Austrian Grand Prix)",
+		"summary": "Austrian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210704T130000Z",
 		"dtend": "20210704T150000Z",
@@ -676,7 +676,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP9_2021_fp1",
-		"summary": "Free Practice 1 (British Grand Prix)",
+		"summary": "British Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210716T103000Z",
 		"dtend": "20210716T113000Z",
@@ -691,7 +691,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP9_2021_fp2",
-		"summary": "Free Practice 2 (British Grand Prix)",
+		"summary": "British Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210716T140000Z",
 		"dtend": "20210716T150000Z",
@@ -706,7 +706,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP9_2021_fp3",
-		"summary": "Free Practice 3 (British Grand Prix)",
+		"summary": "British Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210717T110000Z",
 		"dtend": "20210717T120000Z",
@@ -721,7 +721,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP9_2021_qualifying",
-		"summary": "Qualifying (British Grand Prix)",
+		"summary": "British Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210717T140000Z",
 		"dtend": "20210717T150000Z",
@@ -736,7 +736,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP9_2021_gp",
-		"summary": "Grand Prix (British Grand Prix)",
+		"summary": "British Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210718T140000Z",
 		"dtend": "20210718T160000Z",
@@ -751,7 +751,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP10_2021_fp1",
-		"summary": "Free Practice 1 (Hungarian Grand Prix)",
+		"summary": "Hungarian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210730T093000Z",
 		"dtend": "20210730T103000Z",
@@ -766,7 +766,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP10_2021_fp2",
-		"summary": "Free Practice 2 (Hungarian Grand Prix)",
+		"summary": "Hungarian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210730T130000Z",
 		"dtend": "20210730T140000Z",
@@ -781,7 +781,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP10_2021_fp3",
-		"summary": "Free Practice 3 (Hungarian Grand Prix)",
+		"summary": "Hungarian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210731T100000Z",
 		"dtend": "20210731T110000Z",
@@ -796,7 +796,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP10_2021_qualifying",
-		"summary": "Qualifying (Hungarian Grand Prix)",
+		"summary": "Hungarian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210731T130000Z",
 		"dtend": "20210731T140000Z",
@@ -811,7 +811,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP10_2021_gp",
-		"summary": "Grand Prix (Hungarian Grand Prix)",
+		"summary": "Hungarian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210801T130000Z",
 		"dtend": "20210801T150000Z",
@@ -826,7 +826,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP11_2021_fp1",
-		"summary": "Free Practice 1 (Belgian Grand Prix)",
+		"summary": "Belgian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210827T093000Z",
 		"dtend": "20210827T103000Z",
@@ -841,7 +841,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP11_2021_fp2",
-		"summary": "Free Practice 2 (Belgian Grand Prix)",
+		"summary": "Belgian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210827T130000Z",
 		"dtend": "20210827T140000Z",
@@ -856,7 +856,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP11_2021_fp3",
-		"summary": "Free Practice 3 (Belgian Grand Prix)",
+		"summary": "Belgian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210828T100000Z",
 		"dtend": "20210828T110000Z",
@@ -871,7 +871,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP11_2021_qualifying",
-		"summary": "Qualifying (Belgian Grand Prix)",
+		"summary": "Belgian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210828T130000Z",
 		"dtend": "20210828T140000Z",
@@ -886,7 +886,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP11_2021_gp",
-		"summary": "Grand Prix (Belgian Grand Prix)",
+		"summary": "Belgian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210829T130000Z",
 		"dtend": "20210829T150000Z",
@@ -901,7 +901,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP12_2021_fp1",
-		"summary": "Free Practice 1 (Dutch Grand Prix)",
+		"summary": "Dutch Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210903T093000Z",
 		"dtend": "20210903T103000Z",
@@ -916,7 +916,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP12_2021_fp2",
-		"summary": "Free Practice 2 (Dutch Grand Prix)",
+		"summary": "Dutch Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210903T130000Z",
 		"dtend": "20210903T140000Z",
@@ -931,7 +931,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP12_2021_fp3",
-		"summary": "Free Practice 3 (Dutch Grand Prix)",
+		"summary": "Dutch Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210904T100000Z",
 		"dtend": "20210904T110000Z",
@@ -946,7 +946,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP12_2021_qualifying",
-		"summary": "Qualifying (Dutch Grand Prix)",
+		"summary": "Dutch Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210904T130000Z",
 		"dtend": "20210904T140000Z",
@@ -961,7 +961,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP12_2021_gp",
-		"summary": "Grand Prix (Dutch Grand Prix)",
+		"summary": "Dutch Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210905T130000Z",
 		"dtend": "20210905T150000Z",
@@ -976,7 +976,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP13_2021_fp1",
-		"summary": "Free Practice 1 (Italian Grand Prix)",
+		"summary": "Italian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210910T093000Z",
 		"dtend": "20210910T103000Z",
@@ -991,7 +991,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP13_2021_fp2",
-		"summary": "Free Practice 2 (Italian Grand Prix)",
+		"summary": "Italian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210910T130000Z",
 		"dtend": "20210910T140000Z",
@@ -1006,7 +1006,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP13_2021_fp3",
-		"summary": "Free Practice 3 (Italian Grand Prix)",
+		"summary": "Italian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210911T100000Z",
 		"dtend": "20210911T110000Z",
@@ -1021,7 +1021,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP13_2021_qualifying",
-		"summary": "Qualifying (Italian Grand Prix)",
+		"summary": "Italian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210911T130000Z",
 		"dtend": "20210911T140000Z",
@@ -1036,7 +1036,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP13_2021_gp",
-		"summary": "Grand Prix (Italian Grand Prix)",
+		"summary": "Italian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210912T130000Z",
 		"dtend": "20210912T150000Z",
@@ -1051,7 +1051,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP14_2021_fp1",
-		"summary": "Free Practice 1 (Russian Grand Prix)",
+		"summary": "Russian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210924T083000Z",
 		"dtend": "20210924T093000Z",
@@ -1066,7 +1066,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP14_2021_fp2",
-		"summary": "Free Practice 2 (Russian Grand Prix)",
+		"summary": "Russian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210924T120000Z",
 		"dtend": "20210924T130000Z",
@@ -1081,7 +1081,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP14_2021_fp3",
-		"summary": "Free Practice 3 (Russian Grand Prix)",
+		"summary": "Russian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210925T090000Z",
 		"dtend": "20210925T100000Z",
@@ -1096,7 +1096,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP14_2021_qualifying",
-		"summary": "Qualifying (Russian Grand Prix)",
+		"summary": "Russian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210925T120000Z",
 		"dtend": "20210925T130000Z",
@@ -1111,7 +1111,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP14_2021_gp",
-		"summary": "Grand Prix (Russian Grand Prix)",
+		"summary": "Russian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20210926T120000Z",
 		"dtend": "20210926T140000Z",
@@ -1126,7 +1126,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP15_2021_fp1",
-		"summary": "Free Practice 1 (Singapore Grand Prix)",
+		"summary": "Singapore Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211001T090000Z",
 		"dtend": "20211001T100000Z",
@@ -1141,7 +1141,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP15_2021_fp2",
-		"summary": "Free Practice 2 (Singapore Grand Prix)",
+		"summary": "Singapore Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211001T123000Z",
 		"dtend": "20211001T133000Z",
@@ -1156,7 +1156,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP15_2021_fp3",
-		"summary": "Free Practice 3 (Singapore Grand Prix)",
+		"summary": "Singapore Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211002T100000Z",
 		"dtend": "20211002T110000Z",
@@ -1171,7 +1171,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP15_2021_qualifying",
-		"summary": "Qualifying (Singapore Grand Prix)",
+		"summary": "Singapore Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211002T130000Z",
 		"dtend": "20211002T140000Z",
@@ -1186,7 +1186,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP15_2021_gp",
-		"summary": "Grand Prix (Singapore Grand Prix)",
+		"summary": "Singapore Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211003T120000Z",
 		"dtend": "20211003T140000Z",
@@ -1201,7 +1201,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP16_2021_fp1",
-		"summary": "Free Practice 1 (Japanese Grand Prix)",
+		"summary": "Japanese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211008T023000Z",
 		"dtend": "20211008T033000Z",
@@ -1216,7 +1216,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP16_2021_fp2",
-		"summary": "Free Practice 2 (Japanese Grand Prix)",
+		"summary": "Japanese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211008T060000Z",
 		"dtend": "20211008T070000Z",
@@ -1231,7 +1231,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP16_2021_fp3",
-		"summary": "Free Practice 3 (Japanese Grand Prix)",
+		"summary": "Japanese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211009T030000Z",
 		"dtend": "20211009T040000Z",
@@ -1246,7 +1246,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP16_2021_qualifying",
-		"summary": "Qualifying (Japanese Grand Prix)",
+		"summary": "Japanese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211009T060000Z",
 		"dtend": "20211009T070000Z",
@@ -1261,7 +1261,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP16_2021_gp",
-		"summary": "Grand Prix (Japanese Grand Prix)",
+		"summary": "Japanese Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211010T050000Z",
 		"dtend": "20211010T070000Z",
@@ -1276,7 +1276,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP17_2021_fp1",
-		"summary": "Free Practice 1 (United States Grand Prix)",
+		"summary": "United States Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211022T163000Z",
 		"dtend": "20211022T173000Z",
@@ -1291,7 +1291,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP17_2021_fp2",
-		"summary": "Free Practice 2 (United States Grand Prix)",
+		"summary": "United States Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211022T200000Z",
 		"dtend": "20211022T210000Z",
@@ -1306,7 +1306,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP17_2021_fp3",
-		"summary": "Free Practice 3 (United States Grand Prix)",
+		"summary": "United States Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211023T180000Z",
 		"dtend": "20211023T190000Z",
@@ -1321,7 +1321,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP17_2021_qualifying",
-		"summary": "Qualifying (United States Grand Prix)",
+		"summary": "United States Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211023T210000Z",
 		"dtend": "20211023T220000Z",
@@ -1336,7 +1336,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP17_2021_gp",
-		"summary": "Grand Prix (United States Grand Prix)",
+		"summary": "United States Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211024T190000Z",
 		"dtend": "20211024T210000Z",
@@ -1351,7 +1351,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_fp1",
-		"summary": "Free Practice 1 (Mexico City Grand Prix)",
+		"summary": "Mexico City Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211029T163000Z",
 		"dtend": "20211029T173000Z",
@@ -1366,7 +1366,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_fp2",
-		"summary": "Free Practice 2 (Mexico City Grand Prix)",
+		"summary": "Mexico City Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211029T200000Z",
 		"dtend": "20211029T210000Z",
@@ -1381,7 +1381,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_fp3",
-		"summary": "Free Practice 3 (Mexico City Grand Prix)",
+		"summary": "Mexico City Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211030T160000Z",
 		"dtend": "20211030T170000Z",
@@ -1396,7 +1396,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_qualifying",
-		"summary": "Qualifying (Mexico City Grand Prix)",
+		"summary": "Mexico City Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211030T190000Z",
 		"dtend": "20211030T200000Z",
@@ -1411,7 +1411,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP18_2021_gp",
-		"summary": "Grand Prix (Mexico City Grand Prix)",
+		"summary": "Mexico City Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211031T190000Z",
 		"dtend": "20211031T210000Z",
@@ -1426,7 +1426,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP19_2021_fp1",
-		"summary": "Free Practice 1 (Brazilian Grand Prix)",
+		"summary": "Brazilian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211105T143000Z",
 		"dtend": "20211105T153000Z",
@@ -1441,7 +1441,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP19_2021_fp2",
-		"summary": "Free Practice 2 (Brazilian Grand Prix)",
+		"summary": "Brazilian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211105T180000Z",
 		"dtend": "20211105T190000Z",
@@ -1456,7 +1456,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP19_2021_fp3",
-		"summary": "Free Practice 3 (Brazilian Grand Prix)",
+		"summary": "Brazilian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211106T150000Z",
 		"dtend": "20211106T160000Z",
@@ -1471,7 +1471,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP19_2021_qualifying",
-		"summary": "Qualifying (Brazilian Grand Prix)",
+		"summary": "Brazilian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211106T180000Z",
 		"dtend": "20211106T190000Z",
@@ -1486,7 +1486,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP19_2021_gp",
-		"summary": "Grand Prix (Brazilian Grand Prix)",
+		"summary": "Brazilian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211107T170000Z",
 		"dtend": "20211107T190000Z",
@@ -1501,7 +1501,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP20_2021_fp1",
-		"summary": "Free Practice 1 (Australian Grand Prix)",
+		"summary": "Australian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211119T013000Z",
 		"dtend": "20211119T023000Z",
@@ -1516,7 +1516,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP20_2021_fp2",
-		"summary": "Free Practice 2 (Australian Grand Prix)",
+		"summary": "Australian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211119T050000Z",
 		"dtend": "20211119T060000Z",
@@ -1531,7 +1531,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP20_2021_fp3",
-		"summary": "Free Practice 3 (Australian Grand Prix)",
+		"summary": "Australian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211120T030000Z",
 		"dtend": "20211120T040000Z",
@@ -1546,7 +1546,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP20_2021_qualifying",
-		"summary": "Qualifying (Australian Grand Prix)",
+		"summary": "Australian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211120T060000Z",
 		"dtend": "20211120T070000Z",
@@ -1561,7 +1561,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP20_2021_gp",
-		"summary": "Grand Prix (Australian Grand Prix)",
+		"summary": "Australian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211121T060000Z",
 		"dtend": "20211121T080000Z",
@@ -1576,7 +1576,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP21_2021_fp1",
-		"summary": "Free Practice 1 (Saudi Arabian Grand Prix)",
+		"summary": "Saudi Arabian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211203T123000Z",
 		"dtend": "20211203T133000Z",
@@ -1591,7 +1591,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP21_2021_fp2",
-		"summary": "Free Practice 2 (Saudi Arabian Grand Prix)",
+		"summary": "Saudi Arabian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211203T160000Z",
 		"dtend": "20211203T170000Z",
@@ -1606,7 +1606,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP21_2021_fp3",
-		"summary": "Free Practice 3 (Saudi Arabian Grand Prix)",
+		"summary": "Saudi Arabian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211204T130000Z",
 		"dtend": "20211204T140000Z",
@@ -1621,7 +1621,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP21_2021_qualifying",
-		"summary": "Qualifying (Saudi Arabian Grand Prix)",
+		"summary": "Saudi Arabian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211204T160000Z",
 		"dtend": "20211204T170000Z",
@@ -1636,7 +1636,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP21_2021_gp",
-		"summary": "Grand Prix (Saudi Arabian Grand Prix)",
+		"summary": "Saudi Arabian Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211205T160000Z",
 		"dtend": "20211205T180000Z",
@@ -1651,7 +1651,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP22_2021_fp1",
-		"summary": "Free Practice 1 (Abu Dhabi Grand Prix)",
+		"summary": "Abu Dhabi Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211210T093000Z",
 		"dtend": "20211210T103000Z",
@@ -1666,7 +1666,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP22_2021_fp2",
-		"summary": "Free Practice 2 (Abu Dhabi Grand Prix)",
+		"summary": "Abu Dhabi Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211210T130000Z",
 		"dtend": "20211210T140000Z",
@@ -1681,7 +1681,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP22_2021_fp3",
-		"summary": "Free Practice 3 (Abu Dhabi Grand Prix)",
+		"summary": "Abu Dhabi Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211211T100000Z",
 		"dtend": "20211211T110000Z",
@@ -1696,7 +1696,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP22_2021_qualifying",
-		"summary": "Qualifying (Abu Dhabi Grand Prix)",
+		"summary": "Abu Dhabi Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211211T130000Z",
 		"dtend": "20211211T140000Z",
@@ -1711,7 +1711,7 @@
 	},
 	{
 		"uid": "http://2021.f1calendar.com/#GP22_2021_gp",
-		"summary": "Grand Prix (Abu Dhabi Grand Prix)",
+		"summary": "Abu Dhabi Grand Prix",
 		"dtstamp": "20210313T221400Z",
 		"dtstart": "20211212T130000Z",
 		"dtend": "20211212T150000Z",

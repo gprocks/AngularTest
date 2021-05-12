@@ -65,9 +65,6 @@ export class ResultService {
         }
 
         return weekendResult;
-      }),
-      tap(resp => {
-        console.log("Fetching Weekend Results", resp);
       })
     );
 

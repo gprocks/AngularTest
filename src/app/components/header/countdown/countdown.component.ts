@@ -1,15 +1,14 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Observable, interval } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Component, OnInit, Input } from "@angular/core";
+import { interval } from "rxjs";
+import { map } from "rxjs/operators";
 
-import { RaceScheduleCurrentService } from '../../../services/race-schedule/race-schedule-current.service';
-import { RaceScheduleCurrent } from '../../../models/race-schedule-current';
-import { ParseDateStringBasic } from '../../../services/util/date-helper';
+import { RaceScheduleCurrentService } from "../../../services/race-schedule/race-schedule-current.service";
+import { RaceScheduleCurrent } from "../../../models/race-schedule-current";
 
 @Component({
-  selector: 'app-countdown',
-  templateUrl: './countdown.component.html',
-  styleUrls: ['./countdown.component.css']
+  selector: "app-countdown",
+  templateUrl: "./countdown.component.html",
+  styleUrls: ["./countdown.component.css"]
 })
 export class CountdownComponent implements OnInit {
   @Input() nextRaceDate: Date;
@@ -38,10 +37,10 @@ export class CountdownComponent implements OnInit {
     seconds = time % 60;
 
     this.timeRemaining = [
-      days.toString().padStart(2, '0'),
-      hours.toString().padStart(2, '0'),
-      minutes.toString().padStart(2, '0'),
-      seconds.toString().padStart(2, '0')
+      days.toString().padStart(2, "0"),
+      hours.toString().padStart(2, "0"),
+      minutes.toString().padStart(2, "0"),
+      seconds.toString().padStart(2, "0")
     ];
   }
 

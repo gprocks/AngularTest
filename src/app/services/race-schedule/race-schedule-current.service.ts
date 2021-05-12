@@ -1,13 +1,14 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Observable, BehaviorSubject } from "rxjs";
 import { tap, catchError, map } from "rxjs/operators";
+
 import { RaceScheduleCurrent } from "../../models/race-schedule-current";
 
 import { CurrentRaceSchedule } from "../../util/constants";
-import { ParseDateStringBasic } from "../util/date-helper";
 import { NationalityService } from "../nationality/nationality.service";
 import { ErrorHandlerService } from "../util/error-handler.service";
+import * as ical from "ical.js";
 
 @Injectable()
 export class RaceScheduleCurrentService {
@@ -22,16 +23,23 @@ export class RaceScheduleCurrentService {
   }
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
+    // const headers = new HttpHeaders().set("Content-Type", "text/plain; charset=utf-8");
     return this.http
-      .get<RaceScheduleCurrent[]>("./assets/schedule/2021.json")
+      .get<String>("https://f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics", { responseType: "text" as "json" })
       .pipe(
-        map(raceSchedule => {
-          raceSchedule.forEach(this.setCustomData.bind(this));
-          return raceSchedule;
+        map(calString => {
+          return new ical.Component(ical.parse(calString)).getAllSubcomponents("vevent").map(evt => {
+            const schedule = new RaceScheduleCurrent();
+            schedule.summary = evt.getFirstPropertyValue("summary");
+            schedule.location = evt.getFirstPropertyValue("location");
+            schedule.eventDate = evt.getFirstPropertyValue("dtstart").toJSDate();
+            schedule.status = evt.getFirstPropertyValue("status");
+            schedule.categories = evt.getFirstPropertyValue("categories");
+
+            this.setCustomData(schedule);
+            return schedule;
+          });
         }),
-        tap(raceSchedule =>
-          console.log("Fetching Race Schedule", raceSchedule)
-        ),
         catchError(
           this.errorHandlerService.handleError("getCurrentRaceSchedule", [])
         )
@@ -39,21 +47,21 @@ export class RaceScheduleCurrentService {
   }
 
   setCustomData(raceDetails: RaceScheduleCurrent): RaceScheduleCurrent {
-    raceDetails.eventDate = ParseDateStringBasic(raceDetails.dtstart);
+    raceDetails.nationality = this.getNationality(raceDetails.summary);
     this.nationalityService
-      .GetInfoByNationality(this.getNationality(raceDetails.summary))
+      .GetInfoByNationality(raceDetails.nationality)
       .subscribe(countryInfo => {
         raceDetails.country =
           countryInfo == null
-            ? this.getNationality(raceDetails.summary)
+          ? raceDetails.nationality
             : countryInfo.en_short_name;
       });
     return raceDetails;
   }
 
   getNationality(event: string) {
-    let evt =  event.replace(
-      /(\(|\)| Grand Prix|Session |1 |2 |3 |Practice | Qualifying|Free )+/gi,
+    const evt =  event.replace(
+      /(\(|\)| ?Grand Prix ?| ?Session? |1 |2 |3 | ?Practice | ?Qualifying ?| ?Free? |TBC)+/gi,
       ""
     );
     return evt;

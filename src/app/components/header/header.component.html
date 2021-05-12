@@ -2,7 +2,7 @@
   <div class="header-content">
     <div *ngIf="nextRace">
       <div>
-        <span>{{ nextRace.summary }} starts in:</span>
+        <span>{{ nextRace.country }} starts in:</span>
       </div>
       <app-countdown [nextRaceDate]="nextRace.eventDate"></app-countdown>
     </div>

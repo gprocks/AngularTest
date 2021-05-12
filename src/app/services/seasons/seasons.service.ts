@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { ErrorHandlerService } from '../util/error-handler.service';
-import { Observable } from 'rxjs';
-import { AppSettings } from '../../util/app.settings';
-import { ApiServices } from '../../util/constants';
-import { tap, catchError, map } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { ErrorHandlerService } from "../util/error-handler.service";
+import { Observable } from "rxjs";
+import { AppSettings } from "../../util/app.settings";
+import { ApiServices } from "../../util/constants";
+import { tap, catchError, map } from "rxjs/operators";
 
 @Injectable()
 export class SeasonsService {
@@ -17,17 +17,16 @@ export class SeasonsService {
     // Hack to ensure only seasons with results are included
     const driversUrl =
       AppSettings.API_URL +
-      'constructors/ferrari/' +
+      "constructors/ferrari/" +
       ApiServices.Seasons +
-      '.json?limit=100';
+      ".json?limit=100";
     return this.http.get(driversUrl).pipe(
       map((response: any) => {
         return response.MRData.SeasonTable.Seasons.map(
           seasonItem => seasonItem.season
         );
       }),
-      tap(standings => console.log('Fetching Season List', standings)),
-      catchError(this.errorHandlerService.handleError('getSeasons', []))
+      catchError(this.errorHandlerService.handleError("getSeasons", []))
     );
   }
 }

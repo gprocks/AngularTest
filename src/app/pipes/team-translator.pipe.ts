@@ -1,16 +1,12 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-  name: 'teamTranslator'
+  name: "teamTranslator"
 })
 export class TeamTranslatorPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    if (value === 'Haas F1 Team') {
-      return 'Haas';
-    } else {
-      return value;
-    }
+    return value.replace(" F1 Team", "");
   }
 
 }

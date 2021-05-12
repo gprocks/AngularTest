@@ -38,7 +38,6 @@ export class RaceScheduleComponent implements OnInit {
             raceWeekend = [];
           }
         }
-        console.log("building race schedule", this.raceSchedule);
       },
       error => {
         this.isLoading = false;

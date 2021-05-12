@@ -1,7 +1,7 @@
 <mat-dialog-content>
   <div class="weekendDetails">
     <div class="header" [ngStyle]="headerImage | async">
-      <span>{{ raceWeekend.weekend[4].summary }}</span>
+      <span>{{ raceWeekend.weekend[4].country }}</span>
       <span>{{ raceWeekend.weekend[4].location }}</span>
       <span *ngIf="raceWeekend.weekend[4].status == 'TENTATIVE'"
         >(Unconfirmed)</span

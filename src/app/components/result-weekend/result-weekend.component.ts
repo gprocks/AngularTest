@@ -108,7 +108,6 @@ export class ResultWeekendComponent implements OnInit {
         error => {
           this.isLoading = false;
           this.error = true;
-          console.log("In Error", this.resultsLoaded);
           console.error("Error getting Results: " + error);
         },
         () => {

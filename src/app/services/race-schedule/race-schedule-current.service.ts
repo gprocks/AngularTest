@@ -21,7 +21,7 @@ export class RaceScheduleCurrentService {
   ) {
     this.setNextRaceSubject();
   }
-
+//test
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http
       .get<String>("https://f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics", { responseType: "text" as "json" })

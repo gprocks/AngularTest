@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Observable, BehaviorSubject } from "rxjs";
-import { tap, catchError, map } from "rxjs/operators";
+import { tap, catchError, map, filter, mergeMap } from "rxjs/operators";
 
 import { RaceScheduleCurrent } from "../../models/race-schedule-current";
 
@@ -23,22 +23,23 @@ export class RaceScheduleCurrentService {
   }
 
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
-    // const headers = new HttpHeaders().set("Content-Type", "text/plain; charset=utf-8");
     return this.http
       .get<String>("https://f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics", { responseType: "text" as "json" })
       .pipe(
-        map(calString => {
-          return new ical.Component(ical.parse(calString)).getAllSubcomponents("vevent").map(evt => {
-            const schedule = new RaceScheduleCurrent();
-            schedule.summary = evt.getFirstPropertyValue("summary");
-            schedule.location = evt.getFirstPropertyValue("location");
-            schedule.eventDate = evt.getFirstPropertyValue("dtstart").toJSDate();
-            schedule.status = evt.getFirstPropertyValue("status");
-            schedule.categories = evt.getFirstPropertyValue("categories");
+        map<String, RaceScheduleCurrent[]>(calString => {
+          return new ical.Component(ical.parse(calString)).getAllSubcomponents("vevent")
+            .map(evt => {
+              const schedule = new RaceScheduleCurrent();
+              schedule.summary = evt.getFirstPropertyValue("summary");
+              schedule.location = evt.getFirstPropertyValue("location");
+              schedule.eventDate = evt.getFirstPropertyValue("dtstart").toJSDate();
+              schedule.status = evt.getFirstPropertyValue("status");
+              schedule.categories = evt.getFirstPropertyValue("categories");
 
-            this.setCustomData(schedule);
-            return schedule;
-          });
+              this.setCustomData(schedule);
+              return schedule;
+            })
+            .filter(evt=> evt.status!=='CANCELLED');
         }),
         catchError(
           this.errorHandlerService.handleError("getCurrentRaceSchedule", [])
@@ -53,14 +54,14 @@ export class RaceScheduleCurrentService {
       .subscribe(countryInfo => {
         raceDetails.country =
           countryInfo == null
-          ? raceDetails.nationality
+            ? raceDetails.nationality
             : countryInfo.en_short_name;
       });
     return raceDetails;
   }
 
   getNationality(event: string) {
-    const evt =  event.replace(
+    const evt = event.replace(
       /(\(|\)| ?Grand Prix ?| ?Session? |1 |2 |3 | ?Practice | ?Qualifying ?| ?Free? |TBC)+/gi,
       ""
     );
@@ -77,7 +78,7 @@ export class RaceScheduleCurrentService {
     const currentDate: Date = new Date();
     return this.getCurrentRaceSchedule().pipe(
       map(result => {
-        const races: RaceScheduleCurrent[] = result.filter(function(i) {
+        const races: RaceScheduleCurrent[] = result.filter(function (i) {
           return i.categories === CurrentRaceSchedule.Categories.GrandPrix;
         });
         for (let i = 0; i < races.length; i++) {

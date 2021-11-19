@@ -24,7 +24,7 @@ export class CountryService {
         break;
     }
 
-    const driversUrl = "https://restcountries.eu/rest/v2/name/" + name;
+    const driversUrl = "https://restcountries.com/rest/v2/name/" + name;
     return this.http.get<Country[]>(driversUrl);
   }
 }

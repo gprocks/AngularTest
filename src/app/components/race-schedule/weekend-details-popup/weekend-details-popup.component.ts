@@ -27,7 +27,7 @@ export class WeekendDetailsPopupComponent implements OnInit {
   ngOnInit() {
     this.headerImage = this.countryService
       .getCountry(this.raceWeekend.weekend[0].country)
-      .pipe(map(result => this.getBackgroundImage(result[0].flag)));
+      .pipe(map(result => this.getBackgroundImage(result[0].flags.png)));
 
     this.resultsService
       .getResult(

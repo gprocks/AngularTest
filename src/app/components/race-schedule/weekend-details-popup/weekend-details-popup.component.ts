@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Inject } from "@angular/core";
 import { RaceScheduleCurrent } from "../../../models/race-schedule-current";
 import { MAT_DIALOG_DATA } from "@angular/material";
 import { CountryService } from "../../../services/country/country.service";
-import { Observable } from "rxjs";
+import { Observable, of } from "rxjs";
 import { tap, map, catchError } from "rxjs/operators";
 import { ResultService } from "../../../services/result/result.service";
 import { RaceResult } from "../../../models/race-result";

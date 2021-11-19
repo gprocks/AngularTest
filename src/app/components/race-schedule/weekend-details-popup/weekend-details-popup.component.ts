@@ -30,7 +30,7 @@ export class WeekendDetailsPopupComponent implements OnInit {
       .pipe(
         map(result => this.getBackgroundImage(result[0].flags.png)),
         catchError(()=>{
-          return "background: #3f51b5;"
+          return "background: #3f51b5"
         })
         );
 

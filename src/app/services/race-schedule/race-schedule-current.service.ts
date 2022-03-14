@@ -24,7 +24,7 @@ export class RaceScheduleCurrentService {
 //test
   getCurrentRaceSchedule(): Observable<RaceScheduleCurrent[]> {
     return this.http
-      .get<String>("https://f1calendar.com/download/f1-calendar_p1_p2_p3_q_gp.ics", { responseType: "text" as "json" })
+      .get<String>("https://files-f1.motorsportcalendars.com/f1-calendar_p1_p2_p3_qualifying_sprint_gp.ics", { responseType: "text" as "json" })
       .pipe(
         map<String, RaceScheduleCurrent[]>(calString => {
           return new ical.Component(ical.parse(calString)).getAllSubcomponents("vevent")

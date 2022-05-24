@@ -6,7 +6,7 @@
   height: 300px;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)), url(../../../assets/Header1.jpg) center center no-repeat;
+      rgba(0, 0, 0, 0.6)), url(../../../assets/Header1.jpg) 0% 80% no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
